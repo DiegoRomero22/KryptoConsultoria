@@ -135,8 +135,11 @@ sub {
   bottom: -0.25em;
 }
 
+
 img {
   border: 0;
+  height: 80px;
+  
 }
 
 svg:not(:root) {
@@ -189,6 +192,7 @@ button[disabled],
 html input[disabled] {
   cursor: default;
 }
+
 
 input[type="checkbox"],
 input[type="radio"] {
@@ -353,6 +357,7 @@ a:focus {
 
 img {
   vertical-align: middle;
+    
 }
 
 .img-responsive {
@@ -380,13 +385,6 @@ img {
 
 .img-circle {
   border-radius: 50%;
-}
-
-hr {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  border: 0;
-  border-top: 1px solid #eeeeee;
 }
 
 .sr-only {
@@ -860,6 +858,8 @@ pre code {
   min-height: 1px;
   padding-right: 15px;
   padding-left: 15px;
+    top: 20px;
+    left: 0px;
 }
 
 .col-xs-1,
@@ -6005,12 +6005,20 @@ body.modal-open,
 
 .carousel {
   position: relative;
+    top: 27px;
+    left: -25px;
+    height: 738px;
+    width: 1244px;
+    margin-left: 15px;
 }
 
 .carousel-inner {
   position: relative;
-  width: 100%;
+  width: 93%;
   overflow: hidden;
+    top: 23px;
+    left: 4px;
+    height: 639px;
 }
 
 .carousel-inner > .item {
@@ -6023,9 +6031,13 @@ body.modal-open,
 .carousel-inner > .item > img,
 .carousel-inner > .item > a > img {
   display: block;
-  height: auto;
+  height: 840px;
   max-width: 100%;
   line-height: 1;
+    width: 1109px;
+    margin-left: 0px;
+    margin-right: 22px;
+    margin-top: 835px;
 }
 
 .carousel-inner > .active,
@@ -6035,7 +6047,11 @@ body.modal-open,
 }
 
 .carousel-inner > .active {
-  left: 0;
+  left: 43px;
+    top: -823px;
+    width: 1803px;
+    height: 1953px;
+    margin-top: 0px;
 }
 
 .carousel-inner > .next,
@@ -6168,15 +6184,17 @@ body.modal-open,
 
 .carousel-caption {
   position: absolute;
-  right: 15%;
-  bottom: 20px;
-  left: 15%;
+  right: 36%;
+  bottom: 1004px;
+  left: 37%;
   z-index: 10;
   padding-top: 20px;
   padding-bottom: 20px;
   color: #ffffff;
   text-align: center;
   text-shadow: 0 1px 2px rgba(0, 0, 0, 0.6);
+    height: 53px;
+    width: 479px;
 }
 
 .carousel-caption .btn {
