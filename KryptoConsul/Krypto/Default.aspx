@@ -6,22 +6,27 @@
      
         
       
-         <div class="allcontain">
+         <div class="container">
         <div id="carousel-up" class="carousel slide" data-ride="carousel">
             <div class="carousel-inner " role="listbox">
                 <div class="item active">
-                    &nbsp;<div class="carousel-caption" >
-                        El sueño de KRYPTO es el sueño de todos...</div>
-                    <img src="image/imagen1.jpg"></div>
+                    <img src="image/imagen1.jpg">
+                    <div class="carousel-caption" >
+                       <p> El sueño de KRYPTO es el sueño de todos...</p>
+                     </div>
+                    </div>
                 <div class="item ACTIV">
                     <img src="image/imagen2.jpg" >
                     <div class="carousel-caption">
-                    El sueño de KRYPTO es el sueño de todos...</div>
+                        <p>El sueño de KRYPTO es el sueño de todos...</p>
+
+                    </div>
                 </div>
                 <div class="item">
                     <img src="image/imagen3.jpg">
-                    El sueño de KRYPTO es el sueño de todos...<div class="carousel-caption">
-                        
+                    <div class="carousel-caption">
+                    El sueño de KRYPTO es el sueño de todos...
+                       </div>
                     </div>
                 </div>
             </div>
