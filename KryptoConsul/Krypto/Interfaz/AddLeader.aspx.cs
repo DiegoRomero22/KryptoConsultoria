@@ -13,5 +13,9 @@ namespace Krypto.Interfaz
         {
 
         }
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {
+            Response.Redirect("Inicio.aspx");
+        }
     }
 }

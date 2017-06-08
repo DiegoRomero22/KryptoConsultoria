@@ -7,16 +7,16 @@ using System.Web.UI.WebControls;
 
 namespace Krypto.Interfaz
 {
-    public partial class Login : System.Web.UI.Page
+    public partial class LeaderPage : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-
+     
         }
 
-        protected void BtnIniciarSesion_Click(object sender, EventArgs e)
+        protected void BtnProyectos_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AdminPage.aspx");
-        }      
+            Response.Redirect("ProjectLeader");
+        }
     }
 }
