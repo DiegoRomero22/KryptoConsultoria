@@ -223,7 +223,6 @@
     <Content Include="Interfaz\AddClient.aspx" />
     <Content Include="Interfaz\AddProject.aspx" />
     <Content Include="Interfaz\Client.aspx" />
-    <Content Include="Interfaz\WorkTeam.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -434,13 +433,6 @@
     </Compile>
     <Compile Include="Interfaz\Client.aspx.designer.cs">
       <DependentUpon>Client.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\WorkTeam.aspx.cs">
-      <DependentUpon>WorkTeam.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\WorkTeam.aspx.designer.cs">
-      <DependentUpon>WorkTeam.aspx</DependentUpon>
     </Compile>
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\IdentityModels.cs" />
