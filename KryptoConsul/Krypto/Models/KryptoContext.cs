@@ -9,7 +9,7 @@ namespace Krypto.Models
     public class KryptoContext : DbContext
     {
 
-
+        //otro cambio
         public KryptoContext()
             : base("name=DatabaseKrypto")
         {
