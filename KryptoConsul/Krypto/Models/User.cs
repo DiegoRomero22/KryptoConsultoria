@@ -8,6 +8,7 @@ namespace Krypto.Models
 {
     public class User
     {
+        //Esta vuelta está mal hecha XD.
     }
 
     [ScaffoldColumn(false)]
