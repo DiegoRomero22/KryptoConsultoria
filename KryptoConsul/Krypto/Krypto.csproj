@@ -220,8 +220,11 @@
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
     <Content Include="image\LogoKrypto.png" />
+    <Content Include="Interfaz\AddClient.aspx" />
     <Content Include="Interfaz\AddLeader.aspx" />
+    <Content Include="Interfaz\AddProject.aspx" />
     <Content Include="Interfaz\AdminPage.aspx" />
+    <Content Include="Interfaz\Client_Interface.aspx" />
     <Content Include="Interfaz\LeaderPage.aspx" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
@@ -408,6 +411,13 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\AddClient.aspx.cs">
+      <DependentUpon>AddClient.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\AddClient.aspx.designer.cs">
+      <DependentUpon>AddClient.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\AddLeader.aspx.cs">
       <DependentUpon>AddLeader.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -415,12 +425,26 @@
     <Compile Include="Interfaz\AddLeader.aspx.designer.cs">
       <DependentUpon>AddLeader.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\AddProject.aspx.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\AddProject.aspx.designer.cs">
+      <DependentUpon>AddProject.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\AdminPage.aspx.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaz\AdminPage.aspx.designer.cs">
       <DependentUpon>AdminPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Client_Interface.aspx.cs">
+      <DependentUpon>Client_Interface.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Client_Interface.aspx.designer.cs">
+      <DependentUpon>Client_Interface.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\LeaderPage.aspx.cs">
       <DependentUpon>LeaderPage.aspx</DependentUpon>
