@@ -6,6 +6,8 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using System.Web.Security;
 using System.Web.SessionState;
+using System.Data.Entity;
+using Krypto.Models;
 
 namespace Krypto
 {
@@ -16,6 +18,9 @@ namespace Krypto
             // Código que se ejecuta al iniciar la aplicación
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            //
+            Database.SetInitializer(new InitializeDataBase());
         }
     }
 }
