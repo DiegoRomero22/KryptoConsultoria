@@ -228,7 +228,6 @@
     <Content Include="Interfaz\AdminPage.aspx" />
     <Content Include="Interfaz\Client_Interface.aspx" />
     <Content Include="Interfaz\LeaderPage.aspx" />
-    <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
@@ -460,13 +459,6 @@
     </Compile>
     <Compile Include="Interfaz\LeaderPage.aspx.designer.cs">
       <DependentUpon>LeaderPage.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\Login.aspx.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Login.aspx.designer.cs">
-      <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\UserBLL.cs" />
     <Compile Include="Models\Client.cs" />
