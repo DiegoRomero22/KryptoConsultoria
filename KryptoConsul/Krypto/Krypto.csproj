@@ -486,6 +486,7 @@
     <Compile Include="Interfaz\Role_User.aspx.designer.cs">
       <DependentUpon>Role_User.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\UserBLL.cs" />
     <Compile Include="Models\Client.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
