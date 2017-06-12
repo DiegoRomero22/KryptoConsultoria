@@ -229,6 +229,9 @@
     <Content Include="Interfaz\Client_Interface.aspx" />
     <Content Include="Interfaz\LeaderPage.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
+    <Content Include="Interfaz\Report_Admin.aspx" />
+    <Content Include="Interfaz\Role_Alfa.aspx" />
+    <Content Include="Interfaz\Role_User.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -459,6 +462,27 @@
     </Compile>
     <Compile Include="Interfaz\LeaderPage.aspx.designer.cs">
       <DependentUpon>LeaderPage.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Report_Admin.aspx.cs">
+      <DependentUpon>Report_Admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Report_Admin.aspx.designer.cs">
+      <DependentUpon>Report_Admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Role_Alfa.aspx.cs">
+      <DependentUpon>Role_Alfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Role_Alfa.aspx.designer.cs">
+      <DependentUpon>Role_Alfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Role_User.aspx.cs">
+      <DependentUpon>Role_User.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Role_User.aspx.designer.cs">
+      <DependentUpon>Role_User.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\UserBLL.cs" />
     <Compile Include="Models\Client.cs" />
