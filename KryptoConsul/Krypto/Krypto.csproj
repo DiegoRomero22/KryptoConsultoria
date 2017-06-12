@@ -218,6 +218,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Ico\cal1.png" />
+    <Content Include="Ico\calendar-clock-icon_34472.ico" />
     <Content Include="image\imagen1.jpg" />
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
@@ -230,6 +232,9 @@
     <Content Include="Interfaz\LeaderPage.aspx" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
+    <Content Include="Interfaz\reports_Adm.aspx" />
+    <Content Include="Interfaz\Rol-alfa.aspx" />
+    <Content Include="Interfaz\Rol_user.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -467,6 +472,27 @@
     </Compile>
     <Compile Include="Interfaz\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\reports_Adm.aspx.cs">
+      <DependentUpon>reports_Adm.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\reports_Adm.aspx.designer.cs">
+      <DependentUpon>reports_Adm.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Rol-alfa.aspx.cs">
+      <DependentUpon>Rol-alfa.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Rol-alfa.aspx.designer.cs">
+      <DependentUpon>Rol-alfa.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Rol_user.aspx.cs">
+      <DependentUpon>Rol_user.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Rol_user.aspx.designer.cs">
+      <DependentUpon>Rol_user.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\UserBLL.cs" />
     <Compile Include="Models\Client.cs" />
