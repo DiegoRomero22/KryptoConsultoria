@@ -44,7 +44,6 @@ namespace Krypto.Logic
                         //Si el rol es 2 entonces es Usuario.
                         return 2;
                     }
-
                 }
             }
             catch (Exception)

@@ -15,4 +15,6 @@ namespace Krypto
             routes.EnableFriendlyUrls(settings);
         }
     }
+
+
 }

@@ -15,7 +15,7 @@ namespace Krypto.Account
             RegisterHyperLink.NavigateUrl = "Register";
             // Habilite esta opción una vez tenga la confirmación de la cuenta habilitada para la funcionalidad de restablecimiento de contraseña
             //ForgotPasswordHyperLink.NavigateUrl = "Forgot";
-            OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
+            //OpenAuthLogin.ReturnUrl = Request.QueryString["ReturnUrl"];
             var returnUrl = HttpUtility.UrlEncode(Request.QueryString["ReturnUrl"]);
             if (!String.IsNullOrEmpty(returnUrl))
             {
@@ -33,28 +33,28 @@ namespace Krypto.Account
 
                 // Esto no cuenta los errores de inicio de sesión hacia el bloqueo de cuenta
                 // Para habilitar los errores de contraseña para desencadenar el bloqueo, cambie a shouldLockout: true
-                var result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: false);
+            //    var result = signinManager.PasswordSignIn(Email.Text, Password.Text, RememberMe.Checked, shouldLockout: false);
 
-                switch (result)
-                {
-                    case SignInStatus.Success:
-                        IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
-                        break;
-                    case SignInStatus.LockedOut:
-                        Response.Redirect("/Account/Lockout");
-                        break;
-                    case SignInStatus.RequiresVerification:
-                        Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
-                                                        Request.QueryString["ReturnUrl"],
-                                                        RememberMe.Checked),
-                                          true);
-                        break;
-                    case SignInStatus.Failure:
-                    default:
-                        FailureText.Text = "Intento de inicio de sesión no válido";
-                        ErrorMessage.Visible = true;
-                        break;
-                }
+            //    switch (result)
+            //    {
+            //        case SignInStatus.Success:
+            //            IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
+            //            break;
+            //        case SignInStatus.LockedOut:
+            //            Response.Redirect("/Account/Lockout");
+            //            break;
+            //        case SignInStatus.RequiresVerification:
+            //            Response.Redirect(String.Format("/Account/TwoFactorAuthenticationSignIn?ReturnUrl={0}&RememberMe={1}", 
+            //                                            Request.QueryString["ReturnUrl"],
+            //                                            RememberMe.Checked),
+            //                              true);
+            //            break;
+            //        case SignInStatus.Failure:
+            //        default:
+            //            FailureText.Text = "Intento de inicio de sesión no válido";
+            //            ErrorMessage.Visible = true;
+            //            break;
+            //    }
             }
         }
     }
