@@ -218,6 +218,8 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="ico\cal1.png" />
+    <Content Include="ico\calendar-clock-icon_34472.ico" />
     <Content Include="image\imagen1.jpg" />
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
@@ -524,7 +526,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="ico\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
