@@ -13,6 +13,7 @@ namespace Krypto.Models
         {
             ListRole().ForEach(r => context.Roles.Add(r));
             ListarUser().ForEach(u => context.Users.Add(u));
+            context.SaveChanges();
         }
 
         private static List<Role> ListRole()

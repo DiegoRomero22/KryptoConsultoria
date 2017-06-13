@@ -11,7 +11,8 @@ namespace Krypto.Models
     {
         public KryptoContext()
 
-        : base("KryptoConnection")
+        : base("KryptoContext")
+
         {
             Database.SetInitializer(new InitializeDataBase());
         }

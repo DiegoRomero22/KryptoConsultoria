@@ -12,6 +12,7 @@ namespace Krypto
 {
     public partial class SiteMaster : MasterPage
     {
+      
         private const string AntiXsrfTokenKey = "__AntiXsrfToken";
         private const string AntiXsrfUserNameKey = "__AntiXsrfUserName";
         private string _antiXsrfTokenValue;
@@ -79,6 +80,7 @@ namespace Krypto
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
+           
             Response.Redirect("Inicio.aspx");
         }
     }

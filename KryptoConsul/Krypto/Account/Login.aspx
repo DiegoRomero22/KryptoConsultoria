@@ -58,14 +58,14 @@
                                         <asp:RequiredFieldValidator runat="server" ControlToValidate="Password" CssClass="text-danger" ErrorMessage="El campo de contraseña es obligatorio." />
                                     </div>
                                 </div>
-                               <%-- <div class="form-group">
+                                <div class="form-group">
                                     <div class="col-md-offset-2 col-md-10">
                                         <div class="checkbox">
                                             <asp:CheckBox runat="server" ID="RememberMe" />
                                             <asp:Label runat="server" AssociatedControlID="RememberMe">¿Recordar cuenta?</asp:Label>
                                         </div>
                                     </div>
-                                </div>--%>
+                                </div>
                                 <div class="form-group">
                                     <div class="col-md-offset-2 col-md-10" style="left: 0px; top: 20px">
                                         <asp:Button runat="server" OnClick="LogIn" Text="Iniciar sesión" class="btn" OnClientClick="as"/>

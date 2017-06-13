@@ -9,6 +9,7 @@ namespace Krypto.Models
 {
     public class Role
     {
+        [ScaffoldColumn(false)]
 
         [Key]
         public int IdRole { get; set; }
