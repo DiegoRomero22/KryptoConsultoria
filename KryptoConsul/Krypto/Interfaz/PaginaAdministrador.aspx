@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AdminPage.aspx.cs" Inherits="Krypto.Interfaz.AdminPage" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaginaAdministrador.aspx.cs" Inherits="Krypto.Interfaz.AdminPage" %>
 
 <%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
@@ -12,9 +12,9 @@
       <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown">
       Agregar <span class="caret"></span></button>
       <ul class="dropdown-menu" role="menu">
-        <li><a href="#">Cliente</a></li>
-        <li><a href="#">Proyecto</a></li>
-        <li><a href="AddLeader">Lider</a></li>
+        <li><a href="AddClient">Cliente</a></li>
+        <li><a href="AgregarProyecto">Proyecto</a></li>
+        <li><a href="AgregarLider">Lider</a></li>
       </ul>
     </div>
     <div class="btn-group">

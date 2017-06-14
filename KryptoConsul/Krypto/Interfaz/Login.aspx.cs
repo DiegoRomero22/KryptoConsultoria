@@ -23,7 +23,7 @@ namespace Krypto.Interfaz
 
             if (txtUsuario.Text == "Diego5220@hotmail.com" && txtPassword.Text == "12345")
             {
-                Response.Redirect("AdminPage.aspx");
+                Response.Redirect("PaginaAdministrador.aspx");
             }
             else if (txtUsuario.Text == "Jairo@hotmail.com" && txtPassword.Text == "123")
             {

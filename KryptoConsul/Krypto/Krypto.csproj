@@ -228,18 +228,18 @@
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
     <Content Include="image\LogoKrypto.png" />
-    <Content Include="Interfaz\AddClient.aspx" />
-    <Content Include="Interfaz\AddLeader.aspx" />
-    <Content Include="Interfaz\AddProject.aspx" />
-    <Content Include="Interfaz\AdminPage.aspx" />
+    <Content Include="Interfaz\AgregarCliente.aspx" />
+    <Content Include="Interfaz\AgregarLider.aspx" />
+    <Content Include="Interfaz\AgregarProyecto.aspx" />
+    <Content Include="Interfaz\PaginaAdministrador.aspx" />
     <Content Include="Interfaz\Client_Interface.aspx" />
-    <Content Include="Interfaz\LeaderPage.aspx" />
+    <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
-    <Content Include="Interfaz\Register.aspx" />
+    <Content Include="Interfaz\Registro.aspx" />
     <Content Include="Interfaz\Report_Admin.aspx" />
-    <Content Include="Interfaz\Role_Alfa.aspx" />
-    <Content Include="Interfaz\Role_User.aspx" />
+    <Content Include="Interfaz\RolAlfa.aspx" />
+    <Content Include="Interfaz\RolUsuario.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -429,33 +429,33 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\AddClient.aspx.cs">
-      <DependentUpon>AddClient.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\AddClient.aspx.designer.cs">
-      <DependentUpon>AddClient.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\AddLeader.aspx.cs">
-      <DependentUpon>AddLeader.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarLider.aspx.cs">
+      <DependentUpon>AgregarLider.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\AddLeader.aspx.designer.cs">
-      <DependentUpon>AddLeader.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarLider.aspx.designer.cs">
+      <DependentUpon>AgregarLider.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\AddProject.aspx.cs">
-      <DependentUpon>AddProject.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarProyecto.aspx.cs">
+      <DependentUpon>AgregarProyecto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\AddProject.aspx.designer.cs">
-      <DependentUpon>AddProject.aspx</DependentUpon>
+    <Compile Include="Interfaz\AgregarProyecto.aspx.designer.cs">
+      <DependentUpon>AgregarProyecto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\AdminPage.aspx.cs">
-      <DependentUpon>AdminPage.aspx</DependentUpon>
+    <Compile Include="Interfaz\PaginaAdministrador.aspx.cs">
+      <DependentUpon>PaginaAdministrador.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\AdminPage.aspx.designer.cs">
-      <DependentUpon>AdminPage.aspx</DependentUpon>
+    <Compile Include="Interfaz\PaginaAdministrador.aspx.designer.cs">
+      <DependentUpon>PaginaAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Client_Interface.aspx.cs">
       <DependentUpon>Client_Interface.aspx</DependentUpon>
@@ -464,12 +464,12 @@
     <Compile Include="Interfaz\Client_Interface.aspx.designer.cs">
       <DependentUpon>Client_Interface.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\LeaderPage.aspx.cs">
-      <DependentUpon>LeaderPage.aspx</DependentUpon>
+    <Compile Include="Interfaz\PaginaLider.aspx.cs">
+      <DependentUpon>PaginaLider.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\LeaderPage.aspx.designer.cs">
-      <DependentUpon>LeaderPage.aspx</DependentUpon>
+    <Compile Include="Interfaz\PaginaLider.aspx.designer.cs">
+      <DependentUpon>PaginaLider.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -478,12 +478,12 @@
     <Compile Include="Interfaz\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Register.aspx.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Interfaz\Registro.aspx.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\Register.aspx.designer.cs">
-      <DependentUpon>Register.aspx</DependentUpon>
+    <Compile Include="Interfaz\Registro.aspx.designer.cs">
+      <DependentUpon>Registro.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Report_Admin.aspx.cs">
       <DependentUpon>Report_Admin.aspx</DependentUpon>
@@ -492,27 +492,27 @@
     <Compile Include="Interfaz\Report_Admin.aspx.designer.cs">
       <DependentUpon>Report_Admin.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Role_Alfa.aspx.cs">
-      <DependentUpon>Role_Alfa.aspx</DependentUpon>
+    <Compile Include="Interfaz\RolAlfa.aspx.cs">
+      <DependentUpon>RolAlfa.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\Role_Alfa.aspx.designer.cs">
-      <DependentUpon>Role_Alfa.aspx</DependentUpon>
+    <Compile Include="Interfaz\RolAlfa.aspx.designer.cs">
+      <DependentUpon>RolAlfa.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Role_User.aspx.cs">
-      <DependentUpon>Role_User.aspx</DependentUpon>
+    <Compile Include="Interfaz\RolUsuario.aspx.cs">
+      <DependentUpon>RolUsuario.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\Role_User.aspx.designer.cs">
-      <DependentUpon>Role_User.aspx</DependentUpon>
+    <Compile Include="Interfaz\RolUsuario.aspx.designer.cs">
+      <DependentUpon>RolUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\RoleActions.cs" />
-    <Compile Include="Logic\UserBLL.cs" />
-    <Compile Include="Models\Client.cs" />
+    <Compile Include="Logic\UsuarioBLL.cs" />
+    <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
-    <Compile Include="Models\Role.cs" />
-    <Compile Include="Models\User.cs" />
+    <Compile Include="Models\Rol.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Interfaz\ProjectLeader.aspx.cs">
       <DependentUpon>ProjectLeader.aspx</DependentUpon>
