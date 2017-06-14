@@ -25,7 +25,7 @@ namespace Krypto.Interfaz
             UsuarioBLL registrarLider = new UsuarioBLL();
              if(registrarLider.registroLider(nuevoId, TxtNombreLider.Text,TxtApellidoLider.Text, ulong.Parse(TxtDocumentoLider.Text),TxtEmail.Text,TxtContraseña.Text ,TxtCargo.Text, Int64.Parse(TxtTelefono.Text), 2) == true)
             {
-               
+                Response.Write("<script>alert('Se registro correctamente')</script>");
                 borrarCasillas();
             }           
         }

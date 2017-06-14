@@ -40,12 +40,10 @@
               <div class="form-group">        
                 <asp:TextBox ID="TxtTelefono" runat="server" placeholder="Telefono" class="form-control" TextMode="Phone"></asp:TextBox>      
                   <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TxtTelefono" CssClass="alert-danger" ErrorMessage="Campo Obligatorio."></asp:RequiredFieldValidator>
-                  <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
-                  <asp:Label ID="Label2" runat="server" Text="Label"></asp:Label>
             </div>
 
             <div>
-
+                
                 <asp:Button ID="BtnRegistrarlider" runat="server" Text="Registrar" class="btn" OnClick="BtnRegistrarlider_Click" />
 
                 <asp:Button ID="BtnCancelar" runat="server" Text="Cancelar" class="btn" OnClick="BtnCancelar_Click" />
