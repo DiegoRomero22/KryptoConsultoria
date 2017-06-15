@@ -16,11 +16,16 @@ namespace Krypto.Interfaz
 
         }
 
+        //Metodo que limpia las cajas de texto.
+        public void limpiarCasillas()
+        {
+            TxtUsuario.Text = "";
+            TxtContraseña.Text = "";
 
+        }
 
         protected void BtnIniciarSesion_Click(object sender, EventArgs e)
-        {  
-
+        {
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
             //Valida el Usuario y contraseña segun el rol
             if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
@@ -29,14 +34,14 @@ namespace Krypto.Interfaz
                 Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
                 Response.Redirect("");
-                
+
             }
             //Rol Lider.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
                 Session["Lider"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("");
+                Response.Redirect("PaginaAdministrador.aspx");
             }
             //Rol Usuario.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
@@ -67,16 +72,7 @@ namespace Krypto.Interfaz
                 LblResultado.Visible = true;
             }
         }
-
-        //Metodo que limpia las cajas de texto.
-        public void limpiarCasillas()
-        {
-            TxtUsuario.Text = "";
-            TxtContraseña.Text = "";
-          
-        }
     }
-}
-        
+}    
         
             

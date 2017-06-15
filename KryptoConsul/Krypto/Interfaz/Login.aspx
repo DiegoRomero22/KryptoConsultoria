@@ -50,7 +50,7 @@
            </div>
            <div class="form-group">
        
-               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Usuario" TextMode="Password"></asp:TextBox>
+               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtContraseña" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
                     
            </div>

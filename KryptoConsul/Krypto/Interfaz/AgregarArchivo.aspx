@@ -7,10 +7,10 @@
              <div class="form-group">
                 <asp:Label ID="lblCliente" runat="server" CssClass="col-md-2 control-label">Cliente:</asp:Label>
                 <div class="col-md-4">
-                    <asp:DropDownList ID="DropDownCliente"  
-                    runat="server"
-                    CssClass="form-control">
+                    
+                    <asp:DropDownList ID="DropDownCliente" runat="server" CssClass="form-control" DataTextField="Nombre" DataValueField="IdCliente" DataSourceID="SqlDataSource1" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [Nombre], [IdCliente] FROM [Clientes]"></asp:SqlDataSource>
                 </div>
             </div>
             <div class="form-group">
@@ -18,8 +18,9 @@
                 <div class="col-md-4">
                     <asp:DropDownList ID="DropDownArchivos"  
                     runat="server"
-                    CssClass="form-control" >
+                    CssClass="form-control" DataSourceID="SqlDataSource2" DataTextField="NombreArchivo" DataValueField="IdArchivo" >
                     </asp:DropDownList>
+                    <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdArchivo], [NombreArchivo] FROM [Archivos]"></asp:SqlDataSource>
                 </div>
             </div>
             <div class="form-group">
@@ -34,7 +35,7 @@
              <div class="form-group">
                     <asp:Label ID="lblAddArchivos" runat="server" CssClass="col-lg-2 control-label">Agregar Archivo:</asp:Label>
                     <div class="col-lg-4">
-                        <asp:FileUpload ID="Archivosmage" runat="server" CssClass="form-control" />
+                        <asp:FileUpload ID="ArchivoImage" runat="server" CssClass="form-control" />
                     </div>
                 </div>
                 <div class="form-group">
