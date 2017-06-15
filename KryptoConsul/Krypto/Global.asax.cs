@@ -8,6 +8,7 @@ using System.Web.Security;
 using System.Web.SessionState;
 using System.Data.Entity;
 using Krypto.Models;
+using Krypto.Logic;
 
 namespace Krypto
 {
@@ -21,6 +22,9 @@ namespace Krypto
 
             //
             Database.SetInitializer(new InitializeDataBase());
+
+            
+           
         }
     }
 }

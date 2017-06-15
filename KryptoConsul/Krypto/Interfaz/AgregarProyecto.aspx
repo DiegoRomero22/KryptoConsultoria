@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AddProject.aspx.cs" Inherits="Krypto.Interfaz.AddProject" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarProyecto.aspx.cs" Inherits="Krypto.Interfaz.AddProject" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
      <h3>&nbsp;&nbsp;&nbsp;&nbsp; Agregar Proyecto</h3>
@@ -100,6 +100,7 @@
                             </tr>
                             <tr>
                                 <td style="width: 236px">
+                                    <br />
                         <asp:Button ID="btnAddProject" runat="server" CssClass="btn btn-danger" Text="Agregar Proyecto"/>  
                         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                                 <td style="width: 132px; margin-left: 40px;">  

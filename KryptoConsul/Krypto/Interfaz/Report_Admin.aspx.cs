@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Krypto.Interfaz
 {
-    public partial class AddClient : System.Web.UI.Page
+    public partial class Report_Admin : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

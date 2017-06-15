@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using Krypto.Logic;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 
 namespace Krypto.Models
 {
@@ -11,68 +13,73 @@ namespace Krypto.Models
     {
         protected override void Seed(KryptoContext context)
         {
-            ListRole().ForEach(r => context.Roles.Add(r));
-            ListarUser().ForEach(u => context.Users.Add(u));
+            ListaRol().ForEach(r => context.Roles.Add(r));
+            ListarUsuario().ForEach(u => context.Usuarios.Add(u));
+            context.SaveChanges(); 
+           
         }
 
-        private static List<Role> ListRole()
+        private static List<Rol> ListaRol()
         {
-            var rol = new List<Role>
+            var rol = new List<Rol>
             {
-                new Role
+                new Rol
                 {
-                    IdRole = 1,
-                    NameRole = "Administrator",
+                    IdRol = 1,
+                    NombreRol = "Administrador",
 
                 },
-                new Role
+                new Rol
                 {
-                    IdRole = 2,
-                    NameRole = "User",
+                    IdRol = 2,
+                    NombreRol = "Lider",
                 },
-                new Role
+                new Rol
                 {
-                    IdRole = 3,
-                    NameRole = "Client",
+                    IdRol = 3,
+                    NombreRol = "Usuario",
                 },
-                new Role
+                new Rol
                 {
-                    IdRole = 4,
-                    NameRole = "Leader",
-                }
+                    IdRol = 4,
+                    NombreRol = "Cliente",
+                },
+                new Rol
+                {
+                    IdRol =5,
+                    NombreRol ="Nomina"
+                },
             };
             return rol;
         }
 
-        private static List<User> ListarUser()
+        private static List<Usuario> ListarUsuario()
         {
-            var user = new List<User>
+            var user = new List<Usuario>
             {
-                new User
+                new Usuario
                 {
-                    Id_User = 1031156456,
-                    Name = "Diego Alejandro",
-                    LastName = "Romero Cubillos",
-                    TypeDocument = "CC",
-                    Document = 1031156456,
+                    IdUsuario = Guid.NewGuid(),
+                    Nombre = "Diego Alejandro",
+                    Apellido = "Romero Cubillos",                    
+                    Documento = 1031156456,
                     Email = "Diego5220@hotmail.com",
-                    Password = "1031156456",
-                    Position = "Developer",
-                    Phone = 3219929719,
-                    IdRole = 1,
+                    Contraseña = "1031156456",
+                    Cargo = "Developer",
+                    Telefono = 3219929719,
+                    Roles = 1,
                 },
-                new User
+                new Usuario
                 {
-                    Id_User = 1102851384,
-                    Name = "Jairo Andres",
-                    LastName = "Gomezcaceres Alvarez",
-                    TypeDocument = "CC",
-                    Document = 1102851384,
+                    IdUsuario = Guid.NewGuid(),
+                    Nombre = "Jairo Andres",
+                    Apellido = "Gomezcaceres Alvarez",                   
+                    Documento = 1102851384,
                     Email = "Jairogca_19@hotmail.com",
-                    Password = "1102851384",
-                    Position = "Developer",
-                    Phone = 3017047096,
-                    IdRole = 1,
+                    Contraseña = "1102851384",
+                    Cargo = "Developer",
+                    Telefono = 3017047096,
+                    Roles = 1,
                 },
             };
             return user;

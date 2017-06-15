@@ -7,24 +7,25 @@ using Krypto.Logic;
 
 namespace Krypto.Models
 {
-    public class Role
+    public class Rol
     {
+        [ScaffoldColumn(false)]
 
         [Key]
-        public int IdRole { get; set; }
+        public int IdRol { get; set; }
 
         [Required, StringLength(100), Display(Name = "Name Role")]
-        public string NameRole { get; set; }
+        public string NombreRol { get; set; }
 
         [Required, StringLength(10000), Display(Name = "Description"), DataType(DataType.MultilineText)]
-        public string Description { get; set; }
+        public string Descripcion { get; set; }
 
         [Required]
-        public bool Active { get; set; }
+        public bool Activo { get; set; }
 
 
 
         //Relación con Usuario
-        public virtual ICollection<User> User { get; set; }
-    }
+        public virtual ICollection<Usuario> Usuario { get; set; }
+    }   
 }

@@ -7,15 +7,11 @@ using System.Web.UI.WebControls;
 
 namespace Krypto.Interfaz
 {
-    public partial class AddLeader : System.Web.UI.Page
+    public partial class Role_Alfa : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
-        }
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("Inicio.aspx");
         }
     }
 }
