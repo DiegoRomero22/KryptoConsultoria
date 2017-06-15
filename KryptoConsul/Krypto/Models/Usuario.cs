@@ -47,7 +47,6 @@ namespace Krypto.Logic
 
         //Relación con Rol
         [Required]
-
         public int Roles {get; set; }
 
         public virtual Rol Rol { get; set; }

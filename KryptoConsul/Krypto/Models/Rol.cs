@@ -27,5 +27,5 @@ namespace Krypto.Models
 
         //Relación con Usuario
         public virtual ICollection<Usuario> Usuario { get; set; }
-    }
+    }   
 }

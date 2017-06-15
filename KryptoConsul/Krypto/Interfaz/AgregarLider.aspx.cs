@@ -26,10 +26,10 @@ namespace Krypto.Interfaz
              if(registrarLider.registroLider(nuevoId, TxtNombreLider.Text,TxtApellidoLider.Text, ulong.Parse(TxtDocumentoLider.Text),TxtEmail.Text,TxtContraseña.Text ,TxtCargo.Text, Int64.Parse(TxtTelefono.Text), 2) == true)
             {
                 Response.Write("<script>alert('Se registro correctamente')</script>");
-                borrarCasillas();
+                limpiarCasillas();
             }           
         }
-        public void borrarCasillas()
+        public void limpiarCasillas()
         {
             TxtNombreLider.Text = "";
             TxtApellidoLider.Text = "";

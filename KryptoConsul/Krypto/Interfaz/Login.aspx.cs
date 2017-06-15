@@ -19,67 +19,60 @@ namespace Krypto.Interfaz
 
 
         protected void BtnIniciarSesion_Click(object sender, EventArgs e)
-        {
-
-            //if (txtUsuario.Text == "Diego5220@hotmail.com" && txtPassword.Text == "12345")
-            //{
-            //    Response.Redirect("PaginaAdministrador.aspx");
-            //}
-            //else if (txtUsuario.Text == "Jairo@hotmail.com" && txtPassword.Text == "123")
-            //{
-            //    Response.Redirect("ProjectLeader.aspx");
-            //}
-
-            //else
-            //{
-            //    txtUsuario.Text = "";
-            //    txtPassword.Text = "";
-
-            //}
+        {  
 
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
-            if (LoginuserBLL.Autenticar(txtUsuario.Text, txtPassword.Text) == 1)
+            //Valida el Usuario y contraseña segun el rol
+            if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
             {
-                Session["Admin"] = txtUsuario.Text;
+                //Rol Administrador.
+                Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
-                Response.Redirect("PaginaAdministrador.aspx");
+                Response.Redirect("");
                 
             }
-            else if (LoginuserBLL.Autenticar(txtUsuario.Text, txtPassword.Text) == 2)
+            //Rol Lider.
+            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
-                Session["Lider"] = txtUsuario.Text;
+                Session["Lider"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("AgregarLider.aspx");
+                Response.Redirect("");
             }
-            else if (LoginuserBLL.Autenticar(txtUsuario.Text, txtPassword.Text) == 3)
+            //Rol Usuario.
+            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
             {
-                Session["Usuario"] = txtUsuario.Text;
+                Session["Usuario"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 3;
-                Response.Redirect("AgregarLider.aspx");
+                Response.Redirect("");
             }
-            else if (LoginuserBLL.Autenticar(txtUsuario.Text, txtPassword.Text) == 4)
+            //Rol Cliente.
+            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 4)
             {
-                Session["Cliente"] = txtUsuario.Text;
+                Session["Cliente"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 4;
-                Response.Redirect("RolAlfa.aspx");
+                Response.Redirect("");
             }
-            else if (LoginuserBLL.Autenticar(txtUsuario.Text, txtPassword.Text) == 5)
+            //Rol Nomina.
+            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 5)
             {
-                Session["Nomina"] = txtUsuario.Text;
+                Session["Nomina"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 5;
-                Response.Redirect("Report_Admin.aspx");
+                Response.Redirect("");
             }
 
             else
             {
-                borrarCasillas();
+                limpiarCasillas();
+                //Texto en el cual se mostrara si existe algún error.
                 LblResultado.Visible = true;
             }
         }
-        public void borrarCasillas()
+
+        //Metodo que limpia las cajas de texto.
+        public void limpiarCasillas()
         {
-            txtUsuario.Text = "";
-            txtPassword.Text = "";
+            TxtUsuario.Text = "";
+            TxtContraseña.Text = "";
           
         }
     }

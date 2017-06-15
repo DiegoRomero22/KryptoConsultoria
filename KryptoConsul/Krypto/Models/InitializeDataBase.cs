@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using Krypto.Logic;
+using System.Data.Entity.Validation;
+using System.Diagnostics;
 
 namespace Krypto.Models
 {
@@ -13,7 +15,8 @@ namespace Krypto.Models
         {
             ListaRol().ForEach(r => context.Roles.Add(r));
             ListarUsuario().ForEach(u => context.Usuarios.Add(u));
-            context.SaveChanges();
+            context.SaveChanges(); 
+           
         }
 
         private static List<Rol> ListaRol()

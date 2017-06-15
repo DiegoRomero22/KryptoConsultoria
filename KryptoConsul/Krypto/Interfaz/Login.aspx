@@ -44,15 +44,15 @@
            <td style="width: 275px; border:20px none black; background-color:#fff; " rowspan="4">
            <div class="form-group"  >
 
-             <asp:TextBox ID="txtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email"></asp:TextBox>
-               <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtUsuario" CssClass="text-danger" ErrorMessage="Ingrese un correo."></asp:RequiredFieldValidator>
+             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email"></asp:TextBox>
+               <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtUsuario" CssClass="text-danger" ErrorMessage="Ingrese un correo."></asp:RequiredFieldValidator>
 
            </div>
            <div class="form-group">
        
-               <asp:TextBox ID="txtPassword" runat="server" placeholder="Contraseña" class="form-control" TextMode="Password"></asp:TextBox>     
-               <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtPassword" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
-     
+               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Usuario" TextMode="Password"></asp:TextBox>
+               <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtContraseña" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
+                    
            </div>
                <asp:Button ID="BtnIniciarSesion" runat="server" Text="Iniciar Sesión" class="btn" Width="276px" OnClick="BtnIniciarSesion_Click" />
                <asp:Label ID="LblResultado" runat="server" Text="No se pudo iniciar Sesión correctamente. Por favor vuelva a intentarlo." Visible="False" CssClass="alert-danger"></asp:Label>

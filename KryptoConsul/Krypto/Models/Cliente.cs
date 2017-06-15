@@ -24,5 +24,14 @@ namespace Krypto.Models
 
         [Required, StringLength(20), Display(Name = "TipoDePersona")]
         public string TipoDePersona { get; set; }
+
+        //Relación con Archivo.
+        [Required]
+        public int Archivo { get; set;}
+        public virtual Archivos Archivoo { get; set; }
+
+      
+
+
     }
 }

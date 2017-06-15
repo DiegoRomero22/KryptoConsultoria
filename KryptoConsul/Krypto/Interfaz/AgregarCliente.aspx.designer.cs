@@ -13,175 +13,157 @@ namespace Krypto.Interfaz {
     public partial class AddClient {
         
         /// <summary>
-        /// Control chcColombia.
+        /// Control LblEmpresa.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chcColombia;
+        protected global::System.Web.UI.WebControls.Label LblEmpresa;
         
         /// <summary>
-        /// Control chcConsultoria.
+        /// Control CheckBoxKryptoColombia.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox chcConsultoria;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxKryptoColombia;
         
         /// <summary>
-        /// Control lblNameclient.
+        /// Control CheckBoxKryptoConsul.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblNameclient;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxKryptoConsul;
         
         /// <summary>
-        /// Control txtNameClient.
+        /// Control LblTipoPersona.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNameClient;
+        protected global::System.Web.UI.WebControls.Label LblTipoPersona;
         
         /// <summary>
-        /// Control RequiredFieldValidator4.
+        /// Control CheckBoxPersonaJ.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxPersonaJ;
         
         /// <summary>
-        /// Control lblLastName.
+        /// Control CheckBoxPersonaN.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblLastName;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxPersonaN;
         
         /// <summary>
-        /// Control txtLastName.
+        /// Control TxtNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtLastName;
+        protected global::System.Web.UI.WebControls.TextBox TxtNombre;
         
         /// <summary>
-        /// Control RequiredFieldValidator1.
+        /// Control RFVNombre.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVNombre;
         
         /// <summary>
-        /// Control lblPersonType.
+        /// Control TxtApellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblPersonType;
+        protected global::System.Web.UI.WebControls.TextBox TxtApellido;
         
         /// <summary>
-        /// Control DropDownPersonType.
+        /// Control RFVApellido.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownPersonType;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVApellido;
         
         /// <summary>
-        /// Control SocialReason.
+        /// Control TxtTipoDocumento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label SocialReason;
+        protected global::System.Web.UI.WebControls.Label TxtTipoDocumento;
         
         /// <summary>
-        /// Control txtSocialReason.
+        /// Control CheckBoxCedula.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtSocialReason;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxCedula;
         
         /// <summary>
-        /// Control RequiredFieldValidator3.
+        /// Control CheckBoxNIT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
+        protected global::System.Web.UI.WebControls.CheckBox CheckBoxNIT;
         
         /// <summary>
-        /// Control DocumentType.
+        /// Control TxtRazonSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label DocumentType;
+        protected global::System.Web.UI.WebControls.TextBox TxtRazonSocial;
         
         /// <summary>
-        /// Control DropDownDocumentType.
+        /// Control RFVRazonSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownDocumentType;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVRazonSocial;
         
         /// <summary>
-        /// Control Document.
+        /// Control TxtDocumento.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Document;
+        protected global::System.Web.UI.WebControls.TextBox TxtDocumento;
         
         /// <summary>
-        /// Control txtDocument.
+        /// Control LblCalendarioT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDocument;
-        
-        /// <summary>
-        /// Control RequiredFieldValidator2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
-        
-        /// <summary>
-        /// Control Calendar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Calendar;
+        protected global::System.Web.UI.WebControls.Label LblCalendarioT;
         
         /// <summary>
         /// Control Calendar1.
@@ -193,57 +175,39 @@ namespace Krypto.Interfaz {
         protected global::System.Web.UI.WebControls.Calendar Calendar1;
         
         /// <summary>
-        /// Control ChamberCommerce.
+        /// Control FUAddCamaraComercio.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label ChamberCommerce;
+        protected global::System.Web.UI.WebControls.FileUpload FUAddCamaraComercio;
         
         /// <summary>
-        /// Control AddChamber.
+        /// Control FUAddRut.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload AddChamber;
+        protected global::System.Web.UI.WebControls.FileUpload FUAddRut;
         
         /// <summary>
-        /// Control Rut.
+        /// Control BtnAgregarCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Rut;
+        protected global::System.Web.UI.WebControls.Button BtnAgregarCliente;
         
         /// <summary>
-        /// Control AddRut.
+        /// Control BtnCancelar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload AddRut;
-        
-        /// <summary>
-        /// Control btnAddClient.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAddClient;
-        
-        /// <summary>
-        /// Control btnCancel.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancel;
+        protected global::System.Web.UI.WebControls.Button BtnCancelar;
     }
 }
