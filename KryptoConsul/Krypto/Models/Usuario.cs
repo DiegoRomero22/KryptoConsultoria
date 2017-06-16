@@ -4,11 +4,13 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Krypto.Models;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Logic
 {
     public class Usuario
     {
+      
         [ScaffoldColumn(false)]
         [Key]
 
@@ -19,11 +21,7 @@ namespace Krypto.Logic
 
         [Required, StringLength(100), Display(Name = "Apellido")]
         public string Apellido { get; set; }
-
-        //[Required, StringLength(20), Display(Name = "TipoDocumento")]
-        //public string TipoDocumento { get; set; }
-
-
+        
         public ulong Documento { get; set; }
 
         [Required, StringLength(50), Display(Name = "Email")]
@@ -41,13 +39,12 @@ namespace Krypto.Logic
 
         [Required]
         public bool Activo { get; set; }
-
-      
         
 
         //Relación con Rol
-        [Required]
-        public int Roles {get; set; }
+        
+         
+        public int RolId { get; set; }
 
         public virtual Rol Rol { get; set; }
     }
