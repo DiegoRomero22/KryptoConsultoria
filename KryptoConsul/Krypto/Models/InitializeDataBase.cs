@@ -27,27 +27,32 @@ namespace Krypto.Models
                 {
                     IdRol = 1,
                     NombreRol = "Administrador",
-
+                    Activo = true
                 },
                 new Rol
                 {
                     IdRol = 2,
                     NombreRol = "Lider",
+                    Activo = true
                 },
                 new Rol
                 {
                     IdRol = 3,
                     NombreRol = "Usuario",
+                    Activo = true
                 },
                 new Rol
                 {
                     IdRol = 4,
                     NombreRol = "Cliente",
+                    Activo = true
                 },
                 new Rol
                 {
                     IdRol =5,
-                    NombreRol ="Nomina"
+                    NombreRol ="Nomina",
+                    Activo = true
+                   
                 },
             };
             return rol;
@@ -67,7 +72,8 @@ namespace Krypto.Models
                     Contraseña = "1031156456",
                     Cargo = "Developer",
                     Telefono = 3219929719,
-                    Roles = 1,
+                    Activo = true,
+                    RolId = 2,                    
                 },
                 new Usuario
                 {
@@ -79,11 +85,26 @@ namespace Krypto.Models
                     Contraseña = "1102851384",
                     Cargo = "Developer",
                     Telefono = 3017047096,
-                    Roles = 1,
+                    Activo = true, 
+                    RolId = 2,                     
+                    
                 },
             };
             return user;
         }
+
+        //private static List<TipoArchivo> TArchivo()
+        //{
+        //    var Archiv = new List<TipoArchivo>
+        //    {
+        //        new TipoArchivo
+        //        {
+        //            IdTipoArchivo = 1,
+        //            Extension = "Img",
+                    
+        //        }
+        //    }
+        //}
 
     }
 }

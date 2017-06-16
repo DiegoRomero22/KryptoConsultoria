@@ -522,13 +522,13 @@
     <Compile Include="Interfaz\RolUsuario.aspx.designer.cs">
       <DependentUpon>RolUsuario.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Logic\RoleActions.cs" />
     <Compile Include="Logic\UsuarioBLL.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivos.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
     <Compile Include="Models\Rol.cs" />
+    <Compile Include="Models\TipoArchivo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Interfaz\ProjectLeader.aspx.cs">

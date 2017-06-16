@@ -23,7 +23,7 @@ namespace Krypto.Models
 
         public DbSet<Rol> Roles { get; set; }
 
-        public DbSet<Archivos> Archive { get; set; }
+        public DbSet<Archivos> Archivo { get; set; }
         
     }
 }

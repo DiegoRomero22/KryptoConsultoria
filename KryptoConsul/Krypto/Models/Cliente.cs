@@ -26,12 +26,8 @@ namespace Krypto.Models
         public string TipoDePersona { get; set; }
 
         //Relación con Archivo.
-        [Required]
-        public int Archivo { get; set;}
-        public virtual Archivos Archivoo { get; set; }
-
-      
-
-
+        
+        public virtual ICollection<Archivos> RArchivo { get; set; }
+        
     }
 }

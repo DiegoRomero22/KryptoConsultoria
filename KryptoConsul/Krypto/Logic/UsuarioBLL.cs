@@ -25,7 +25,7 @@ namespace Krypto.Logic
                     //Buscar el Rol del Usuario que se loguea.
                     var idRol = from user in context.Usuarios
                                 where user.Email == email
-                                select user.Roles;
+                                select user.RolId;
 
                     //Este if confirma si hay un usuario en la Base de Datos.
                     if (mostrarinfo.Count() == 0)
@@ -97,7 +97,7 @@ namespace Krypto.Logic
                     user.Cargo = ccargo;
                     user.Telefono = ttelefono;
                     user.Activo = aactivo;
-                    user.Roles = rrol;
+                    user.RolId = rrol;
                     
                 };
                 KryptoContext context = new KryptoContext();

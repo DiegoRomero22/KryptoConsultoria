@@ -52,9 +52,9 @@
              
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Interfaz/PaginaAdministrador">Admin</a></li>
-                                <li><a runat="server" href="/Interfaz/Login">Iniciar sesion</a></li>
+                            <ul class="nav navbar-nav navbar-right" >
+                                <li><a runat="server" style="color:white" href="~/Interfaz/PaginaAdministrador">Admin</a></li>
+                                <li><a runat="server" style="color:white" href="/Interfaz/Login">Iniciar sesion</a></li>
                             </ul>
 
                         </AnonymousTemplate>

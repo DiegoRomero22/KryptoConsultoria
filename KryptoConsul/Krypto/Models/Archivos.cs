@@ -16,9 +16,13 @@ namespace Krypto.Models
         public string NombreArchivo { get; set; }
 
         [Required]
-        public string Archive { get; set; }
+        public string rutaArchivo { get; set; }
 
         //Relación con Cliente.
-        public virtual ICollection<Cliente> cliente { get; set; }       
+        public virtual TipoArchivo TArchivo { get; set; }
+
+
+        //public int ClienteId { get; set; }
+        public virtual Cliente RCliente { get; set; }
     }
 }
