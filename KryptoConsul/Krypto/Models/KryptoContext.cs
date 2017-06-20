@@ -17,11 +17,11 @@ namespace Krypto.Models
             Database.SetInitializer(new InitializeDataBase());
         }
 
-        public DbSet<Cliente> Clientes { get; set; }
+        public DbSet<Cliente> Cliente { get; set; }
 
-        public DbSet<Usuario> Usuarios { get; set; }
+        public DbSet<Usuario> Usuario { get; set; }
 
-        public DbSet<Rol> Roles { get; set; }
+        public DbSet<Rol> Rol { get; set; }
 
         public DbSet<Archivos> Archivo { get; set; }
         

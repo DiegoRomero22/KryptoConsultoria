@@ -79,15 +79,17 @@
         <tr>
             <td style="height: 22px; width: 284px; font-weight: bold;">&nbsp;</td>
             <td style="height: 22px; width: 243px">
-               <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" DataTextField="Nombre" DataValueField="IdCliente" Width="250px" >
+               <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" DataTextField="Nombre" DataValueField="IdCliente" Width="250px" DataSourceID="SqlDataSource1" >
                     </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdCliente], [Nombre] FROM [Clientes]"></asp:SqlDataSource>
             </td>
             <td style="height: 22px; width: 128px;">&nbsp;</td>
             <td style="height: 22px; width: 332px;">
                 <asp:DropDownList ID="DDLTipoArchivo"  
                     runat="server"
-                    CssClass="form-control" DataTextField="NombreArchivo" DataValueField="IdArchivo" Width="250px" >
+                    CssClass="form-control" DataTextField="Extension" DataValueField="IdTipoArchivo" Width="250px" DataSourceID="SqlDataSource2" >
                     </asp:DropDownList>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdTipoArchivo], [Extension] FROM [TipoArchivoes]"></asp:SqlDataSource>
             </td>
             <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
@@ -188,7 +190,7 @@
             <td style="height: 22px; width: 284px">
                 &nbsp;</td>
             <td style="height: 22px; " colspan="3">
-                <asp:Button ID="btnAgregar" Class="btn" runat="server" Text="Agregar" ForeColor="Black" Width="250px" style="margin-left: 203px" />
+                <asp:Button ID="btnAgregar" Class="btn" runat="server" Text="Agregar" ForeColor="Black" Width="250px" style="margin-left: 203px" OnClick="btnAgregar_Click" />
             </td>
             <td style="height: 22px">
                 &nbsp;</td>

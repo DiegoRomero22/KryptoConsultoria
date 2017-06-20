@@ -9,6 +9,11 @@ namespace Krypto.Models
 {
     public class Rol
     {
+        public Rol ()
+        {
+            Usuario = new List<Usuario>();
+            Cliente = new List<Cliente>();
+        }
       
         [ScaffoldColumn(false)]
 
@@ -26,5 +31,6 @@ namespace Krypto.Models
         //Relación con Usuario
 
         public virtual ICollection<Usuario> Usuario { get; set; }
+        public virtual ICollection<Cliente> Cliente { get; set; }
     }   
 }

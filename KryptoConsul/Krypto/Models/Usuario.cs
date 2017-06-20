@@ -10,17 +10,13 @@ namespace Krypto.Logic
 {
     public class Usuario
     {
-      
         [ScaffoldColumn(false)]
         [Key]
 
         public Guid IdUsuario { get; set; }
 
         [Required, StringLength(100), Display(Name = "Nombre")]
-        public string Nombre { get; set; }
-
-        [Required, StringLength(100), Display(Name = "Apellido")]
-        public string Apellido { get; set; }
+        public string NombreCompleto { get; set; }    
         
         public ulong Documento { get; set; }
 
@@ -29,10 +25,9 @@ namespace Krypto.Logic
 
         [Required, StringLength(100), Display(Name = "Contraseña")]
         public string Contraseña { get; set; }
-
-        //Cargo
-        [Required, StringLength(30), Display(Name = "Cargo")]
-        public string Cargo { get; set; }
+        
+        [Required, StringLength(100), Display(Name = "Direccion")]
+        public string Direccion { get; set; }
 
         [Required]
         public Int64 Telefono { get; set; }
@@ -41,11 +36,8 @@ namespace Krypto.Logic
         public bool Activo { get; set; }
         
 
-        //Relación con Rol
-        
-         
+        //Relación con Rol.         
         public int RolId { get; set; }
-
         public virtual Rol Rol { get; set; }
     }
 }
