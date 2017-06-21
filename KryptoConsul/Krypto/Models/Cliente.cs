@@ -12,10 +12,7 @@ namespace Krypto.Models
         public int IdCliente { get; set; }
 
         [Required, StringLength(100), Display(Name = "Nombre")]
-        public string Nombre { get; set; }
-
-        [Required, StringLength(100), Display(Name = "Apellido")]
-        public string Apellido { get; set; }
+        public string NombreCompleto { get; set; }      
 
         [Required, StringLength(20), Display(Name = "TipoDocumento")]
         public string TipoDocumento { get; set; }
@@ -24,9 +21,10 @@ namespace Krypto.Models
 
         [Required, StringLength(20), Display(Name = "TipoDePersona")]
         public string TipoDePersona { get; set; }
+        
 
         //Relación con Archivo.        
-        public virtual Archivos archivo { get; set; }   
+        public virtual Archivo archivo { get; set; }   
 
         //Relación Con Rol. 
         public virtual Rol rol { get; set;}

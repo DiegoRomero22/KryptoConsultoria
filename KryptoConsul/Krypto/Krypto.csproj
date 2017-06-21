@@ -523,8 +523,10 @@
       <DependentUpon>RolUsuario.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\UsuarioBLL.cs" />
+    <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
+    <Compile Include="Models\GrupoDeTrabajo.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
     <Compile Include="Models\Rol.cs" />

@@ -165,16 +165,13 @@
                     <td style="width: 208px">
                         &nbsp;</td>
                     <td style="width: 235px">
-                         <asp:Button ID="ButtonVacant" runat="server" class="btn btn-warning" Text="Vacante" />
-                    </td>
+                         &nbsp;</td>
                     <td>
                    
                         &nbsp;</td>
                     <td>
                    
-                        <asp:Button ID="ButtonKryptoClient" runat="server" class="btn btn-danger" Text="Krypto" />
-                   
-                    </td>
+                        &nbsp;</td>
                     <td>
                    
                         &nbsp;</td>

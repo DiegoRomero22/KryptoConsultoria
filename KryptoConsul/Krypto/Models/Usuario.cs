@@ -31,7 +31,7 @@ namespace Krypto.Logic
 
         [Required]
         public Int64 Telefono { get; set; }
-
+         
         [Required]
         public bool Activo { get; set; }
         
@@ -39,5 +39,6 @@ namespace Krypto.Logic
         //Relación con Rol.         
         public int RolId { get; set; }
         public virtual Rol Rol { get; set; }
+        public virtual GrupoDeTrabajo grupoDeTrabajo { get; set; }
     }
 }

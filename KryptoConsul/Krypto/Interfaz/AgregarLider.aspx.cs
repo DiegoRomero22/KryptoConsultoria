@@ -27,6 +27,7 @@ namespace Krypto.Interfaz
             txtEmailLider.Text = "";
             txtPasswordLider.Text = "";           
             txtTelefonoLider.Text = "";
+            txtDireccionLider.Text = "";
         }
 
         protected void BtnCancelar_Click(object sender, EventArgs e)

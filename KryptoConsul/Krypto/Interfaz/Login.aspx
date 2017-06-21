@@ -1,47 +1,23 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Krypto.Interfaz.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <table class="nav-justified" >
+    <table class="well bs-component" style="width: 561px; margin-left: 315px; background-color:#f4f4f4" >
        <tr>
-           <td style="width: 459px">&nbsp;</td>
-           <td style="width: 275px">&nbsp;  </td>
-           <td>&nbsp;</td>
-       </tr>
-       <tr>
-           <td style="width: 459px">&nbsp;</td>
-           <td style="width: 275px">
-               &nbsp;</td>
-           <td>&nbsp;</td>
-       </tr>
-       <tr>
-           <td style="width: 459px">&nbsp;</td>
-           <td style="width: 275px">
-               &nbsp;</td>
-           <td>&nbsp;</td>
-       </tr>
-       <tr>
-           <td style="width: 459px">&nbsp;</td>          
-                     
-       </tr>
-       <tr>
-           <td style="width: 459px; height: 19px;"></td>
-           <td style="height: 19px">
-
-           </td>
-       </tr>
-       <tr>
-           <td style="width: 459px">&nbsp;</td>
-          <td style="width: 275px; border:20px none black; background-color:#fff; ">
+           <td style="width: 55px;">&nbsp;</td>
+           <td style="width: 44px;">&nbsp;</td>
+          <td style="width: 169px;">
                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
-                                <hr />
                                 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; Iniciar Sesión</h3> 
 
+                                <hr />
+
            </td>
-           <td>&nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
        </tr>
        <tr>
-           <td style="width: 459px" rowspan="5">&nbsp;</td>
-           <td style="width: 275px; border:20px none black; background-color:#fff; " rowspan="4">
+           <td style="width: 55px" rowspan="7">&nbsp;</td>
+           <td style="width: 44px" rowspan="7">&nbsp;</td>
+           <td style="width: 169px; " rowspan="4">
            <div class="form-group"  >
 
              <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email"></asp:TextBox>
@@ -57,24 +33,34 @@
                <asp:Button ID="BtnIniciarSesion" runat="server" Text="Iniciar Sesión" class="btn" Width="276px" OnClick="BtnIniciarSesion_Click" />
                <asp:Label ID="LblResultado" runat="server" Text="No se pudo iniciar Sesión correctamente. Por favor vuelva a intentarlo." Visible="False" CssClass="alert-danger"></asp:Label>
            </td>
-           <td>
+           <td style="width: 6px">
                &nbsp;</td>
        </tr>
        <tr>
-           <td>
+           <td style="width: 6px">
                &nbsp;</td>
        </tr>
        <tr>
-           <td>&nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
        </tr>
        <tr>
-           <td>&nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
        </tr>
        <tr>
-           <td style="width: 275px">
+           <td style="width: 169px">
                                 <hr />
                                 </td>
-           <td>&nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
+       </tr>
+       <tr>
+           <td style="width: 169px">
+                                &nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
+       </tr>
+       <tr>
+           <td style="width: 169px">
+                                &nbsp;</td>
+           <td style="width: 6px">&nbsp;</td>
        </tr>
    </table>
    <div class="container">
