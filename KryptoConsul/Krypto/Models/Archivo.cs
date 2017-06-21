@@ -7,9 +7,9 @@ using System.Web;
 
 namespace Krypto.Models
 {
-    public class Archivos
+    public class Archivo
     {
-        public Archivos()
+        public Archivo()
         {
             this.TArchivo = new HashSet<TipoArchivo>();
 
