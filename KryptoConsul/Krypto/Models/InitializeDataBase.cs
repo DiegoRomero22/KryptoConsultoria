@@ -13,8 +13,8 @@ namespace Krypto.Models
     {
         protected override void Seed(KryptoContext context)
         {
-            ListaRol().ForEach(r => context.Roles.Add(r));
-            ListarUsuario().ForEach(u => context.Usuarios.Add(u));
+            ListaRol().ForEach(r => context.Rol.Add(r));
+            ListarUsuario().ForEach(u => context.Usuario.Add(u));
             context.SaveChanges(); 
            
         }
@@ -46,14 +46,7 @@ namespace Krypto.Models
                     IdRol = 4,
                     NombreRol = "Cliente",
                     Activo = true
-                },
-                new Rol
-                {
-                    IdRol =5,
-                    NombreRol ="Nomina",
-                    Activo = true
-                   
-                },
+                },                
             };
             return rol;
         }
@@ -65,25 +58,23 @@ namespace Krypto.Models
                 new Usuario
                 {
                     IdUsuario = Guid.NewGuid(),
-                    Nombre = "Diego Alejandro",
-                    Apellido = "Romero Cubillos",                    
+                    NombreCompleto = "Diego Alejandro",
                     Documento = 1031156456,
                     Email = "Diego5220@hotmail.com",
                     Contraseña = "1031156456",
-                    Cargo = "Developer",
+                    Direccion = "Calle 123",
                     Telefono = 3219929719,
                     Activo = true,
-                    RolId = 2,                    
+                    RolId = ( 1),                  
                 },
                 new Usuario
                 {
                     IdUsuario = Guid.NewGuid(),
-                    Nombre = "Jairo Andres",
-                    Apellido = "Gomezcaceres Alvarez",                   
+                    NombreCompleto = "Jairo Andres",                    
                     Documento = 1102851384,
-                    Email = "Jairogca_19@hotmail.com",
+                    Email = "Jairogca_19@hotmail.com",                    
                     Contraseña = "1102851384",
-                    Cargo = "Developer",
+                    Direccion = "Calle456",
                     Telefono = 3017047096,
                     Activo = true, 
                     RolId = 2,                     

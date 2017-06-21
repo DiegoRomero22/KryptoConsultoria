@@ -18,12 +18,12 @@ namespace Krypto.Logic
             {
                 using (KryptoContext context = new KryptoContext())
                 {
-                    var mostrarinfo = from usr in context.Usuarios
+                    var mostrarinfo = from usr in context.Usuario
                                       where usr.Email == email && usr.Contraseña == clave
                                       select usr;
 
                     //Buscar el Rol del Usuario que se loguea.
-                    var idRol = from user in context.Usuarios
+                    var idRol = from user in context.Usuario
                                 where user.Email == email
                                 select user.RolId;
 
@@ -75,33 +75,32 @@ namespace Krypto.Logic
 
             string sesionActual = HttpContext.Current.Session["UserLogin"].ToString();
             KryptoContext context = new KryptoContext();
-            Guid? idUser = (from usuario in context.Usuarios
+            Guid? idUser = (from usuario in context.Usuario
                             where usuario.Email == sesionActual
                             select usuario.IdUsuario).FirstOrDefault();
 
             return idUser;
         }
 
-        public bool registroLider(Guid id, string nnombre, string aapellido, ulong ddocumento, string eemail, string cclave, string ccargo, Int64 ttelefono , int rrol, bool aactivo = true)
+        public bool registroLider(Guid id, string nnombrecompleto,  ulong ddocumento, string eemail, string cclave, string ddirecion, Int64 ttelefono , int rrol, bool aactivo = true)
         {
             try
             {
                 Usuario user = new Usuario();
                 {
                     user.IdUsuario = id;
-                    user.Nombre = nnombre;
-                    user.Apellido = aapellido;
+                    user.NombreCompleto = nnombrecompleto;                    
                     user.Documento = ddocumento;
                     user.Email = eemail;
                     user.Contraseña = cclave;
-                    user.Cargo = ccargo;
+                    user.Direccion = ddirecion;                  
                     user.Telefono = ttelefono;
                     user.Activo = aactivo;
                     user.RolId = rrol;
                     
                 };
                 KryptoContext context = new KryptoContext();
-                context.Usuarios.Add(user);
+                context.Usuario.Add(user);
                 context.SaveChanges();
                 return true;
             }

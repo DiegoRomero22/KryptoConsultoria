@@ -19,15 +19,17 @@ namespace Krypto.Models
 
         [Required, StringLength(20), Display(Name = "TipoDocumento")]
         public string TipoDocumento { get; set; }
-
+        [Required]
         public int Documento { get; set; }
 
         [Required, StringLength(20), Display(Name = "TipoDePersona")]
         public string TipoDePersona { get; set; }
 
-        //Relación con Archivo.
-        
-        public virtual ICollection<Archivos> RArchivo { get; set; }
-        
+        //Relación con Archivo.        
+        public virtual Archivos archivo { get; set; }   
+
+        //Relación Con Rol. 
+        public virtual Rol rol { get; set;}
+            
     }
 }

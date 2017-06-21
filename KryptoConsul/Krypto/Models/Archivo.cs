@@ -9,6 +9,13 @@ namespace Krypto.Models
 {
     public class Archivos
     {
+        public Archivos()
+        {
+            this.TArchivo = new HashSet<TipoArchivo>();
+
+            cliente = new List<Cliente>();
+        }
+        
         [Key]
         public int IdArchivo { get; set; }
 
@@ -19,10 +26,8 @@ namespace Krypto.Models
         public string rutaArchivo { get; set; }
 
         //Relación con Cliente.
-        public virtual TipoArchivo TArchivo { get; set; }
+       public virtual ICollection<TipoArchivo> TArchivo { get; set; }
 
-
-        //public int ClienteId { get; set; }
-        public virtual Cliente RCliente { get; set; }
+        public virtual ICollection<Cliente> cliente { get; set; }
     }
 }

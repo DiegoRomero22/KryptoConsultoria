@@ -9,14 +9,15 @@ namespace Krypto.Models
 {
     public class TipoArchivo
     {
-
+        public TipoArchivo ()
+        {
+            this.Archivo = new HashSet<Archivos>();
+        }
         [Key]
         public int IdTipoArchivo { get; set; }
 
         public string Extension { get; set; }
-
-        [Required]
-        public int ArchivoS { get; set; }
+               
 
         public virtual ICollection<Archivos> Archivo { get; set; }
 
