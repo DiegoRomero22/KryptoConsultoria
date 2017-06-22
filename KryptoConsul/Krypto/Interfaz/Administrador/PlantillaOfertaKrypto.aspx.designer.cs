@@ -7,127 +7,28 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto.Interfaz {
+namespace Krypto.Interfaz.Administrador {
     
     
-    public partial class AddClient {
+    public partial class PlantillaOfertaKrypto {
         
         /// <summary>
-        /// Control LblEmpresa.
+        /// Control LblInformacionBasica.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblEmpresa;
+        protected global::System.Web.UI.WebControls.Label LblInformacionBasica;
         
         /// <summary>
-        /// Control CheckBoxKryptoColombia.
+        /// Control LblRazonSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxKryptoColombia;
-        
-        /// <summary>
-        /// Control CheckBoxKryptoConsul.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxKryptoConsul;
-        
-        /// <summary>
-        /// Control LblTipoPersona.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTipoPersona;
-        
-        /// <summary>
-        /// Control CheckBoxPersonaJ.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxPersonaJ;
-        
-        /// <summary>
-        /// Control CheckBoxPersonaN.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxPersonaN;
-        
-        /// <summary>
-        /// Control TxtNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNombre;
-        
-        /// <summary>
-        /// Control RFVNombre.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVNombre;
-        
-        /// <summary>
-        /// Control TxtApellido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtApellido;
-        
-        /// <summary>
-        /// Control RFVApellido.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVApellido;
-        
-        /// <summary>
-        /// Control TxtTipoDocumento.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label TxtTipoDocumento;
-        
-        /// <summary>
-        /// Control CheckBoxCedula.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxCedula;
-        
-        /// <summary>
-        /// Control CheckBoxNIT.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.CheckBox CheckBoxNIT;
+        protected global::System.Web.UI.WebControls.Label LblRazonSocial;
         
         /// <summary>
         /// Control TxtRazonSocial.
@@ -139,75 +40,174 @@ namespace Krypto.Interfaz {
         protected global::System.Web.UI.WebControls.TextBox TxtRazonSocial;
         
         /// <summary>
-        /// Control RFVRazonSocial.
+        /// Control LblNIT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.RequiredFieldValidator RFVRazonSocial;
+        protected global::System.Web.UI.WebControls.Label LblNIT;
         
         /// <summary>
-        /// Control TxtDocumento.
+        /// Control TxtNit.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtDocumento;
+        protected global::System.Web.UI.WebControls.TextBox TxtNit;
         
         /// <summary>
-        /// Control LblCalendarioT.
+        /// Control LblDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblCalendarioT;
+        protected global::System.Web.UI.WebControls.Label LblDireccion;
         
         /// <summary>
-        /// Control Calendar1.
+        /// Control TxtDireccion.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.TextBox TxtDireccion;
         
         /// <summary>
-        /// Control FUAddCamaraComercio.
+        /// Control LblTelefono.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUAddCamaraComercio;
+        protected global::System.Web.UI.WebControls.Label LblTelefono;
         
         /// <summary>
-        /// Control FUAddRut.
+        /// Control TxtTelefono.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FileUpload FUAddRut;
+        protected global::System.Web.UI.WebControls.TextBox TxtTelefono;
         
         /// <summary>
-        /// Control BtnAgregarCliente.
+        /// Control LblCiudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregarCliente;
+        protected global::System.Web.UI.WebControls.Label LblCiudad;
         
         /// <summary>
-        /// Control BtnCancelar.
+        /// Control TxtCiudad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCancelar;
+        protected global::System.Web.UI.WebControls.TextBox TxtCiudad;
+        
+        /// <summary>
+        /// Control LblNombreContacto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblNombreContacto;
+        
+        /// <summary>
+        /// Control TxtnombreContacto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtnombreContacto;
+        
+        /// <summary>
+        /// Control LblCargoContacto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblCargoContacto;
+        
+        /// <summary>
+        /// Control TxtCargoContacto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtCargoContacto;
+        
+        /// <summary>
+        /// Control LblNumeroCelular.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblNumeroCelular;
+        
+        /// <summary>
+        /// Control TxtnumeroCelular.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtnumeroCelular;
+        
+        /// <summary>
+        /// Control LblEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblEmail;
+        
+        /// <summary>
+        /// Control TxtEmail.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtEmail;
+        
+        /// <summary>
+        /// Control LblFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblFecha;
+        
+        /// <summary>
+        /// Control TxtFecha.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.TextBox TxtFecha;
+        
+        /// <summary>
+        /// Control BtnSiguiente.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnSiguiente;
     }
 }

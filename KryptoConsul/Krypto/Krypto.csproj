@@ -236,8 +236,11 @@
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
     <Content Include="image\LogoKrypto.png" />
+    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
+    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
+    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
+    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
     <Content Include="Interfaz\AgregarArchivo.aspx" />
-    <Content Include="Interfaz\AgregarCliente.aspx" />
     <Content Include="Interfaz\AgregarLider.aspx" />
     <Content Include="Interfaz\AgregarProyecto.aspx" />
     <Content Include="Interfaz\PaginaAdministrador.aspx" />
@@ -438,19 +441,40 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx.cs">
+      <DependentUpon>PlantillaOfertaKrypto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx.designer.cs">
+      <DependentUpon>PlantillaOfertaKrypto.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx.cs">
+      <DependentUpon>PlantillaOfertaKrypto1.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx.designer.cs">
+      <DependentUpon>PlantillaOfertaKrypto1.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx.cs">
+      <DependentUpon>PlantillaOfertaKrypto2.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx.designer.cs">
+      <DependentUpon>PlantillaOfertaKrypto2.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.cs">
+      <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.designer.cs">
+      <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\AgregarArchivo.aspx.cs">
       <DependentUpon>AgregarArchivo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaz\AgregarArchivo.aspx.designer.cs">
       <DependentUpon>AgregarArchivo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\AgregarCliente.aspx.cs">
-      <DependentUpon>AgregarCliente.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\AgregarCliente.aspx.designer.cs">
-      <DependentUpon>AgregarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\AgregarLider.aspx.cs">
       <DependentUpon>AgregarLider.aspx</DependentUpon>

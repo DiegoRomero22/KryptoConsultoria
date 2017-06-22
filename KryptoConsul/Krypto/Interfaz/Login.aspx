@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Krypto.Interfaz.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <table class="well bs-component" style="width: 561px; margin-left: 315px; background-color:#f4f4f4" >
+    <table class="well bs-component" style="width: 561px; margin-left: 315px; border:double; background-color:#f4f4f4" >
        <tr>
            <td style="width: 55px;">&nbsp;</td>
            <td style="width: 44px;">&nbsp;</td>
