@@ -13,5 +13,10 @@ namespace Krypto.Interfaz
         {
 
         }
+
+        protected void BtnAgregarLider_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarLider.aspx");
+        }
     }
 }

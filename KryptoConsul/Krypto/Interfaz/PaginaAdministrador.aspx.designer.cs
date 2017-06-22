@@ -13,57 +13,39 @@ namespace Krypto.Interfaz {
     public partial class AdminPage {
         
         /// <summary>
-        /// Control txtBalance.
+        /// Control BtnOfertaKrypto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtBalance;
+        protected global::System.Web.UI.WebControls.Button BtnOfertaKrypto;
         
         /// <summary>
-        /// Control Balance.
+        /// Control BtnVerClientes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Balance;
+        protected global::System.Web.UI.WebControls.Button BtnVerClientes;
         
         /// <summary>
-        /// Control txtPercentage.
+        /// Control BtnAgregarLider.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtPercentage;
+        protected global::System.Web.UI.WebControls.Button BtnAgregarLider;
         
         /// <summary>
-        /// Control Percentage.
+        /// Control BtnAgregarProyecto.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Percentage;
-        
-        /// <summary>
-        /// Control txtResult.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label txtResult;
-        
-        /// <summary>
-        /// Control Result.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.DataVisualization.Charting.Chart Result;
+        protected global::System.Web.UI.WebControls.Button BtnAgregarProyecto;
     }
 }
