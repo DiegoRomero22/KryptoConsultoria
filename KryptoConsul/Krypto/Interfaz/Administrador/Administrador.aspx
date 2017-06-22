@@ -1,8 +1,5 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PaginaAdministrador.aspx.cs" Inherits="Krypto.Interfaz.AdminPage" %>
-
-<%@ Register Assembly="System.Web.DataVisualization, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" Namespace="System.Web.UI.DataVisualization.Charting" TagPrefix="asp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Administrador.aspx.cs" Inherits="Krypto.Interfaz.Administrador.Administrador" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
- 
 
     <table style="width:100%;">
         <tr>
@@ -29,7 +26,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="BtnOfertaKrypto" runat="server" CssClass="btn" Text="Oferta Krypto" ForeColor="White" BackColor="#bf0d11" Width="191px" />
+                <asp:Button ID="BtnOfertaKrypto" runat="server" CssClass="btn" Text="Oferta Krypto" ForeColor="White" BackColor="#bf0d11" Width="191px" OnClick="BtnOfertaKrypto_Click" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -140,6 +137,5 @@
             <td>&nbsp;</td>
         </tr>
     </table>
- 
 
 </asp:Content>

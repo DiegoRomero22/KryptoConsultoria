@@ -15,7 +15,7 @@ namespace Krypto.Models
 
             cliente = new List<Cliente>();
         }
-        
+        [ScaffoldColumn(false)]
         [Key]
         public int IdArchivo { get; set; }
 

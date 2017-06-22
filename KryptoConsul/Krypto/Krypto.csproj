@@ -236,14 +236,14 @@
     <Content Include="image\imagen2.jpg" />
     <Content Include="image\imagen3.jpg" />
     <Content Include="image\LogoKrypto.png" />
+    <Content Include="Interfaz\Administrador\Administrador.aspx" />
+    <Content Include="Interfaz\Administrador\AgregarArchivos.aspx" />
+    <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
-    <Content Include="Interfaz\AgregarArchivo.aspx" />
-    <Content Include="Interfaz\AgregarLider.aspx" />
     <Content Include="Interfaz\AgregarProyecto.aspx" />
-    <Content Include="Interfaz\PaginaAdministrador.aspx" />
     <Content Include="Interfaz\Client_Interface.aspx" />
     <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\Login.aspx" />
@@ -441,6 +441,27 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Administrador\Administrador.aspx.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\Administrador.aspx.designer.cs">
+      <DependentUpon>Administrador.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarArchivos.aspx.cs">
+      <DependentUpon>AgregarArchivos.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarArchivos.aspx.designer.cs">
+      <DependentUpon>AgregarArchivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarLider.aspx.cs">
+      <DependentUpon>AgregarLider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarLider.aspx.designer.cs">
+      <DependentUpon>AgregarLider.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx.cs">
       <DependentUpon>PlantillaOfertaKrypto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -469,33 +490,12 @@
     <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.designer.cs">
       <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\AgregarArchivo.aspx.cs">
-      <DependentUpon>AgregarArchivo.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\AgregarArchivo.aspx.designer.cs">
-      <DependentUpon>AgregarArchivo.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\AgregarLider.aspx.cs">
-      <DependentUpon>AgregarLider.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\AgregarLider.aspx.designer.cs">
-      <DependentUpon>AgregarLider.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Interfaz\AgregarProyecto.aspx.cs">
       <DependentUpon>AgregarProyecto.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaz\AgregarProyecto.aspx.designer.cs">
       <DependentUpon>AgregarProyecto.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\PaginaAdministrador.aspx.cs">
-      <DependentUpon>PaginaAdministrador.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\PaginaAdministrador.aspx.designer.cs">
-      <DependentUpon>PaginaAdministrador.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Client_Interface.aspx.cs">
       <DependentUpon>Client_Interface.aspx</DependentUpon>
@@ -550,10 +550,12 @@
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
+    <Compile Include="Models\DetalleRegistros.cs" />
     <Compile Include="Models\GrupoDeTrabajo.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
     <Compile Include="Models\Rol.cs" />
+    <Compile Include="Models\ServicioDeContabilidad.cs" />
     <Compile Include="Models\TipoArchivo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />

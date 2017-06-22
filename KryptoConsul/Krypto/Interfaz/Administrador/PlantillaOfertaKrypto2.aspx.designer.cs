@@ -49,22 +49,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblNumeroClientes;
         
         /// <summary>
-        /// Control TxtNumeroClientesCantidadM.
+        /// Control TxtNumeroClientes1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroClientesCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroClientes1;
         
         /// <summary>
-        /// Control TxtNumeroClientesNumeroDoc.
+        /// Control TxtNumeroClientes2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroClientesNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroClientes2;
         
         /// <summary>
         /// Control LblFacturasVenta.
@@ -76,22 +76,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblFacturasVenta;
         
         /// <summary>
-        /// Control TxtFacturasVentaCantidadM.
+        /// Control TxtFacturasVenta1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFacturasVentaCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtFacturasVenta1;
         
         /// <summary>
-        /// Control TxtFacturasVentaNumeroDoc.
+        /// Control TxtFacturasVenta2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFacturasVentaNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtFacturasVenta2;
         
         /// <summary>
         /// Control LblCantidadRemisiones.
@@ -103,22 +103,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblCantidadRemisiones;
         
         /// <summary>
-        /// Control TxtCantidadRemisionesCantidadM.
+        /// Control TxtCantidadRemisiones1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCantidadRemisionesCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtCantidadRemisiones1;
         
         /// <summary>
-        /// Control TxtCantidadRemisionesNumeroDoc.
+        /// Control TxtCantidadRemisiones2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCantidadRemisionesNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtCantidadRemisiones2;
         
         /// <summary>
         /// Control LblCantidadOrdenes.
@@ -130,22 +130,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblCantidadOrdenes;
         
         /// <summary>
-        /// Control TxtCantidadOrdenesCantidadM.
+        /// Control TxtCantidadOrdenes1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCantidadOrdenesCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtCantidadOrdenes1;
         
         /// <summary>
-        /// Control TxtCantidadOrdenesnumeroDoc.
+        /// Control TxtCantidadOrdenes2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtCantidadOrdenesnumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtCantidadOrdenes2;
         
         /// <summary>
         /// Control LblNumeroProveedores.
@@ -157,22 +157,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblNumeroProveedores;
         
         /// <summary>
-        /// Control TxtNumeroProveedoresCantidadM.
+        /// Control TxtNumeroProveedores1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroProveedoresCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroProveedores1;
         
         /// <summary>
-        /// Control TxtNumeroProveedoresNumeroDoc.
+        /// Control TxtNumeroProveedores2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroProveedoresNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroProveedores2;
         
         /// <summary>
         /// Control LblFacturasCompras.
@@ -184,22 +184,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblFacturasCompras;
         
         /// <summary>
-        /// Control TxtFacturasComprasCantidadM.
+        /// Control TxtFacturasCompras1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFacturasComprasCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtFacturasCompras1;
         
         /// <summary>
-        /// Control TxtFacturasComprasNumeroDoc.
+        /// Control TxtFacturasCompras2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtFacturasComprasNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtFacturasCompras2;
         
         /// <summary>
         /// Control LblComprobantesEgreso.
@@ -211,22 +211,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblComprobantesEgreso;
         
         /// <summary>
-        /// Control TxtComprobantesEgresCantidadM.
+        /// Control TxtComprobantesEgreso1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtComprobantesEgresCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtComprobantesEgreso1;
         
         /// <summary>
-        /// Control TxtComprobantesEgresNumeroDoc.
+        /// Control TxtComprobantesEgres2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtComprobantesEgresNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtComprobantesEgres2;
         
         /// <summary>
         /// Control LblReembolsosCajaMenor.
@@ -238,22 +238,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblReembolsosCajaMenor;
         
         /// <summary>
-        /// Control TxtReembolsosCajaMenorCantidadM.
+        /// Control TxtReembolsos1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosCajaMenorCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtReembolsos1;
         
         /// <summary>
-        /// Control TxtReembolsosCajaMenorNumeroDoc.
+        /// Control TxtReembolsosCajaMenor2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosCajaMenorNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosCajaMenor2;
         
         /// <summary>
         /// Control LblReembolsosGastosViaje.
@@ -265,22 +265,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblReembolsosGastosViaje;
         
         /// <summary>
-        /// Control TxtReembolsosGastosViajeCantidadM.
+        /// Control TxtReembolsosGastosViaje1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosGastosViajeCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosGastosViaje1;
         
         /// <summary>
-        /// Control TxtReembolsosGastosViajeNumeroDoc.
+        /// Control TxtReembolsosGastosViaje2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosGastosViajeNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtReembolsosGastosViaje2;
         
         /// <summary>
         /// Control LblRecibosCaja.
@@ -292,22 +292,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblRecibosCaja;
         
         /// <summary>
-        /// Control TxtRecibosCajaCantidadM.
+        /// Control TxtRecibosCaja1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtRecibosCajaCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtRecibosCaja1;
         
         /// <summary>
-        /// Control TxtRecibosCajaNumeroDoc.
+        /// Control TxtRecibosCaja2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtRecibosCajaNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtRecibosCaja2;
         
         /// <summary>
         /// Control LblLegalizaionAnticipos.
@@ -319,22 +319,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblLegalizaionAnticipos;
         
         /// <summary>
-        /// Control TxtLegalizaionAnticiposCantidadM.
+        /// Control TxtLegalizacionAnticipos1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtLegalizaionAnticiposCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtLegalizacionAnticipos1;
         
         /// <summary>
-        /// Control TxtLegalizaionAnticiposNumeroDoc.
+        /// Control TxtLegalizaionAnticipos2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtLegalizaionAnticiposNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtLegalizaionAnticipos2;
         
         /// <summary>
         /// Control LblNumeroCuentasBanca.
@@ -346,22 +346,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblNumeroCuentasBanca;
         
         /// <summary>
-        /// Control TxtNumeroCuentasBancaCantidadM.
+        /// Control TxtNumeroCuentasBancarias1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCuentasBancaCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCuentasBancarias1;
         
         /// <summary>
-        /// Control TxtNumeroCuentasBancaNumeroDoc.
+        /// Control TxtNumeroCuentasBanca2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCuentasBancaNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCuentasBanca2;
         
         /// <summary>
         /// Control LblNumeorPaginasExtractoBan.
@@ -373,22 +373,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblNumeorPaginasExtractoBan;
         
         /// <summary>
-        /// Control TxtNumeorPaginasExtractoBanCantidadM.
+        /// Control TxtNumeroPaginasExtractoBan1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeorPaginasExtractoBanCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroPaginasExtractoBan1;
         
         /// <summary>
-        /// Control TxtNumeorPaginasExtractoBanNumeroDoc.
+        /// Control TxtNumeorPaginasExtractoBan2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeorPaginasExtractoBanNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeorPaginasExtractoBan2;
         
         /// <summary>
         /// Control LblNumeroCajaMenores.
@@ -400,22 +400,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblNumeroCajaMenores;
         
         /// <summary>
-        /// Control TxtNumeroCajaMenoresCantidadM.
+        /// Control TxtNumeroCajaMenores1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCajaMenoresCantidadM;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCajaMenores1;
         
         /// <summary>
-        /// Control TxtNumeroCajaMenoresNumeroDoc.
+        /// Control TxtNumeroCajaMenores2.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCajaMenoresNumeroDoc;
+        protected global::System.Web.UI.WebControls.TextBox TxtNumeroCajaMenores2;
         
         /// <summary>
         /// Control BtnSiguiente2.

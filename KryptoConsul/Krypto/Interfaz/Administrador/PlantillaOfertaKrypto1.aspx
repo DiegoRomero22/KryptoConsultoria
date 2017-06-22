@@ -45,7 +45,7 @@
                 .</td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtTiposociedad" CssClass="form-control" runat="server" ></asp:TextBox>
+                <asp:TextBox ID="TxtTipoSociedad" CssClass="form-control" runat="server" ></asp:TextBox>
             </td>
             <td>
                 <asp:Label ID="LblTiposociedad2" runat="server" Text="Limitada, Sociedad Anónima, Sociedad por Acciones Simplificada (SAS)"></asp:Label>
@@ -68,7 +68,7 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtObjetosocial" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtObjetoSocial" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -147,12 +147,12 @@
         <tr>
             <td style="width: 63px">&nbsp;</td>
             <td style="width: 199px">
-                <asp:Label ID="LblSoftwareUtiliza" runat="server" Text="Qué Software Contable utiliza?"></asp:Label>
+                <asp:Label ID="LblSoftwareQueUtiliza" runat="server" Text="Qué Software Contable utiliza?"></asp:Label>
             </td>
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtSoftwareUtiliza" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtSoftwareQueUtiliza" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -191,12 +191,12 @@
         <tr>
             <td style="width: 63px">&nbsp;</td>
             <td style="width: 199px">
-                <asp:Label ID="LblProductosClasif" runat="server" Text="Si manejan inventario, cuántos productos tienen clasificados?"></asp:Label>
+                <asp:Label ID="LblProductosClasificados" runat="server" Text="Si manejan inventario, cuántos productos tienen clasificados?"></asp:Label>
             </td>
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtProductosClasif" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtProductosClasificados" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -234,11 +234,11 @@
         <tr>
             <td style="width: 63px">&nbsp;</td>
             <td style="width: 199px">
-                <asp:Label ID="LblEstadoSecretariaH" runat="server" Text="Estado de cuenta ante Secretaría de Hacienda."></asp:Label>
+                <asp:Label ID="LblEstadoSecretariaHacienda" runat="server" Text="Estado de cuenta ante Secretaría de Hacienda."></asp:Label>
             </td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtEstadoSecretariaH" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtEstadoSecretariaHacienda" CssClass="form-control" runat="server"></asp:TextBox>
             </td>
             <td>
                 <asp:Label ID="LblEstadoSecretariaH2" runat="server" Text="Reporte de cómo están actualmente en reporte y pagos a Secretaría de Hacienda."></asp:Label>

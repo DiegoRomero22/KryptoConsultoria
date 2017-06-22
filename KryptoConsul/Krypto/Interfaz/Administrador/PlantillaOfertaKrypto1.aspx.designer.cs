@@ -31,13 +31,13 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblTiposociedad;
         
         /// <summary>
-        /// Control TxtTiposociedad.
+        /// Control TxtTipoSociedad.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTiposociedad;
+        protected global::System.Web.UI.WebControls.TextBox TxtTipoSociedad;
         
         /// <summary>
         /// Control LblTiposociedad2.
@@ -58,13 +58,13 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label lblObjetosocial;
         
         /// <summary>
-        /// Control TxtObjetosocial.
+        /// Control TxtObjetoSocial.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtObjetosocial;
+        protected global::System.Web.UI.WebControls.TextBox TxtObjetoSocial;
         
         /// <summary>
         /// Control LblFechaConstitucion.
@@ -121,22 +121,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.TextBox TxtlVentasAnuales;
         
         /// <summary>
-        /// Control LblSoftwareUtiliza.
+        /// Control LblSoftwareQueUtiliza.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblSoftwareUtiliza;
+        protected global::System.Web.UI.WebControls.Label LblSoftwareQueUtiliza;
         
         /// <summary>
-        /// Control TxtSoftwareUtiliza.
+        /// Control TxtSoftwareQueUtiliza.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtSoftwareUtiliza;
+        protected global::System.Web.UI.WebControls.TextBox TxtSoftwareQueUtiliza;
         
         /// <summary>
         /// Control LblModulosLicenciados.
@@ -166,22 +166,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblModulosLicenciados2;
         
         /// <summary>
-        /// Control LblProductosClasif.
+        /// Control LblProductosClasificados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblProductosClasif;
+        protected global::System.Web.UI.WebControls.Label LblProductosClasificados;
         
         /// <summary>
-        /// Control TxtProductosClasif.
+        /// Control TxtProductosClasificados.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtProductosClasif;
+        protected global::System.Web.UI.WebControls.TextBox TxtProductosClasificados;
         
         /// <summary>
         /// Control LblEstadoDIAN.
@@ -211,22 +211,22 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblEstadoDIAN2;
         
         /// <summary>
-        /// Control LblEstadoSecretariaH.
+        /// Control LblEstadoSecretariaHacienda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblEstadoSecretariaH;
+        protected global::System.Web.UI.WebControls.Label LblEstadoSecretariaHacienda;
         
         /// <summary>
-        /// Control TxtEstadoSecretariaH.
+        /// Control TxtEstadoSecretariaHacienda.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtEstadoSecretariaH;
+        protected global::System.Web.UI.WebControls.TextBox TxtEstadoSecretariaHacienda;
         
         /// <summary>
         /// Control LblEstadoSecretariaH2.

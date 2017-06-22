@@ -1,25 +1,7 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarLider.aspx.cs" Inherits="Krypto.Interfaz.AddLeader" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarLider.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarLider" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <table style="width:56%;  background-color:#f4f4f4; margin-left: 282px; margin-right: 18px;" border:"8px;" class="well bs-component">
-        <tr>
-            <td style="width: 79px">&nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td colspan="3">
-                &nbsp;</td>
-            <td style="width: 17px">&nbsp;</td>
-            <td style="width: 64px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 79px">&nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td colspan="3">
-                &nbsp;</td>
-            <td style="width: 17px">&nbsp;</td>
-            <td style="width: 64px">&nbsp;</td>
-        </tr>
+        <table style="width:56%; border:double; background-color:#f4f4f4; margin-left: 282px; margin-right: 18px;" border:"8px;" class="well bs-component" >
         <tr>
             <td style="width: 79px">&nbsp;</td>
             <td>
@@ -35,17 +17,8 @@
                 &nbsp;</td>
             <td colspan="3">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
-                <asp:Label ID="lblRegistrarLider" runat="server" Text="Registrar Lider" Font-Bold="True" Font-Size="X-Large"></asp:Label>
+                <h4>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <asp:Label ID="lblRegistrarLider" runat="server" Text="Registrar Lider" Font-Bold="True" Font-Size="X-Large" ForeColor="#BF0D11"></asp:Label></h4>
             </td>
-            <td style="width: 17px">&nbsp;</td>
-            <td style="width: 64px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 79px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td style="width: 255px">&nbsp;</td>
-            <td style="width: 66px">&nbsp;</td>
-            <td>&nbsp;</td>
             <td style="width: 17px">&nbsp;</td>
             <td style="width: 64px">&nbsp;</td>
         </tr>
@@ -99,18 +72,6 @@
             <td style="width: 79px">&nbsp;</td>
             <td>&nbsp;</td>
             <td style="width: 255px">
-                &nbsp;</td>
-            <td style="width: 66px">
-                &nbsp;</td>
-            <td>
-                &nbsp;</td>
-            <td style="width: 17px">&nbsp;</td>
-            <td style="width: 64px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 79px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td style="width: 255px">
                 <asp:TextBox ID="txtTelefonoLider" runat="server" placeholder="Ingrese Telefono" TextMode="Phone" class="form-control" Width="255px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="txtTelefonoLider" CssClass="alert-danger" ErrorMessage="Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
@@ -120,15 +81,6 @@
                 <asp:TextBox ID="txtDireccionLider" runat="server" placeholder="Ingrese Direccion" class="form-control" Width="255px"></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtDireccionLider" CssClass="alert-danger" ErrorMessage="Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
-            <td style="width: 17px">&nbsp;</td>
-            <td style="width: 64px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 79px">&nbsp;</td>
-            <td>&nbsp;</td>
-            <td style="width: 255px">&nbsp;</td>
-            <td style="width: 66px">&nbsp;</td>
-            <td>&nbsp;</td>
             <td style="width: 17px">&nbsp;</td>
             <td style="width: 64px">&nbsp;</td>
         </tr>
@@ -188,7 +140,7 @@
             <td colspan="3">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Text="Agregar" CssClass="btn" BackColor="#bf0d11" OnClick="btnAgregar_Click" Width="140px" ForeColor="White"/>
                 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnCancelar" runat="server" Text="Cancelar" CssClass="btn" Width="140px" />
+                <asp:Button ID="BtnCancelar"   runat="server" Text="Cancelar" CssClass="btn" Width="140px" OnClick="BtnCancelar_Click"  />
             </td>
             <td style="width: 17px">&nbsp;</td>
             <td style="width: 64px">&nbsp;</td>
@@ -224,8 +176,6 @@
             <td style="width: 64px">&nbsp;</td>
         </tr>
     </table>
-
-
 
 
 </asp:Content>

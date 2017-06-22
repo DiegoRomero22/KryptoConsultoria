@@ -6,26 +6,26 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Krypto.Logic;
 
-namespace Krypto.Interfaz
+namespace Krypto.Interfaz.Administrador
 {
-    public partial class AddLeader : System.Web.UI.Page
+    public partial class AgregarLider : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
         }
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {
             Response.Redirect("Inicio.aspx");
         }
 
-      
+
         public void limpiarCasillas()
         {
-            txtNombreLider.Text = "";           
+            txtNombreLider.Text = "";
             txtDocumentoLider.Text = "";
             txtEmailLider.Text = "";
-            txtPasswordLider.Text = "";           
+            txtPasswordLider.Text = "";
             txtTelefonoLider.Text = "";
             txtDireccionLider.Text = "";
         }

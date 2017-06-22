@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto.Interfaz {
+namespace Krypto.Interfaz.Administrador {
     
     
-    public partial class AddLeader {
+    public partial class AgregarLider {
         
         /// <summary>
         /// Control lblRegistrarLider.
@@ -139,12 +139,12 @@ namespace Krypto.Interfaz {
         protected global::System.Web.UI.WebControls.Button btnAgregar;
         
         /// <summary>
-        /// Control btnCancelar.
+        /// Control BtnCancelar.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnCancelar;
+        protected global::System.Web.UI.WebControls.Button BtnCancelar;
     }
 }

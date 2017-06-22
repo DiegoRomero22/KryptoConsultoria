@@ -1,7 +1,6 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarArchivo.aspx.cs" Inherits="Krypto.Interfaz.AgregarArchivo" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarArchivos.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarArchivos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
-
-    <table style="width:100%; border: red 2px solid;">
+     <table style="width:100%; border: red 2px solid;">
         <tr>
             <td style="width: 284px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
             <td style="width: 243px; font-size: large; font-weight: bold;">&nbsp;</td>
@@ -216,5 +215,4 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
     </table>
-
 </asp:Content>

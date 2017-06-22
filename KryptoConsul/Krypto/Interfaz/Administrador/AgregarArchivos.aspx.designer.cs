@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto.Interfaz {
+namespace Krypto.Interfaz.Administrador {
     
     
-    public partial class AgregarArchivo {
+    public partial class AgregarArchivos {
         
         /// <summary>
         /// Control txtNombreArchivo.
