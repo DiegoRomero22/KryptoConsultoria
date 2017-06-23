@@ -4,22 +4,23 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Krypto.Logic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Models
 {
     public class TipoArchivo
     {
-        public TipoArchivo ()
-        {
-            this.Archivo = new HashSet<Archivo>();
-        }
+       
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdTipoArchivo { get; set; }
 
         public string Extension { get; set; }
                
 
-        public virtual ICollection<Archivo> Archivo { get; set; }
+        //Relación.
+        public virtual ICollection<Archivo>archivo { get; set; }
+
 
     }
 }

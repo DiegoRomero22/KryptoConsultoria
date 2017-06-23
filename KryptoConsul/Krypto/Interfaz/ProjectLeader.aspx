@@ -1,7 +1,7 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="ProjectLeader.aspx.cs" Inherits="Krypto.ProjectLeader" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
-    <table style="width:103%; border:solid">
+    0<table style="width:103%; border:solid">
         <tr>
             <td style="width: 93px">&nbsp;</td>
             <td colspan="4" rowspan="2">&nbsp;</td>

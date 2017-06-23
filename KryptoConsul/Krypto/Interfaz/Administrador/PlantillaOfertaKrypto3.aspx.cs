@@ -13,5 +13,10 @@ namespace Krypto.Interfaz.Administrador
         {
 
         }
+
+        protected void BtnGuardar_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("Administrador.aspx");
+        }
     }
 }

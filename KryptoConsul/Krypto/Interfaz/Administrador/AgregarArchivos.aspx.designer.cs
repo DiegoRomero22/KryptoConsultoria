@@ -13,6 +13,15 @@ namespace Krypto.Interfaz.Administrador {
     public partial class AgregarArchivos {
         
         /// <summary>
+        /// Control LblAgregarArchivo.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblAgregarArchivo;
+        
+        /// <summary>
         /// Control txtNombreArchivo.
         /// </summary>
         /// <remarks>

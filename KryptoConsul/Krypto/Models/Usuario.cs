@@ -10,14 +10,13 @@ namespace Krypto.Logic
 {
     public class Usuario
     {
-        [ScaffoldColumn(false)]
         [Key]
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public Guid IdUsuario { get; set; }
 
         [Required, StringLength(100), Display(Name = "Nombre")]
-        public string NombreCompleto { get; set; }    
-        
+        public string NombreCompleto { get; set; }
+
         public ulong Documento { get; set; }
 
         [Required, StringLength(50), Display(Name = "Email")]
@@ -25,20 +24,25 @@ namespace Krypto.Logic
 
         [Required, StringLength(100), Display(Name = "Contraseña")]
         public string Contraseña { get; set; }
-        
+
         [Required, StringLength(100), Display(Name = "Direccion")]
         public string Direccion { get; set; }
 
         [Required]
         public Int64 Telefono { get; set; }
-         
+
         [Required]
         public bool Activo { get; set; }
-        
 
-        //Relación con Rol.         
+
+        //Relación con Rol.     
+        [Required]
         public int RolId { get; set; }
+
         public virtual Rol Rol { get; set; }
-        public virtual GrupoDeTrabajo grupoDeTrabajo { get; set; }
+
+        public virtual ICollection<Proyecto> proyecto { get; set; }
+        public virtual ICollection<Archivo> archivo { get; set; }
+        public virtual ICollection<Tarea> tarea { get; set; }
     }
 }

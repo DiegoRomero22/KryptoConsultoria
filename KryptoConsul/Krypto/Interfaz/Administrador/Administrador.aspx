@@ -42,7 +42,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="BtnVerClientes" runat="server" CssClass="btn" Text="Ver Clientes" Width="191px" ForeColor="White" BackColor="#bf0d11" />
+                <asp:Button ID="BtnVerClientes" runat="server" CssClass="btn" Text="Ver Clientes" Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnVerClientes_Click" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

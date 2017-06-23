@@ -14,6 +14,10 @@ namespace Krypto.Interfaz.Administrador
 
         }
 
-       
+        protected void BtnSiguiente1_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PlantillaOfertaKrypto2.aspx");
+
+        }
     }
 }

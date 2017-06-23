@@ -245,8 +245,8 @@
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
     <Content Include="Interfaz\AgregarProyecto.aspx" />
     <Content Include="Interfaz\Client_Interface.aspx" />
-    <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\Login.aspx" />
+    <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
     <Content Include="Interfaz\Registro.aspx" />
     <Content Include="Interfaz\Report_Admin.aspx" />
@@ -504,19 +504,19 @@
     <Compile Include="Interfaz\Client_Interface.aspx.designer.cs">
       <DependentUpon>Client_Interface.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\PaginaLider.aspx.cs">
-      <DependentUpon>PaginaLider.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\PaginaLider.aspx.designer.cs">
-      <DependentUpon>PaginaLider.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Interfaz\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaz\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\PaginaLider.aspx.cs">
+      <DependentUpon>PaginaLider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\PaginaLider.aspx.designer.cs">
+      <DependentUpon>PaginaLider.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Registro.aspx.cs">
       <DependentUpon>Registro.aspx</DependentUpon>
@@ -554,8 +554,12 @@
     <Compile Include="Models\GrupoDeTrabajo.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
+    <Compile Include="Models\NominaYRecursosHumanos.cs" />
+    <Compile Include="Models\OfertaKrypto.cs" />
+    <Compile Include="Models\Proyecto.cs" />
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\ServicioDeContabilidad.cs" />
+    <Compile Include="Models\Tarea.cs" />
     <Compile Include="Models\TipoArchivo.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />

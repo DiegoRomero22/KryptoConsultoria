@@ -3,13 +3,18 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Models
 {
     public class DetalleRegistros
     {
-        [ScaffoldColumn(false)]
+        public DetalleRegistros()
+        {
+            ofertaKrypto = new List<OfertaKrypto>();
+        }
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int IdDetalleRegistros { get; set; }
 
@@ -39,6 +44,10 @@ namespace Krypto.Models
         public int NumeroPaginasExtractoBancario { get; set; }
 
         public int NumeroCajaMenores { get; set; }
+
+        //Relación.
+        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
+
 
     }
 }

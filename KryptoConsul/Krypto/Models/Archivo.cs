@@ -4,19 +4,15 @@ using System.ComponentModel.DataAnnotations;
 using System.Drawing;
 using System.Linq;
 using System.Web;
+using Krypto.Logic;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Models
 {
     public class Archivo
     {
-        public Archivo()
-        {
-            this.TArchivo = new HashSet<TipoArchivo>();
-
-            cliente = new List<Cliente>();
-        }
-        [ScaffoldColumn(false)]
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdArchivo { get; set; }
 
         [Required]
@@ -26,8 +22,9 @@ namespace Krypto.Models
         public string rutaArchivo { get; set; }
 
         //Relación con Cliente.
-       public virtual ICollection<TipoArchivo> TArchivo { get; set; }
-
-        public virtual ICollection<Cliente> cliente { get; set; }
+        public virtual ICollection<Usuario> usuario { get; set; }
+        public virtual ICollection<TipoArchivo> tipoArchivo { get; set; }
+     
+        
     }
 }

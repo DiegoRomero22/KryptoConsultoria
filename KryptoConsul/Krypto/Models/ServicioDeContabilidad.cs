@@ -10,6 +10,11 @@ namespace Krypto.Models
 {
     public class ServicioDeContabilidad
     {
+        
+        public ServicioDeContabilidad ()
+        {
+            ofertaKrypto = new List<OfertaKrypto>();
+        }
         [ScaffoldColumn(false)]
         [Key]
 
@@ -52,6 +57,10 @@ namespace Krypto.Models
         public DateTime FechaRenovacionMercantil { get; set; }
                
         public DateTime FechaCorteFinanciero { get; set; }
-        
+
+        //Relacion.
+        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
+
+
     }
 }

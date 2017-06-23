@@ -188,7 +188,7 @@
                 <td style="width: 59px">&nbsp;</td>
                 <td class="modal-sm" style="width: 302px">&nbsp;</td>
                 <td style="width: 250px">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="BtnGuardar" runat="server" ForeColor="White" BackColor="#BF0D11" Text="Guardar" Width="118px" />
+                    <asp:Button ID="BtnGuardar" runat="server" ForeColor="White" BackColor="#BF0D11" Text="Guardar" Width="118px" OnClick="BtnGuardar_Click" />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>

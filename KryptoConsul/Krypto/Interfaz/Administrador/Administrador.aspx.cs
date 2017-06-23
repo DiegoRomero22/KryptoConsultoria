@@ -18,5 +18,15 @@ namespace Krypto.Interfaz.Administrador
         {
             Response.Redirect("PlantillaOfertaKrypto.aspx");
         }
+
+        protected void BtnAgregarLider_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarLider.aspx");
+        }
+
+        protected void BtnVerClientes_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

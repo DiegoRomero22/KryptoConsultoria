@@ -4,19 +4,14 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Krypto.Logic;
-
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Models
 {
     public class GrupoDeTrabajo
     {
-        public GrupoDeTrabajo()
-        {
-            usuario = new List<Usuario>();
-        }
-        [ScaffoldColumn(false)]
         [Key]
-
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int IdGrupoTrabajo { get; set; }
 
         [Required,StringLength(100), Display(Name ="NombreCompleto")]
@@ -46,8 +41,6 @@ namespace Krypto.Models
         
 
         //Relación con Cargo.
-        public virtual Cargo cargo { get; set; }
-
-        public virtual ICollection<Usuario> usuario { get; set; }
+ 
     }
 }

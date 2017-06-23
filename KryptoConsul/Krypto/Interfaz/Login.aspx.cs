@@ -5,7 +5,6 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Krypto.Logic;
-
 namespace Krypto.Interfaz
 {
     public partial class Login : System.Web.UI.Page
@@ -15,7 +14,6 @@ namespace Krypto.Interfaz
         {
 
         }
-
         //Metodo que limpia las cajas de texto.
         public void limpiarCasillas()
         {
@@ -23,8 +21,7 @@ namespace Krypto.Interfaz
             TxtContraseña.Text = "";
 
         }
-
-        protected void BtnIniciarSesion_Click(object sender, EventArgs e)
+        protected void BtnIniciarSesion_Click1(object sender, EventArgs e)
         {
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
             //Valida el Usuario y contraseña segun el rol
@@ -33,7 +30,7 @@ namespace Krypto.Interfaz
                 //Rol Administrador.
                 Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
-                Response.Redirect("");
+                Response.Redirect("Administrador/AgregarLider.aspx");
 
             }
             //Rol Lider.
@@ -41,7 +38,7 @@ namespace Krypto.Interfaz
             {
                 Session["Lider"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("PaginaAdministrador.aspx");
+                Response.Redirect("Administrador/Administrador.aspx");
             }
             //Rol Usuario.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
@@ -74,5 +71,3 @@ namespace Krypto.Interfaz
         }
     }
 }    
-        
-            

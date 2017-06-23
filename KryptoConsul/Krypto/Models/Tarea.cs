@@ -8,23 +8,17 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Models
 {
-    public class Rol
+    public class Tarea
     {
-          
+  
+     
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int IdRol { get; set; }
+        public int IdTarea { get; set; }
+        [StringLength(200), Display(Name =("Descripcion"))]
+        public string Descripcion { get; set; }
 
-        [Required, StringLength(100), Display(Name = "Name Role")]
-        public string NombreRol { get; set; }    
-      
-        [Required]
-        public bool Activo { get; set; }
-
-
-
-        //Relación con Usuario
-     
-      
-    }   
+        //Relaciones.
+        public virtual ICollection<Usuario> usuario { get; set; }
+    }
 }

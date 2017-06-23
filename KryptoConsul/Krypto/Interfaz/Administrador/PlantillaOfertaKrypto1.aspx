@@ -310,7 +310,7 @@
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BtnSiguiente1" runat="server" CssClass="btn" Text="Siguiente" BackColor="#bf0d11" ForeColor="White"  Width="160px" />
+                <asp:Button ID="BtnSiguiente1" runat="server" CssClass="btn" Text="Siguiente" BackColor="#bf0d11" ForeColor="White"  Width="160px" OnClick="BtnSiguiente1_Click" />
             </td>
             <td>
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;

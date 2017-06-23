@@ -369,7 +369,7 @@
             <td style="width: 721px">&nbsp;</td>
             <td colspan="4">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BtnSiguiente2" runat="server" CssClass="btn" BackColor="#bf0d11" ForeColor="White" Text="Siguiente" Width="145px" />
+                <asp:Button ID="BtnSiguiente2" runat="server" CssClass="btn" BackColor="#bf0d11" ForeColor="White" Text="Siguiente" Width="145px" OnClick="BtnSiguiente2_Click" />
             </td>
             <td style="width: 16px">&nbsp;</td>
         </tr>

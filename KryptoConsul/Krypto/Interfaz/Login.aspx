@@ -36,7 +36,7 @@
                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtContraseña" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
                     
            </div>
-               <asp:Button ID="BtnIniciarSesion" runat="server" Text="Iniciar Sesión" class="btn" Width="276px" OnClick="BtnIniciarSesion_Click" BackColor="#BF0D11" CssClass="btn" ForeColor="White" />
+               <asp:Button ID="BtnIniciarSesion" runat="server" Text="Iniciar Sesión" class="btn" Width="276px"  BackColor="#BF0D11" CssClass="btn" ForeColor="White" OnClick="BtnIniciarSesion_Click1" />
                <asp:Label ID="LblResultado" runat="server" Text="No se pudo iniciar Sesión correctamente. Por favor vuelva a intentarlo." Visible="False" CssClass="alert-danger"></asp:Label>
            </td>
            <td style="width: 6px">
@@ -76,10 +76,6 @@
            </div>
 
        </div>
-       </div>     
-
-<%--    Panel login
-      <div class="clearfix mobile has-sms" style="padding:200px 10px; background-color:coral">
-          </div>--%>
+       </div>   
 
 </asp:Content>
