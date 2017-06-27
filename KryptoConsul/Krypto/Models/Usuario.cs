@@ -44,5 +44,6 @@ namespace Krypto.Logic
         public virtual ICollection<Proyecto> proyecto { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
         public virtual ICollection<Tarea> tarea { get; set; }
+        public virtual ICollection<OfertaKrypto> ofeteKrypto { get; set; }
     }
 }

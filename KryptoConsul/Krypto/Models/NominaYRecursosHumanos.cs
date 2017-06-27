@@ -14,6 +14,7 @@ namespace Krypto.Models
             ofertaKrypto = new List<OfertaKrypto>();
         }
         [Key]
+
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
         public int IdNominaYRecursosH { get; set; }
@@ -35,6 +36,5 @@ namespace Krypto.Models
 
         //Relación.
         public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
-
     }
 }

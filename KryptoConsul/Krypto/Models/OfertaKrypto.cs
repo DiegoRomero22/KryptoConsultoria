@@ -51,5 +51,6 @@ namespace Krypto.Models
         public virtual DetalleRegistros detalleRegistros { get; set; }
         public virtual ServicioDeContabilidad servicioDeContabilidad { get; set; }
         public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
+        public virtual Usuario usuario { get; set; }
     }
 }
