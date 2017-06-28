@@ -9,6 +9,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 namespace Krypto.Logic
 {
     public class Usuario
+
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -42,8 +43,8 @@ namespace Krypto.Logic
         public virtual Rol Rol { get; set; }
 
         public virtual ICollection<Proyecto> proyecto { get; set; }
-        public virtual ICollection<Archivo> archivo { get; set; }
+      /*  public virtual ICollection<Archivo> archivo { get; set;} */
         public virtual ICollection<Tarea> tarea { get; set; }
-        public virtual ICollection<OfertaKrypto> ofeteKrypto { get; set; }
+        public virtual OfertaKrypto ofertaKrypto { get; set; }
     }
 }
