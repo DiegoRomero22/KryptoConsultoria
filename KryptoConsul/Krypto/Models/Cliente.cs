@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
+using Krypto.Logic;
 
 namespace Krypto.Models
 {
@@ -41,7 +42,7 @@ namespace Krypto.Models
         //Relación.
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
-
-    
+        public virtual Proyecto proyecto { get; set; }
+        
     }
 }

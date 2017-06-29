@@ -18,35 +18,7 @@ namespace Krypto.Interfaz.Administrador
 
         protected void DDLTipoArchivo_SelectedIndexChanged(object sender, EventArgs e)
         { 
-        //{
-        //    if (DDLTipoArchivo.SelectedValue == "1")
-        //    {
-        //        FUImagen.Enabled = true;
-        //        FUExcel.Enabled = false;
-        //        FUPDF.Enabled = false;
-        //        FUWord.Enabled = false;
-        //    }
-        //    else if (DDLTipoArchivo.SelectedValue == "2")
-        //    {
-        //        FUExcel.Enabled = true;
-        //        FUImagen.Enabled = false;
-        //        FUPDF.Enabled = false;
-        //        FUWord.Enabled = false;
-        //    }
-        //    else if (DDLTipoArchivo.SelectedValue == "3")
-        //    {
-        //        FUWord.Enabled = true;
-        //        FUImagen.Enabled = false;
-        //        FUPDF.Enabled = false;
-        //        FUExcel.Enabled = false;
-        //    }
-        //    else if (DDLTipoArchivo.SelectedValue == "4")
-        //    {
-        //        FUPDF.Enabled = true;
-        //        FUImagen.Enabled = false;
-        //        FUExcel.Enabled = false;
-        //        FUWord.Enabled = false;
-        //    }
+        
         }
 
         protected void btnAgregar_Click(object sender, EventArgs e)

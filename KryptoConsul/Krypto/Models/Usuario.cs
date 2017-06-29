@@ -41,10 +41,12 @@ namespace Krypto.Logic
         public int RolId { get; set; }
 
         public virtual Rol Rol { get; set; }
-
-        public virtual ICollection<Proyecto> proyecto { get; set; }
-      /*  public virtual ICollection<Archivo> archivo { get; set;} */
+        
         public virtual ICollection<Tarea> tarea { get; set; }
         public virtual OfertaKrypto ofertaKrypto { get; set; }
+
+
+
+
     }
 }

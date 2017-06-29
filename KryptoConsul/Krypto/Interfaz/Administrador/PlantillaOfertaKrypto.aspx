@@ -140,7 +140,7 @@
                 <asp:Label ID="LblTelefono" runat="server" Text="TELÉFONO:"></asp:Label>
             </td>
             <td style="width: 329px">
-                <asp:TextBox ID="TxtTelefono" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="TxtTelefono" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
             </td>
             <td style="width: 184px" class="modal-sm">
                 &nbsp;</td>
@@ -232,7 +232,7 @@
                 <asp:Label ID="LblNumeroCelular" runat="server" Text="NIÚMERO CELULAR:"></asp:Label>
             </td>
             <td style="width: 329px">
-                <asp:TextBox ID="TxtNumeroCelular" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="TxtNumeroCelular" runat="server" CssClass="form-control" TextMode="Phone"></asp:TextBox>
             </td>
             <td style="width: 184px" class="modal-sm">
                 &nbsp;</td>
@@ -255,7 +255,7 @@
                 <asp:Label ID="LblEmail" runat="server" Text="EMAIL:"></asp:Label>
             </td>
             <td style="width: 329px">
-                <asp:TextBox ID="TxtEmail" runat="server" CssClass="form-control" ></asp:TextBox>
+                <asp:TextBox ID="TxtEmail" runat="server" CssClass="form-control" TextMode="Email" ></asp:TextBox>
             </td>
             <td style="width: 184px" class="modal-sm">
                 &nbsp;</td>
@@ -278,7 +278,7 @@
                 <asp:Label ID="LblFecha" runat="server" Text="FECHA:"></asp:Label>
             </td>
             <td style="width: 329px">
-                <asp:TextBox ID="TxtFecha" runat="server" CssClass="form-control"></asp:TextBox>
+                <asp:TextBox ID="TxtFecha" runat="server" CssClass="form-control" TextMode="Date"></asp:TextBox>
             </td>
             <td style="width: 184px" class="modal-sm">
                 &nbsp;</td>

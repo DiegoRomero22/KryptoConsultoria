@@ -31,7 +31,6 @@ namespace Krypto.Interfaz
                 Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
                 Response.Redirect("Administrador/AgregarLider.aspx");
-
             }
             //Rol Lider.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)

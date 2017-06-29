@@ -20,6 +20,7 @@ namespace Krypto.Models
         public int Horas { get; set; }
 
         //Relacion
-        public virtual ICollection<Usuario> usuario { get; set; }
+        public virtual ICollection<Cliente> cliente { get; set; }
+    
     }
 }

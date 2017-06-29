@@ -225,6 +225,7 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -252,6 +253,7 @@
     <Content Include="Interfaz\Report_Admin.aspx" />
     <Content Include="Interfaz\RolAlfa.aspx" />
     <Content Include="Interfaz\RolUsuario.aspx" />
+    <Content Include="Interfaz\VerProyecto.aspx" />
     <Content Include="Scripts\ai.0.22.9-build00167.js" />
     <Content Include="Scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -546,7 +548,15 @@
     <Compile Include="Interfaz\RolUsuario.aspx.designer.cs">
       <DependentUpon>RolUsuario.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\VerProyecto.aspx.cs">
+      <DependentUpon>VerProyecto.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\VerProyecto.aspx.designer.cs">
+      <DependentUpon>VerProyecto.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Logic\ArchivoBLL.cs" />
+    <Compile Include="Logic\OfertaKryptoBLL.cs" />
     <Compile Include="Logic\UsuarioBLL.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />

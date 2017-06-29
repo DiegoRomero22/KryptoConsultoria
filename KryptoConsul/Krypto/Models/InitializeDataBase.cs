@@ -40,13 +40,7 @@ namespace Krypto.Models
                     IdRol = 3,
                     NombreRol = "Usuario",
                     Activo = true
-                },
-                new Rol
-                {
-                    IdRol = 4,
-                    NombreRol = "Cliente",
-                    Activo = true
-                },                
+                },                              
             };
             return rol;
         }

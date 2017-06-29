@@ -30,6 +30,13 @@ namespace Krypto.Logic
             }
           
         }
+        public List<Archivo> Obtenerarchivoa()
+        {
+            KryptoContext context = new KryptoContext();
+            var mostrararchivo = from archiv in context.Archivo
+                                 select archiv;
+            return mostrararchivo.ToList();
+        }       
     }
 
 }

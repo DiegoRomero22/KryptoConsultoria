@@ -52,5 +52,6 @@ namespace Krypto.Models
         public virtual ServicioDeContabilidad servicioDeContabilidad { get; set; }
         public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
         public virtual ICollection<Usuario> usuario { get; set; }
+
     }
 }
