@@ -45,7 +45,10 @@
                 .</td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtTipoSociedad" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtTipoSociedad" CssClass="form-control" runat="server" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtTipoSociedad" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
+                <br />
             </td>
             <td>
                 <asp:Label ID="LblTiposociedad2" runat="server" Text="Limitada, Sociedad Anónima, Sociedad por Acciones Simplificada (SAS)"></asp:Label>
@@ -68,7 +71,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TxtObjetoSocial" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtObjetoSocial" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtObjetoSocial" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -89,7 +94,8 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtFechaConstitucion" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtFechaConstitucion" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtFechaConstitucion" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -110,7 +116,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator8" runat="server" ControlToValidate="TxtNumeroSucursales" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtNumeroSucursales" CssClass="form-control" runat="server"></asp:TextBox>
+            &nbsp;<asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtNumeroSucursales" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -131,7 +139,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator9" runat="server" ControlToValidate="TxtlVentasAnuales" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtlVentasAnuales" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TxtlVentasAnuales" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -152,7 +162,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TxtSoftwareQueUtiliza" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtSoftwareQueUtiliza" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TxtSoftwareQueUtiliza" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -173,7 +185,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator4" runat="server" ControlToValidate="TxtModulosLicenciados" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtModulosLicenciados" CssClass="form-control" runat="server" ></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TxtModulosLicenciados" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>
                 <asp:Label ID="LblModulosLicenciados2" runat="server" Text="Facturación / Nómina / Cartera / Invbentarios / Proveeodres / Contabilidad / etc"></asp:Label>
@@ -196,7 +210,9 @@
             <td style="width: 30px">
                 &nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator10" runat="server" ControlToValidate="TxtProductosClasificados" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtProductosClasificados" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TxtProductosClasificados" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -216,7 +232,9 @@
             </td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator6" runat="server" ControlToValidate="TxtEstadoDIAN" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtEstadoDIAN" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ControlToValidate="TxtEstadoDIAN" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>
                 <asp:Label ID="LblEstadoDIAN2" runat="server" Text="Reporte de cómo están actualmente en reporte y pagos a la DIAN."></asp:Label>
@@ -238,7 +256,9 @@
             </td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
+                <asp:RegularExpressionValidator ID="RegularExpressionValidator7" runat="server" ControlToValidate="TxtEstadoSecretariaHacienda" CssClass="alert-danger" ErrorMessage="Solo letras." ValidationExpression="^[a-zA-Z ]*$"></asp:RegularExpressionValidator>
                 <asp:TextBox ID="TxtEstadoSecretariaHacienda" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ControlToValidate="TxtEstadoSecretariaHacienda" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>
                 <asp:Label ID="LblEstadoSecretariaH2" runat="server" Text="Reporte de cómo están actualmente en reporte y pagos a Secretaría de Hacienda."></asp:Label>
@@ -260,7 +280,8 @@
             </td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtFechaRenovacionMercantil" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtFechaRenovacionMercantil" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator11" runat="server" ControlToValidate="TxtFechaRenovacionMercantil" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -280,7 +301,8 @@
             </td>
             <td style="width: 30px">&nbsp;</td>
             <td style="width: 287px" class="modal-sm">
-                <asp:TextBox ID="TxtFechaCorteFinanciero" CssClass="form-control" runat="server"></asp:TextBox>
+                <asp:TextBox ID="TxtFechaCorteFinanciero" CssClass="form-control" runat="server" TextMode="Date"></asp:TextBox>
+                <asp:RequiredFieldValidator ID="RequiredFieldValidator12" runat="server" ControlToValidate="TxtFechaCorteFinanciero" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

@@ -16,34 +16,50 @@ namespace Krypto.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
-        public int IdDetalleRegistros { get; set; }
+        [Required]
+        public Int16 IdDetalleRegistros { get; set; }
 
-        public int Numeroclientes { get; set; }
-        public int FacturasVenta { get; set; }
+        [Required]
+        public Int16 Numeroclientes { get; set; }
 
-        public int CantidadRemisiones { get; set; }
+        [Required]
+        public Int16 FacturasVenta { get; set; }
 
-        public int CantidadOrdenes { get; set; }
+        [Required]
+        public Int16 CantidadRemisiones { get; set; }
 
-        public int NumeroProveedores { get; set; }
+        [Required]
+        public Int16 CantidadOrdenes { get; set; }
 
-        public int FacturasCompras { get; set; }
+        [Required]
+        public Int16 NumeroProveedores { get; set; }
 
-        public int ComprobantesEgreso { get; set; }
+        [Required]
+        public Int16 FacturasCompras { get; set; }
 
-        public int Reembolsos { get; set; }
+        [Required]
+        public Int16 ComprobantesEgreso { get; set; }
 
-        public int ReembolsosGastosViaje { get; set; }
+        [Required]
+        public Int16 Reembolsos { get; set; }
 
-        public int RecibosCaja { get; set; }
+        [Required]
+        public Int16 ReembolsosGastosViaje { get; set; }
 
-        public int LegalizacionAnticipos { get; set; }
+        [Required]
+        public Int16 RecibosCaja { get; set; }
 
-        public int NumerocuentasBancaria { get; set; }
+        [Required]
+        public Int16 LegalizacionAnticipos { get; set; }
 
-        public int NumeroPaginasExtractoBancario { get; set; }
+        [Required]
+        public Int16 NumerocuentasBancaria { get; set; }
 
-        public int NumeroCajaMenores { get; set; }
+        [Required]
+        public Int16 NumeroPaginasExtractoBancario { get; set; }
+
+        [Required]
+        public Int16 NumeroCajaMenores { get; set; }
 
         //Relación.
         public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }

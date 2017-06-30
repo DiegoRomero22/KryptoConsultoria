@@ -17,45 +17,47 @@ namespace Krypto.Models
         }
         [ScaffoldColumn(false)]
         [Key]
-
+        [Required]
         public int IdServicioContabilidad { get; set; }
 
-        [StringLength(50), Display(Name =("TipoDeSociedad"))]
+        [Required StringLength(50), Display(Name =("TipoDeSociedad"))]
         public string TipoSociedad { get; set; }
 
 
-        [StringLength(50), Display(Name =("ObjetoSocial"))]
+        [Required StringLength(50), Display(Name =("ObjetoSocial"))]
         public string ObjetoSocial { get; set; }
 
-                
+        [Required]
         public DateTime FechaConstitucion { get; set; }
 
+        [Required]
         public int NumeroSucursales { get; set; }
-    
-        public Int32 VentasAnuales { get; set; }
 
-        [StringLength(50), Display(Name = ("SoftwareQueUtiliza"))]
+        [Required]
+        public Int64 VentasAnuales { get; set; }
+
+        [Required StringLength(50), Display(Name = ("SoftwareQueUtiliza"))]
         public string SoftwareQueUtiliza { get; set; }
 
 
-        [StringLength(50), Display(Name = ("ModulosLicenciados"))]
+        [Required StringLength(50), Display(Name = ("ModulosLicenciados"))]
         public string ModulosLicenciados { get; set; }
 
-
-        [StringLength(50), Display(Name = ("ProductosClasificados"))]
-        public string ProductosClasificados { get; set; }    
+        [Required]
+        public int ProductosClasificados { get; set; }    
            
 
-        [StringLength(50), Display(Name = ("EstadoDIAN"))]
+        [Required StringLength(50), Display(Name = ("EstadoDIAN"))]
         public string EstadoDIAN { get; set; }
 
 
-        [StringLength(50), Display(Name = ("EstadoSecretariaHacienda"))]
+        [Required StringLength(50), Display(Name = ("EstadoSecretariaHacienda"))]
         public string EstadoSecretariaHacienda { get; set; }
 
-                
+        [Required]
         public DateTime FechaRenovacionMercantil { get; set; }
-               
+
+        [Required]
         public DateTime FechaCorteFinanciero { get; set; }
 
         //Relacion.

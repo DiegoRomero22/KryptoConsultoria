@@ -48,6 +48,7 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtNumeroEmpleados" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtNumeroEmpleados" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -65,6 +66,8 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtPrestacionServicio" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -82,6 +85,8 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtNomina" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>
@@ -101,6 +106,8 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtSeguridadSocial" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>
@@ -120,6 +127,8 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtPagoNomina" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>
@@ -139,6 +148,8 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtIngresosRetiroMensuales" runat="server" CssClass="form-control"></asp:TextBox>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <br />
                 </td>
                 <td>&nbsp;</td>
                 <td>

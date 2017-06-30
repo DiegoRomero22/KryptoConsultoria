@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Krypto.Logic;
 
 namespace Krypto.Interfaz.Administrador
 {
@@ -16,7 +17,13 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnGuardar_Click(object sender, EventArgs e)
         {
-            Response.Redirect("Administrador.aspx");
+            PlantillasKryptoBLL pKryptoBLL = new PlantillasKryptoBLL();
+            if (pKryptoBLL.plantillaKrypto3(Convert.ToInt64(TxtNumeroEmpleados.Text), Convert.ToInt64(TxtPrestacionServicio.Text), TxtPagoNomina.Text, TxtSeguridadSocial.Text, TxtPagoNomina.Text, Convert.ToInt64(TxtIngresosRetiroMensuales.Text), TxtObservaciones.Text))
+            {
+                Response.Write("<script>alert('Formulario registrado correctamente')</script>");
+                Response.Redirect("../Cliente/Cliente.aspx");
+            }
+         
         }
     }
 }

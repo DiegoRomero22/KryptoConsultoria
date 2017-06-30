@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto.Interfaz {
+namespace Krypto.Interfaz.Cliente {
     
     
-    public partial class Client_Interface {
+    public partial class Cliente {
         
         /// <summary>
         /// Control BtnProyectos.

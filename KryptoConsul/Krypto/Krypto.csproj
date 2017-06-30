@@ -245,7 +245,7 @@
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
     <Content Include="Interfaz\AgregarProyecto.aspx" />
-    <Content Include="Interfaz\Client_Interface.aspx" />
+    <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />
@@ -499,12 +499,12 @@
     <Compile Include="Interfaz\AgregarProyecto.aspx.designer.cs">
       <DependentUpon>AgregarProyecto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Client_Interface.aspx.cs">
-      <DependentUpon>Client_Interface.aspx</DependentUpon>
+    <Compile Include="Interfaz\Cliente\Cliente.aspx.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\Client_Interface.aspx.designer.cs">
-      <DependentUpon>Client_Interface.aspx</DependentUpon>
+    <Compile Include="Interfaz\Cliente\Cliente.aspx.designer.cs">
+      <DependentUpon>Cliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -556,7 +556,7 @@
       <DependentUpon>VerProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\ArchivoBLL.cs" />
-    <Compile Include="Logic\OfertaKryptoBLL.cs" />
+    <Compile Include="Logic\PlantillasKryptoBLL.cs" />
     <Compile Include="Logic\UsuarioBLL.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />

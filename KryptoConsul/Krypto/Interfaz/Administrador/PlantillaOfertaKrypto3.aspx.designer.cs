@@ -40,6 +40,15 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.TextBox TxtNumeroEmpleados;
         
         /// <summary>
+        /// Control RequiredFieldValidator1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator1;
+        
+        /// <summary>
         /// Control lblPrestacionServicio.
         /// </summary>
         /// <remarks>
@@ -58,6 +67,15 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.TextBox TxtPrestacionServicio;
         
         /// <summary>
+        /// Control RequiredFieldValidator2.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator2;
+        
+        /// <summary>
         /// Control LblNomina.
         /// </summary>
         /// <remarks>
@@ -74,6 +92,15 @@ namespace Krypto.Interfaz.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtNomina;
+        
+        /// <summary>
+        /// Control RequiredFieldValidator3.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator3;
         
         /// <summary>
         /// Control LblNominaSiNo.
@@ -103,6 +130,15 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.TextBox TxtSeguridadSocial;
         
         /// <summary>
+        /// Control RequiredFieldValidator4.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator4;
+        
+        /// <summary>
         /// Control LblSeguridadSocialSiNo.
         /// </summary>
         /// <remarks>
@@ -130,6 +166,15 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.TextBox TxtPagoNomina;
         
         /// <summary>
+        /// Control RequiredFieldValidator5.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator5;
+        
+        /// <summary>
         /// Control LblPagoNominaQuincenalMensual.
         /// </summary>
         /// <remarks>
@@ -155,6 +200,15 @@ namespace Krypto.Interfaz.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtIngresosRetiroMensuales;
+        
+        /// <summary>
+        /// Control RequiredFieldValidator6.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator RequiredFieldValidator6;
         
         /// <summary>
         /// Control LblIngresosRetiroMensualesPromedios.

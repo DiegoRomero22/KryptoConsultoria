@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Client_Interface.aspx.cs" Inherits="Krypto.Interfaz.Client_Interface" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Cliente.aspx.cs" Inherits="Krypto.Interfaz.Cliente.Cliente" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
     <table class="well bs-component" style="border-style: double; border-color: inherit; border-width: medium; width: 561px; margin-left: 284px; background-color:#f4f4f4" >
@@ -130,7 +130,5 @@
             <td>&nbsp;</td>
         </tr>
     </table>
-
-
 
 </asp:Content>

@@ -16,22 +16,28 @@ namespace Krypto.Models
         [Key]
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [Required]
+        public Int64 IdNominaYRecursosH { get; set; }
 
-        public int IdNominaYRecursosH { get; set; }
-        public int EmpleadosContratacionDirecta { get; set; }
-        public int EmpleadosPrestacionServicio { get; set; }
+        [Required]
+        public Int64 EmpleadosContratacionDirecta { get; set; }
 
-        [StringLength(5), Display(Name =("LiquidacionNomina"))]
+        [Required]
+        public Int64 EmpleadosPrestacionServicio { get; set; }
+
+        [Required StringLength(5), Display(Name =("LiquidacionNomina"))]
         public string LiquidacionNomina { get; set; }
 
-        [StringLength(5), Display(Name = ("LiquidacionSeguridadSocial"))]
+        [Required StringLength(5), Display(Name = ("LiquidacionSeguridadSocial"))]
         public string LiquidacionSeguridadSocial { get; set; }
 
-        [StringLength(15), Display(Name = ("PagoNimina"))]
+        [Required StringLength(15), Display(Name = ("PagoNimina"))]
         public string PagoNomina { get; set; }
 
-        public int IngresosORetiros { get; set; }
-        [StringLength(200), Display(Name =("Observaciones"))]
+        [Required]
+        public Int64 IngresosORetiros { get; set; }
+
+        [Required StringLength(200), Display(Name =("Observaciones"))]
         public string Observaciones { get; set; }
 
         //Relación.

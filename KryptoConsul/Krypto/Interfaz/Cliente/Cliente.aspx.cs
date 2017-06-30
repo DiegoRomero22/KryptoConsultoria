@@ -5,15 +5,13 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 
-namespace Krypto.Interfaz
+namespace Krypto.Interfaz.Cliente
 {
-    public partial class Client_Interface : System.Web.UI.Page
+    public partial class Cliente : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
 
         }
-
-       
     }
 }

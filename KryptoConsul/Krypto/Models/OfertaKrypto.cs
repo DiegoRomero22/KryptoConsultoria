@@ -49,9 +49,10 @@ namespace Krypto.Models
         public virtual Cliente cliente { get; set; }
 
         public virtual DetalleRegistros detalleRegistros { get; set; }
-        public virtual ServicioDeContabilidad servicioDeContabilidad { get; set; }
+      
         public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
         public virtual ICollection<Usuario> usuario { get; set; }
+        public virtual ServicioDeContabilidad servicioDeContabilidad { get; set; }
 
     }
 }
