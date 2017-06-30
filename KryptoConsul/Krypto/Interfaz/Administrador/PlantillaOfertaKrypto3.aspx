@@ -66,7 +66,7 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtPrestacionServicio" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtNumeroEmpleados" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>
