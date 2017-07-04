@@ -244,6 +244,7 @@
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
+    <Content Include="Interfaz\Administrador\VerClientes.aspx" />
     <Content Include="Interfaz\AgregarProyecto.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\Login.aspx" />
@@ -491,6 +492,13 @@
     </Compile>
     <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.designer.cs">
       <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\VerClientes.aspx.cs">
+      <DependentUpon>VerClientes.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\VerClientes.aspx.designer.cs">
+      <DependentUpon>VerClientes.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\AgregarProyecto.aspx.cs">
       <DependentUpon>AgregarProyecto.aspx</DependentUpon>

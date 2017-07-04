@@ -36,7 +36,9 @@
             <tr>
                 <td style="width: 59px">&nbsp;</td>
                 <td class="modal-sm" style="width: 302px">&nbsp;</td>
-                <td style="width: 250px">&nbsp;</td>
+                <td style="width: 250px">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" ControlToValidate="TxtNumeroEmpleados" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
+                </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
@@ -65,8 +67,9 @@
                     <asp:Label ID="lblPrestacionServicio" runat="server" Text="Número de Empleados por prestación de servicios."></asp:Label>
                 </td>
                 <td style="width: 250px">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator2" runat="server" ControlToValidate="TxtPrestacionServicio" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="TxtPrestacionServicio" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtNumeroEmpleados" CssClass="alert-danger"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtPrestacionServicio" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>
@@ -85,7 +88,7 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtNomina" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtNomina" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>
@@ -106,7 +109,7 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtSeguridadSocial" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtSeguridadSocial" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>
@@ -127,7 +130,7 @@
                 </td>
                 <td style="width: 250px">
                     <asp:TextBox ID="TxtPagoNomina" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtPagoNomina" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>
@@ -147,8 +150,9 @@
                     <asp:Label ID="LblIngresosRetiroMensuales" runat="server" Text="Promedio de ingresos o retiros mensuales."></asp:Label>
                 </td>
                 <td style="width: 250px">
+                    <asp:RegularExpressionValidator ID="RegularExpressionValidator3" runat="server" ControlToValidate="TxtIngresosRetiroMensuales" CssClass="alert-danger" ErrorMessage="Solo Numeros." ValidationExpression="^[0-9]*"></asp:RegularExpressionValidator>
                     <asp:TextBox ID="TxtIngresosRetiroMensuales" runat="server" CssClass="form-control"></asp:TextBox>
-                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="RequiredFieldValidator"></asp:RequiredFieldValidator>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtIngresosRetiroMensuales" CssClass="alert-danger"></asp:RequiredFieldValidator>
                     <br />
                 </td>
                 <td>&nbsp;</td>

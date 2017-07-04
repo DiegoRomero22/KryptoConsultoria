@@ -25,10 +25,10 @@ namespace Krypto.Models
         [Required]
         public Int64 EmpleadosPrestacionServicio { get; set; }
 
-        [Required StringLength(5), Display(Name =("LiquidacionNomina"))]
+        [Required StringLength(3), Display(Name =("LiquidacionNomina"))]
         public string LiquidacionNomina { get; set; }
 
-        [Required StringLength(5), Display(Name = ("LiquidacionSeguridadSocial"))]
+        [Required StringLength(3), Display(Name = ("LiquidacionSeguridadSocial"))]
         public string LiquidacionSeguridadSocial { get; set; }
 
         [Required StringLength(15), Display(Name = ("PagoNimina"))]

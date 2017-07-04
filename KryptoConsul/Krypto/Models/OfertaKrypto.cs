@@ -45,7 +45,10 @@ namespace Krypto.Models
         [Required]
         public DateTime Fecha { get; set; }
 
+        public int IdCliente { get; set; }
+
         //Relación
+        [ForeignKey("IdCliente")]
         public virtual Cliente cliente { get; set; }
 
         public virtual DetalleRegistros detalleRegistros { get; set; }

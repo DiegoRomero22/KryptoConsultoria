@@ -40,6 +40,7 @@ namespace Krypto.Models
         public string Contraseña { get; set; }
 
         //Relación.
+
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
         public virtual Proyecto proyecto { get; set; }
