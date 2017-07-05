@@ -12,7 +12,7 @@ namespace Krypto.Interfaz
         public static int? usuarioEstaLogueado;
         protected void Page_Load(object sender, EventArgs e)
         {
-
+       
         }
         //Metodo que limpia las cajas de texto.
         public void limpiarCasillas()
@@ -30,14 +30,14 @@ namespace Krypto.Interfaz
                 //Rol Administrador.
                 Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
-                Response.Redirect("Administrador/AgregarLider.aspx");
+                Response.Redirect("Administrador/Administrador.aspx");
             }
             //Rol Lider.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
                 Session["Lider"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("Administrador/Administrador.aspx");
+                Response.Redirect("Administrador/Lider.aspx");
             }
             //Rol Usuario.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)

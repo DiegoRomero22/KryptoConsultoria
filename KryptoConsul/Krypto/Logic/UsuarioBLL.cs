@@ -111,5 +111,9 @@ namespace Krypto.Logic
             }
         }
         
+        public void agregarCliente ()
+        {
+
+        }
     }
 }

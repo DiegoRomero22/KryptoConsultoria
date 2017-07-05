@@ -239,6 +239,7 @@
     <Content Include="image\LogoKrypto.png" />
     <Content Include="Interfaz\Administrador\Administrador.aspx" />
     <Content Include="Interfaz\Administrador\AgregarArchivos.aspx" />
+    <Content Include="Interfaz\Administrador\AgregarCliente.aspx" />
     <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
@@ -457,6 +458,13 @@
     </Compile>
     <Compile Include="Interfaz\Administrador\AgregarArchivos.aspx.designer.cs">
       <DependentUpon>AgregarArchivos.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarCliente.aspx.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AgregarCliente.aspx.designer.cs">
+      <DependentUpon>AgregarCliente.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Administrador\AgregarLider.aspx.cs">
       <DependentUpon>AgregarLider.aspx</DependentUpon>

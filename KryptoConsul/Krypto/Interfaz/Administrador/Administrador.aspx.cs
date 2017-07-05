@@ -26,7 +26,7 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnVerClientes_Click(object sender, EventArgs e)
         {
-
+            Response.Redirect("VerClientes.aspx");
         }
     }
 }

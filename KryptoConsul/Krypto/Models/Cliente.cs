@@ -24,21 +24,14 @@ namespace Krypto.Models
         [Required]
         public string Documento { get; set; }
 
-        [StringLength(10), Display(Name ="Direccion")]    
-        public string Direccion { get; set; }
-
-        [Required]
-        public int Telefono { get; set; }
-
-        [Required, StringLength(20), Display(Name = "Ciudad")]
-        public string Ciudad { get; set; }        
-
         [Required, StringLength(50), Display(Name = "Email")]
         public string Email { get; set; }
 
         [Required, StringLength(50), Display(Name = "Contraseña")]
         public string Contraseña { get; set; }
 
+        [Required]
+        public bool Activo { get; set; }
         //Relación.
 
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }
