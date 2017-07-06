@@ -109,11 +109,7 @@ namespace Krypto.Logic
 
                 throw;
             }
-        }
-        
-        public void agregarCliente ()
-        {
-
-        }
+        }       
+       
     }
 }

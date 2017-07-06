@@ -25,15 +25,6 @@
         </tr>
         <tr>
             <td>&nbsp;</td>
-            <td>
-                <asp:Button ID="BtnOfertaKrypto" runat="server" CssClass="btn" Text="Oferta Krypto" ForeColor="White" BackColor="#bf0d11" Width="191px" OnClick="BtnOfertaKrypto_Click" />
-            </td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-            <td>&nbsp;</td>
-        </tr>
-        <tr>
-            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -74,7 +65,7 @@
         <tr>
             <td>&nbsp;</td>
             <td>
-                <asp:Button ID="BtnAgregarProyecto" runat="server" CssClass="btn" Text="Agregar Proyecto" ForeColor="White" Width="191px" BackColor="#bf0d11" />
+                <asp:Button ID="BtnAgregarProyecto" runat="server" CssClass="btn" Text="Agregar Proyecto" ForeColor="White" Width="191px" BackColor="#bf0d11" OnClick="BtnAgregarProyecto_Click" />
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

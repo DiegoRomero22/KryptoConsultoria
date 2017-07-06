@@ -74,7 +74,7 @@
         <div class="navbar navbar-inverse navbar-fixed" style="background-color:#ffffff; border:none">
                     <div class="container">
                         <div class="navbar-body" contenteditable="inherit">
-                            <asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="150" Height="95" ImageAlign="Left" OnClick="ImageButton2_Click"/>
+                            <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="150" Height="95" ImageAlign="Left" OnClick="ImageButton2_Click"  /></a>
                        
                         </div>
           

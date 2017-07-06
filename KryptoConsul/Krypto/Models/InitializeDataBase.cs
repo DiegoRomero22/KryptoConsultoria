@@ -38,9 +38,33 @@ namespace Krypto.Models
                 new Rol
                 {
                     IdRol = 3,
-                    NombreRol = "Usuario",
+                    NombreRol = "Cliente",
                     Activo = true
-                },                              
+                },
+                new Rol
+                {
+                    IdRol = 4,
+                    NombreRol = "Contador",
+                    Activo = true
+                },
+                new Rol
+                {
+                    IdRol = 5,
+                    NombreRol = "Nomina",
+                    Activo = true
+                },
+                 new Rol
+                {
+                    IdRol = 6,
+                    NombreRol = "Auxiliar Contable",
+                    Activo = true
+                },
+                  new Rol
+                {
+                    IdRol = 7,
+                    NombreRol = "Auditor",
+                    Activo = true
+                },
             };
             return rol;
         }

@@ -30,14 +30,15 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnSiguiente_Click(object sender, EventArgs e)
         {
+
             PlantillasKryptoBLL ofertaBLL = new PlantillasKryptoBLL();
-            if (ofertaBLL.guardarOferta(TxtRazonSocial.Text, TxtNit.Text, TxtDireccion.Text, Convert.ToInt16(TxtTelefono.Text), TxtCiudad.Text, TxtNombreContacto.Text, TxtCargoContacto.Text, Convert.ToInt32( TxtNumeroCelular.Text), TxtEmail.Text, Convert.ToDateTime(TxtFecha.Text)))
+            if (ofertaBLL.guardarOferta(TxtRazonSocial.Text, TxtNit.Text, TxtDireccion.Text, Convert.ToInt64(TxtTelefono.Text), TxtCiudad.Text, TxtNombreContacto.Text, TxtCargoContacto.Text, Convert.ToInt32(TxtNumeroCelular.Text), TxtEmail.Text, Convert.ToDateTime(TxtFecha.Text)))
             {
                 Response.Write("<script>alert('Formulario registrado corretamente')</script>");
                 limpiarCasillas();
                 Response.Redirect("PlantillaOfertaKrypto1.aspx");
             }
-           
+
         }
     }
 }

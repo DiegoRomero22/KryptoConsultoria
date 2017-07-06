@@ -13,15 +13,6 @@ namespace Krypto.Interfaz.Administrador {
     public partial class Administrador {
         
         /// <summary>
-        /// Control BtnOfertaKrypto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnOfertaKrypto;
-        
-        /// <summary>
         /// Control BtnVerClientes.
         /// </summary>
         /// <remarks>

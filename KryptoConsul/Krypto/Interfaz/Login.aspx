@@ -26,18 +26,19 @@
            <td style="width: 169px; " rowspan="4">
            <div class="form-group"  >
 
-             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email"></asp:TextBox>
+             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email" OnTextChanged="TxtUsuario_TextChanged" ></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtUsuario" CssClass="text-danger" ErrorMessage="Ingrese un correo."></asp:RequiredFieldValidator>
 
            </div>
            <div class="form-group">
        
-               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password"></asp:TextBox>
+               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password" OnTextChanged="TxtContraseña_TextChanged"></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtContraseña" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
                     
            </div>
                <asp:Button ID="BtnIniciarSesion" runat="server" Text="Iniciar Sesión"  Width="276px"  BackColor="#BF0D11" CssClass="btn" ForeColor="White" OnClick="BtnIniciarSesion_Click1" />
-               <asp:Label ID="LblResultado" runat="server" Text="No se pudo iniciar Sesión correctamente. Por favor vuelva a intentarlo." Visible="False" CssClass="alert-danger"></asp:Label>
+               <br />
+               <asp:Label ID="LblResultado" runat="server" Text="No se pudo iniciar sesión correctamente.<br/> Por favor vuelva a intentarlo." Visible="False" CssClass="alert-danger"></asp:Label>
            </td>
            <td style="width: 6px">
                &nbsp;</td>

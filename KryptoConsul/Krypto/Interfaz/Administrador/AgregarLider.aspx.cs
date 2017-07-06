@@ -43,7 +43,7 @@ namespace Krypto.Interfaz.Administrador
             {
                 Response.Write("<script>alert('Se registro correctamente')</script>");
                 limpiarCasillas();
-            }
+            }                     
         }
     }
 }

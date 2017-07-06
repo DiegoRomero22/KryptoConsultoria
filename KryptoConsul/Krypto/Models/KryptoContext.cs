@@ -36,7 +36,9 @@ namespace Krypto.Models
         public DbSet<NominaYRecursosHumanos> NominaYRecursosHumanos { get; set; }
 
         public DbSet<OfertaKrypto> ofertaKrypto { get; set; }
+
         public DbSet<Proyecto> proyecto { get; set; }
+
         public DbSet<Tarea> tarea { get; set; }
     }
 }

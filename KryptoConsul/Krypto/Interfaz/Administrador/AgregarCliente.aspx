@@ -5,21 +5,21 @@
     <table class="well bs-component" style="border-style: double; border-color: inherit; border-width: medium; width: 621px; margin-left: 223px; background-color:#f4f4f4" >
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px" rowspan="2">&nbsp;</td>
-            <td rowspan="2" style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td rowspan="2" style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px" rowspan="2">
                 
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 
-                <asp:FormView ID="FormView1" runat="server" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="414px" CellPadding="2" CssClass="well bs-component" ForeColor="#0066FF" GridLines="Vertical" Height="132px" HorizontalAlign="Justify"  style="margin-left: 75px; margin-right: 10px;"  >
+                <asp:FormView ID="FormView1" runat="server" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" DefaultMode="Insert" Width="414px" CellPadding="2" CssClass="well bs-component" ForeColor="#0066FF" GridLines="Vertical" Height="132px" HorizontalAlign="Justify"  style="margin-left: 54px; margin-right: 10px;"  >
                     <EditItemTemplate>
                         IdCliente:
                         <asp:Label ID="IdClienteLabel1" runat="server" Text='<%# Eval("IdCliente") %>' />
@@ -45,158 +45,130 @@
                     <InsertItemTemplate>
                         <table style="width:100%;">
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">Nombre Completo</td>
-                                <td style="width: 180px">
-                                    <asp:TextBox ID="NombreCompletoTextBox" runat="server" CssClass="btn" Text='<%# Bind("NombreCompleto") %>' />
+                                <td>&nbsp;</td>
+                                <td>Nombre Completo:</td>
+                                <td>
+                                    <asp:TextBox ID="NombreCompletoTextBox" runat="server" CssClass="form-control" Text='<%# Bind("NombreCompleto") %>' />
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">Documento</td>
-                                <td style="width: 180px">
-                                    <asp:TextBox ID="DocumentoTextBox" runat="server" CssClass="btn" Text='<%# Bind("Documento") %>' />
+                                <td>&nbsp;</td>
+                                <td>Documento: </td>
+                                <td>
+                                    <asp:TextBox ID="DocumentoTextBox" runat="server" CssClass="form-control" Text='<%# Bind("Documento") %>' />
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">Email</td>
-                                <td style="width: 180px">
-                                    <asp:TextBox ID="EmailTextBox" runat="server" CssClass="btn" Text='<%# Bind("Email") %>' />
+                                <td>&nbsp;</td>
+                                <td>Email:</td>
+                                <td>
+                                    <asp:TextBox ID="EmailTextBox" runat="server" CssClass="form-control" Text='<%# Bind("Email") %>' />
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">Contraseña</td>
-                                <td style="width: 180px">
-                                    <asp:TextBox ID="ContraseñaTextBox" runat="server" CssClass="btn" Text='<%# Bind("Contraseña") %>' />
+                                <td>&nbsp;</td>
+                                <td>Contraseña: </td>
+                                <td>
+                                    <asp:TextBox ID="ContraseñaTextBox" runat="server" CssClass="form-control" Text='<%# Bind("Contraseña") %>' />
                                 </td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td></td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                             <tr>
-                                <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <td>&nbsp;</td>
+                                <td>Activo: </td>
+                                <td>
+                                    <asp:CheckBox ID="ActivoCheckBox" runat="server" Checked='<%# Bind("Activo") %>' />
+                                </td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                            </tr>
+                            <tr>
+                                <td colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:LinkButton ID="InsertButton" runat="server" CausesValidation="True" CommandName="Insert" Text="Insertar" />
-&nbsp;
-                                    &nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;
                                     <asp:LinkButton ID="InsertCancelButton" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancelar" PostBackUrl="~/Interfaz/Administrador/Administrador.aspx" />
                                 </td>
                             </tr>
                             <tr>
-                                <td style="width: 25px">&nbsp;</td>
-                                <td style="width: 164px">&nbsp;</td>
-                                <td style="width: 180px">&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
+                                <td>&nbsp;</td>
                                 <td>&nbsp;</td>
                             </tr>
                         </table>
                     </InsertItemTemplate>
                     <ItemTemplate>
-                        <table style="width:100%;">
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>NombreCompleto:</td>
-                                <td>
-                                    <asp:Label ID="NombreCompletoLabel" runat="server" Text='<%# Bind("NombreCompleto") %>' />
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>Documento</td>
-                                <td>
-                                    <asp:Label ID="DocumentoLabel" runat="server" Text='<%# Bind("Documento") %>' />
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>Email</td>
-                                <td>
-                                    <asp:Label ID="EmailLabel" runat="server" Text='<%# Bind("Email") %>' />
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>Contraseña</td>
-                                <td>
-                                    <asp:Label ID="ContraseñaLabel" runat="server" Text='<%# Bind("Contraseña") %>' />
-                                </td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td colspan="4">&nbsp;</td>
-                            </tr>
-                            <tr>
-                                <td style="width: 32px">&nbsp;</td>
-                                <td>
-                                    <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Editar" />
-                                    &nbsp;
-                                    <asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Eliminar" />
-                                    &nbsp;
-                                    <asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Nuevo" />
-                                </td>
-                                <td>&nbsp;</td>
-                                <td>&nbsp;</td>
-                            </tr>
-                        </table>
+                        IdCliente:
+                        <asp:Label ID="IdClienteLabel" runat="server" Text='<%# Eval("IdCliente") %>' />
                         <br />
+                        NombreCompleto:
+                        <asp:Label ID="NombreCompletoLabel" runat="server" Text='<%# Bind("NombreCompleto") %>' />
+                        <br />
+                        Documento:
+                        <asp:Label ID="DocumentoLabel" runat="server" Text='<%# Bind("Documento") %>' />
+                        <br />
+                        Email:
+                        <asp:Label ID="EmailLabel" runat="server" Text='<%# Bind("Email") %>' />
+                        <br />
+                        Contraseña:
+                        <asp:Label ID="ContraseñaLabel" runat="server" Text='<%# Bind("Contraseña") %>' />
+                        <br />
+                        Activo:
+                        <asp:CheckBox ID="ActivoCheckBox" runat="server" Checked='<%# Bind("Activo") %>' Enabled="false" />
+                        <br />
+                        <asp:LinkButton ID="EditButton" runat="server" CausesValidation="False" CommandName="Edit" Text="Editar" />
+                        &nbsp;<asp:LinkButton ID="DeleteButton" runat="server" CausesValidation="False" CommandName="Delete" Text="Eliminar" />
+                        &nbsp;<asp:LinkButton ID="NewButton" runat="server" CausesValidation="False" CommandName="New" Text="Nuevo" />
                     </ItemTemplate>
                 </asp:FormView>
                   
@@ -232,35 +204,25 @@
                 </asp:SqlDataSource>
             </td>
             <%--<td>&nbsp;</td>--%>
-            <td style="width: 384px">
+            <td style="width: 274px" class="modal-sm">
                 
                 &nbsp;</td>
             <td></td>
         </tr>
         <tr>
-            <td style="width: 9px">&nbsp;</td>
-            <td style="width: 384px">
+            <td style="width: 37px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">
                 
                 &nbsp;</td>
             <td></td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">
-                
-                &nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
-            <td style="width: 69px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">
                 &nbsp;</td>
             <td style="width: 384px">
-                &nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1">
+                &nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" style="margin-left: 0px" CellPadding="3" BackColor="#CCCCCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" Width="544px" >
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" InsertVisible="False" ReadOnly="True" SortExpression="IdCliente" Visible="false" />
@@ -270,84 +232,93 @@
                         <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" SortExpression="Contraseña" />
                         <asp:CheckBoxField DataField="Activo" HeaderText="Activo" SortExpression="Activo" />
                     </Columns>
+                    <FooterStyle BackColor="White" ForeColor="#000066" />
+                    <HeaderStyle BackColor="#cc0000" Font-Bold="True" ForeColor="White" />
+                    <PagerStyle BackColor="White" ForeColor="#000066" HorizontalAlign="Left" />
+                    <RowStyle ForeColor="#000066" />
+                    <SelectedRowStyle BackColor="#669999" Font-Bold="True" ForeColor="White" />
+                    <SortedAscendingCellStyle BackColor="#F1F1F1" />
+                    <SortedAscendingHeaderStyle BackColor="#007DBB" />
+                    <SortedDescendingCellStyle BackColor="#CAC9C9" />
+                    <SortedDescendingHeaderStyle BackColor="#00547E" />
                 </asp:GridView>
             </td>
-            <td style="width: 384px">
+            <td style="width: 274px" class="modal-sm">
                 &nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">
                 &nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">
                 &nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px">&nbsp;</td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px">&nbsp;</td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px">&nbsp;</td>
             <td style="width: 384px">&nbsp;</td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
         <tr>
             <td style="width: 4px"></td>
-            <td style="width: 81px">&nbsp;</td>
-            <td style="width: 9px"></td>
+            <td style="width: 148px">&nbsp;</td>
+            <td style="width: 37px"></td>
             <td style="width: 384px"></td>
-            <td style="width: 384px">&nbsp;</td>
+            <td style="width: 274px" class="modal-sm">&nbsp;</td>
             <td style="width: 69px">&nbsp;</td>
         </tr>
     </table>

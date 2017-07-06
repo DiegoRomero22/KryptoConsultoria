@@ -21,7 +21,7 @@ namespace Krypto.Interfaz.Administrador
             if (pKryptoBLL.plantillaKrypto3(Convert.ToInt64(TxtNumeroEmpleados.Text), Convert.ToInt64(TxtPrestacionServicio.Text), TxtPagoNomina.Text, TxtSeguridadSocial.Text, TxtPagoNomina.Text, Convert.ToInt64(TxtIngresosRetiroMensuales.Text), TxtObservaciones.Text))
             {
                 Response.Write("<script>alert('Formulario registrado correctamente')</script>");
-                Response.Redirect("../Cliente/Cliente.aspx");
+                Response.Redirect("Administrador.aspx");
             }
          
         }

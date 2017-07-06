@@ -20,11 +20,11 @@ namespace Krypto.Models
         [Required, StringLength(30), Display(Name = "NIT")]
         public string NIT { get; set; }
 
-        [Required, StringLength(10), Display(Name = "Direccion")]
+        [Required, StringLength(100), Display(Name = "Direccion")]
         public string Direccion { get; set; }
 
         [Required]
-        public int Telefono { get; set; }
+        public Int64 Telefono { get; set; }
 
         [Required, StringLength(20), Display(Name = "Ciudad")]
         public string Ciudad { get; set; }
@@ -45,11 +45,12 @@ namespace Krypto.Models
         [Required]
         public DateTime Fecha { get; set; }
 
-        public int IdCliente { get; set; }
+     
 
         //Relación
-        [ForeignKey("IdCliente")]
-        public virtual Cliente cliente { get; set; }
+        //[ForeignKey("IdCliente")]
+        //public int IdCliente { get; set; }
+        //public virtual Cliente cliente { get; set; }
 
         public virtual DetalleRegistros detalleRegistros { get; set; }
       

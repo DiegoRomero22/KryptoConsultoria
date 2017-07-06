@@ -23,6 +23,21 @@ namespace Krypto.Interfaz
         }
         protected void BtnIniciarSesion_Click1(object sender, EventArgs e)
         {
+            validarLogin();
+        }
+
+        protected void TxtUsuario_TextChanged(object sender, EventArgs e)
+        {
+            validarLogin();
+        }
+
+        protected void TxtContraseña_TextChanged(object sender, EventArgs e)
+        {
+            validarLogin();
+        }
+           
+        public void validarLogin()
+        {
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
             //Valida el Usuario y contraseña segun el rol
             if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
@@ -68,5 +83,7 @@ namespace Krypto.Interfaz
                 LblResultado.Visible = true;
             }
         }
-    }
-}    
+    }    
+}
+    
+ 

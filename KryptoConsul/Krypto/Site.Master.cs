@@ -79,13 +79,7 @@ namespace Krypto
         protected void Unnamed_LoggingOut(object sender, LoginCancelEventArgs e)
         {
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
-        }
-
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-           
-            Response.Redirect("Inicio.aspx");
-        }
+        }        
 
         public void ocultarBotones()
         {
@@ -95,7 +89,10 @@ namespace Krypto
             }
         }
 
-        
+        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
+        {            
+            Response.Redirect("Inicio.aspx");
+        }
     }
 
 }
