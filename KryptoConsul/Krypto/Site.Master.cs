@@ -7,7 +7,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
-using Krypto.Logic;
+
 
 namespace Krypto
 {
@@ -92,6 +92,12 @@ namespace Krypto
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {            
             Response.Redirect("Inicio.aspx");
+        }
+
+        protected void BtnInicioSesion_Click(object sender, EventArgs e)
+        {           
+             
+            Response.Redirect("Login.aspx");
         }
     }
 

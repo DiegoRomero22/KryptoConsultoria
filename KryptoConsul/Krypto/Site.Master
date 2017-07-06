@@ -53,8 +53,14 @@
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
                         <AnonymousTemplate>
                             <ul class="nav navbar-nav navbar-right" >
-                                                               
-                                <li><a runat="server" style="color:white" href="/Interfaz/Login">Iniciar sesion</a></li>
+                            <li> 
+<%--                                <a href="Interfaz/Login.aspx"> <asp:Label ID="LblInicioSesion" runat="server" style="color:white" Text="Iniciar Sesion" ></asp:Label></a> </li>--%>
+                                <asp:Button ID="BtnInicioSesion" runat="server" Text="Iniciar Sesión" CssClass="btn" BackColor="#A2001E" ForeColor="White" OnClick="BtnInicioSesion_Click" Visible="False"  />
+                                <br />
+                                <li><asp:Button ID="BtnCerrarSesion" CssClass="btn" runat="server" Text="Cerrar Sesion" PostBackUrl="~/Interfaz/Login.aspx" BackColor="#A2001E" ForeColor="White" />              
+                                <%--<li><a runat="server" style="color:white" href="/Interfaz/Login" id="InicioSesion">Iniciar sesion</a>--%>
+
+                            </li>
                                 
                             </ul>
 

@@ -5,6 +5,8 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Krypto.Logic;
+using Krypto;
+
 namespace Krypto.Interfaz
 {
     public partial class Login : System.Web.UI.Page
@@ -12,7 +14,7 @@ namespace Krypto.Interfaz
         public static int? usuarioEstaLogueado;
         protected void Page_Load(object sender, EventArgs e)
         {
-       
+            
         }
         //Metodo que limpia las cajas de texto.
         public void limpiarCasillas()
