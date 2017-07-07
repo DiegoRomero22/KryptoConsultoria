@@ -7,7 +7,7 @@ using System.Web.Security;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using Microsoft.AspNet.Identity;
-
+using Krypto.Logic;
 
 namespace Krypto
 {
@@ -81,24 +81,21 @@ namespace Krypto
             Context.GetOwinContext().Authentication.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
         }        
 
-        public void ocultarBotones()
-        {
-            if (usuarioLogin == 1)
-            {
-              
-            }
-        }
+       
 
         protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
         {            
             Response.Redirect("Inicio.aspx");
+        }        
+
+        protected void BtnInicioSesion_Click1(object sender, EventArgs e)
+        {
+            Response.Redirect("Interfaz/Login.aspx");
         }
 
-        protected void BtnInicioSesion_Click(object sender, EventArgs e)
-        {           
-             
-            Response.Redirect("Login.aspx");
-        }
+        protected void Button1_Click(object sender, EventArgs e)
+        {
+        }       
     }
 
 }

@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using Krypto.Logic;
 
 namespace Krypto.Interfaz.Administrador
 {
@@ -11,8 +12,17 @@ namespace Krypto.Interfaz.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
-        }
+            try
+            {
+           
+              string email  = Session["email"].ToString();
+                Label2.Text = "Bienvenido " + email;
+            }
+            catch (Exception)
+            {
+                Response.Redirect("../Login.aspx?men=1");
+            }
+        } 
         
 
         protected void BtnAgregarLider_Click(object sender, EventArgs e)
@@ -34,6 +44,12 @@ namespace Krypto.Interfaz.Administrador
         {
             
             Label1.Text = DateTime.Now.ToString();
+        }
+
+        protected void BtnCerrarSesion_Click(object sender, EventArgs e)
+        {
+            Session.Remove("email");
+            Response.Redirect("../Login.aspx");
         }
     }
 }

@@ -1,6 +1,20 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarArchivos.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarArchivos" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
+    <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #A2001E">
+        <div class="container">
+            <div class="navbar-body" contenteditable="inherit">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   
+                </button>
+            </div>
+        </div>
+    </div>
+
      <table style="border-style: double; border-color: inherit; border-width: medium; width:92%; background-color:#f4f4f4; margin-left: 49px;" class="well bs-component">
         <tr>
             <td style="width: 182px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>

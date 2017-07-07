@@ -1,4 +1,5 @@
-﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Krypto.SiteMaster" %>
+﻿
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="Krypto.SiteMaster" %>
 <!DOCTYPE html>
 
 <html lang="es">
@@ -38,64 +39,19 @@
                 <%--Scripts del sitio--%>
             </Scripts>            
         </asp:ScriptManager>
-     
-             <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#A2001E">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-
-                </div>
-             
-                    <asp:LoginView runat="server" ViewStateMode="Disabled">
-                        <AnonymousTemplate>
-                            <ul class="nav navbar-nav navbar-right" >
-                            <li> 
-<%--                                <a href="Interfaz/Login.aspx"> <asp:Label ID="LblInicioSesion" runat="server" style="color:white" Text="Iniciar Sesion" ></asp:Label></a> </li>--%>
-                                <asp:Button ID="BtnInicioSesion" runat="server" Text="Iniciar Sesión" CssClass="btn" BackColor="#A2001E" ForeColor="White" OnClick="BtnInicioSesion_Click" Visible="False"  />
-                                <br />
-                                <li><asp:Button ID="BtnCerrarSesion" CssClass="btn" runat="server" Text="Cerrar Sesion" PostBackUrl="~/Interfaz/Login.aspx" BackColor="#A2001E" ForeColor="White" />              
-                                <%--<li><a runat="server" style="color:white" href="/Interfaz/Login" id="InicioSesion">Iniciar sesion</a>--%>
-
-                            </li>
-                                
-                            </ul>
-
-                        </AnonymousTemplate>
-                        <LoggedInTemplate>
-                            <ul class="nav navbar-nav navbar-right">
-                                <li><a runat="server" href="~/Account/Manage" title="Manage your account">Hello, <%: Context.User.Identity.GetUserName()  %> !</a></li>
-                                <li>
-                                    <asp:LoginStatus runat="server" LogoutAction="Redirect" LogoutText="Cerrar sesion" LogoutPageUrl="~/" OnLoggingOut="Unnamed_LoggingOut" />
-                                </li>
-                            </ul>
-                        </LoggedInTemplate>
-                    </asp:LoginView>
-                </div>
-            </div>
-
-        <div class="navbar navbar-inverse navbar-fixed" style="background-color:#ffffff; border:none">
+        <div class="navbar navbar-inverse navbar-fixed" style="background-color:#ffffff; border:none" >
                     <div class="container">
                         <div class="navbar-body" contenteditable="inherit">
-                            <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="150" Height="95" ImageAlign="Left" OnClick="ImageButton2_Click"  /></a>
-                       
+                            <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="150" Height="95" ImageAlign="Left"  /></a>                           
                         </div>
           
                     </div>
-                </div>
-
-
+                </div>        
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
            </asp:ContentPlaceHolder>
 
-</div>
-
-                
-   
+        </div>
 
         <div class="container">
             <div class="navbar-header">
@@ -109,7 +65,7 @@
                         <td style="width: 100%;" align="center" 
                             <div class="footer">
                     <div class="copyright">
-                        &copy; Krypto Consultoria | <a href="https://www.krypto.com.co/">Contactenos </a>
+                        &copy; Krypto Consultoria | <a href="https://www.krypto.com.co/"> Contactenos </a>
                     </div>
                             </div> 
                          </td>

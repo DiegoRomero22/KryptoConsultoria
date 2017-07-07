@@ -1,6 +1,18 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="PlantillaOfertaKrypto2.aspx.cs" Inherits="Krypto.Interfaz.Administrador.PlantillaOfertaKrypto2" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
+      <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #A2001E">
+        <div class="container">
+            <div class="navbar-body" contenteditable="inherit">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                   
+                </button>
+            </div>
+        </div>
+    </div>
       <table style="border-style: double; border-color: inherit; border-width: medium; width:93%; margin-left: 43px; background-color:#FFFAFA; " class="well bs-component" >
         <tr>
             <td style="width: 68px">&nbsp;</td>

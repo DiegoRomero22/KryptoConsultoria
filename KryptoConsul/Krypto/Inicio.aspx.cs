@@ -13,5 +13,10 @@ namespace Krypto
         {
 
         }
+
+        protected void BtnIniciarSesion_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("/Interfaz/Login.aspx");
+        }
     }
 }
