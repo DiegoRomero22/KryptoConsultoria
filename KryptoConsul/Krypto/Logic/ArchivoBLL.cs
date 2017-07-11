@@ -3,11 +3,13 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using Krypto.Models;
+using System.Drawing;
+
 namespace Krypto.Logic
 {
     public class ArchivoBLL
     {
-        public bool guardarImagen(string nombreA, byte[] image, int idclient)
+        public bool guardarImagen(string nombreA, string image, int idclient)
         {
             try
             {
@@ -16,7 +18,7 @@ namespace Krypto.Logic
                     ar.NombreArchivo = nombreA;
                     ar.imagen = image;
                     ar.idcliente = idclient;
-                    
+
                 };
                 KryptoContext context = new KryptoContext();
                 context.Archivo.Add(ar);
@@ -28,7 +30,7 @@ namespace Krypto.Logic
 
                 throw;
             }
-          
+
         }
         public List<Archivo> Obtenerarchivoa()
         {
@@ -36,7 +38,8 @@ namespace Krypto.Logic
             var mostrararchivo = from archiv in context.Archivo
                                  select archiv;
             return mostrararchivo.ToList();
-        }       
+        }
+            
     }
 
 }

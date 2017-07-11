@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using Krypto.Logic;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Web.UI.WebControls;
 
 namespace Krypto.Models
 {
@@ -18,8 +19,8 @@ namespace Krypto.Models
         [Required]
         public string NombreArchivo { get; set; }
     
-        [Required ]
-        public byte[] imagen { get; set; }
+        [Required, StringLength(200), Display (Name ="Imagen")]
+        public string imagen { get; set; }
         
         //Relaciones.
         public int idcliente { get; set; }

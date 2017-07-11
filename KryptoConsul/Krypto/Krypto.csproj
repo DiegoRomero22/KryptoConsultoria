@@ -245,6 +245,7 @@
     <Content Include="Interfaz\Administrador\AgregarArchivos.aspx" />
     <Content Include="Interfaz\Administrador\AgregarCliente.aspx" />
     <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
+    <Content Include="Interfaz\Administrador\descarga.jpg" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
@@ -613,6 +614,7 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Docuementos\" />
+    <Folder Include="Interfaz\Administrador\Imagenes\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
