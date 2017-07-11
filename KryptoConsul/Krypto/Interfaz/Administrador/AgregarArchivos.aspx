@@ -18,205 +18,284 @@
 
     <table style="border-style: double; border-color: inherit; border-width: medium; width: 92%; background-color: #f4f4f4; margin-left: 49px;" class="well bs-component">
         <tr>
-            <td style="width: 182px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
-            <td style="width: 142px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
+            <td style="width: 1709px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 1389px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 715px; font-size: large; font-weight: bold;">&nbsp;</td>
             <td style="width: 176px" colspan="2">&nbsp;</td>
-            <td style="width: 332px">&nbsp;</td>
+            <td style="width: 358px">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 182px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
-            <td style="width: 142px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
+            <td style="width: 1709px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 1389px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 715px; font-size: large; font-weight: bold;">&nbsp;</td>
             <td style="width: 176px" colspan="2">&nbsp;</td>
-            <td style="width: 332px">&nbsp;</td>
+            <td style="width: 358px">&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 182px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
+            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
+            <td style="font-size: large; font-weight: bold; width: 1709px;">
+                &nbsp;</td>
+            <td style="font-size: large; font-weight: bold; width: 1389px;">
+                &nbsp;</td>
             <td style="font-size: large; font-weight: bold;" colspan="4">
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
                     <asp:Label ID="LblAgregarArchivo" runat="server" ForeColor="#BF0D11" Text="Agregar Archivo"></asp:Label></h3>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 142px"></td>
+            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">&nbsp;</td>
+            <td style="height: 22px; width: 1389px">&nbsp;</td>
+            <td style="height: 22px; width: 715px"></td>
             <td style="height: 22px; width: 176px;" colspan="2"></td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px"></td>
-            <td style="height: 22px; width: 142px"></td>
-            <td style="height: 22px; width: 176px;" colspan="2"></td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="width: 1329px"></td>
+            <td style="width: 1709px">&nbsp;</td>
+            <td style="width: 1389px">&nbsp;</td>
+            <td style="width: 715px"></td>
+            <td style="width: 176px;" colspan="2">&nbsp;</td>
+            <td style="width: 358px;"></td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td>&nbsp;</td>
+            <td></td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 142px; font-weight: bold;">Nombre de Archivo:</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 78px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px;">&nbsp;</td>
-            <td style="height: 22px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">
-                <asp:TextBox runat="server" ID="txtNombreArchivo" CssClass="form-control" Font-Size="Large" Columns="10" Height="33px" Style="margin-left: 0px" Width="290px"></asp:TextBox>
+            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 1709px; font-weight: bold;">
+                &nbsp;</td>
+            <td style="height: 22px; width: 1389px; font-weight: bold;">
+                &nbsp;</td>
+            <td></td>
+            <td style="height: 22px; width: 715px; font-weight: bold;">
+                <asp:Label ID="LblNombreArchivo" runat="server" Text="Nombre del archivo:"></asp:Label>
+                <br />
+                <asp:TextBox ID="TxtNombreArchivo"  runat="server" CssClass="form-control" Width="314px"></asp:TextBox>
             </td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
-            </td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px; font-weight: bold;">Cliente:</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px; font-weight: bold;">
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
-            </td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="height: 22px; width: 182px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 142px">
-                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" Width="290px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdCliente">
+            <td style="height: 22px; width: 176px;" colspan="1">
+                <asp:Label ID="LblCliente" runat="server" Text="Seleccione el cliente:"></asp:Label>
+                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdCliente" AutoPostBack="True">
                 </asp:DropDownList>
                 <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdCliente], [NombreCompleto] FROM [Clientes]"></asp:SqlDataSource>
             </td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">Agregar Archivos:<asp:FileUpload ID="FUImagen" runat="server" />
-                <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Button" />
-            </td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px;">&nbsp;</td>
+            <td style="height: 22px; width: 1389px;">&nbsp;</td>
+            <td style="height: 22px; width: 78px;" colspan="2">&nbsp;</td>
+            <td style="height: 22px; width: 358px;"">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">
+                &nbsp;</td>
+            <td style="height: 22px; width: 1389px">
+                &nbsp;</td>
+            <td></td>
+            <td style="height: 22px; width: 715px">
+                <asp:FileUpload ID="FUImagen" runat="server" Width="290px" />
+                <asp:Button ID="TxtGuardarArchivo" runat="server" OnClick="GuardarArchivo_Click" Text="Guardar Archivo" Width="180px" />
+                </td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">
+                &nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 1389px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 715px; font-weight: bold;">
+                &nbsp;</td>
+            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
+            <td style="height: 22px; width: 358px; font-weight: bold;">
+                &nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 142px; font-weight: bold;">
-                <br />
-            </td>
+            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">
+                &nbsp;</td>
+            <td style="height: 22px; width: 1389px">
+                &nbsp;</td>
+            <td style="height: 22px; width: 715px">
+                &nbsp;</td>
+            <td style="height: 22px; width: 176px;" colspan="2" aria-orientation="horizontal">
+                &nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">&nbsp;</td>
+            <td style="height: 22px; width: 1389px">&nbsp;</td>
+            <td style="height: 22px; width: 715px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdArchivo" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand1" >
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand" DataKeyNames="IdArchivo" AllowSorting="True" >
                     <Columns>
-                        <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" InsertVisible="False" ReadOnly="True" SortExpression="IdArchivo" />
+                        <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" SortExpression="IdArchivo" InsertVisible="false" ReadOnly="True" Visible="false"/>
                         <asp:BoundField DataField="NombreArchivo" HeaderText="NombreArchivo" SortExpression="NombreArchivo" />
-                        <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen" />
-                        <asp:TemplateField ShowHeader="False">
+                        <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen"  Visible="false" />
+                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
+                        <asp:TemplateField ShowHeader="False" >
                             <ItemTemplate>
-                                <asp:ImageButton ID="ImageButton1" ImageUrl="~/Interfaz/Administrador/descarga.jpg" CommandArgument='<%# Eval("imagen")%>' runat="server" CausesValidation="false"  CommandName="dwn" Text="Botón" />
+                                <asp:ImageButton ID="ImageButton1" Width="27px" ImageUrl="~/Interfaz/descarga.png" CommandArgument='<%# Eval("imagen")%>'  runat="server" CausesValidation="false" CommandName="dwn" Text="Botón" />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:CommandField ButtonType="Image" InsertImageUrl="~/Interfaz/Administrador/descarga.jpg" ShowEditButton="True" />
+                        <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
                     </Columns>
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" 
-                    DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo" 
-                    InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen]) VALUES (@NombreArchivo, @imagen)" 
-                    SelectCommand="SELECT [IdArchivo], [NombreArchivo], [imagen] FROM [Archivoes]" 
-                    UpdateCommand="UPDATE [Archivoes] SET [NombreArchivo] = @NombreArchivo,WHERE [IdArchivo] = @IdArchivo">
+                    DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo"
+                     InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen]) VALUES (@NombreArchivo, @imagen)" 
+                    SelectCommand="SELECT Archivoes.IdArchivo, Archivoes.NombreArchivo, Archivoes.imagen, Clientes.NombreCompleto FROM Archivoes LEFT OUTER JOIN Clientes ON Clientes.IdCliente = Archivoes.idcliente WHERE (Clientes.IdCliente = @IdCliente)" 
+                    UpdateCommand="UPDATE Archivoes SET NombreArchivo = @NombreArchivo WHERE (IdArchivo = @IdArchivo)">
                     <DeleteParameters>
-                        <asp:Parameter Name="IdArchivo" Type="Int32" />
+                        <asp:Parameter Name="IdArchivo" />
                     </DeleteParameters>
                     <InsertParameters>
-                        <asp:Parameter Name="NombreArchivo" Type="String" />
-                        <asp:Parameter Name="imagen" Type="String" />
+                        <asp:Parameter Name="NombreArchivo" />
+                        <asp:Parameter Name="imagen" />
                     </InsertParameters>
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DDLCliente" Name="IdCliente" PropertyName="SelectedValue" />
+                    </SelectParameters>
                     <UpdateParameters>
-                        <asp:Parameter Name="NombreArchivo" Type="String" />
-                        <asp:Parameter Name="imagen" Type="String" />
-                        <asp:Parameter Name="IdArchivo" Type="Int32" />
+                        <asp:Parameter Name="NombreArchivo" />
+                        <asp:Parameter Name="IdArchivo" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
             </td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">
-                <%-- <asp:RegularExpressionValidator ID="RegularExpressionValidator1" runat="server" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RegularExpressionValidator>--%>
+            <td style="height: 20px; width: 1329px">&nbsp;</td>
+            <td style="height: 20px; width: 1709px">&nbsp;</td>
+            <td style="height: 20px; width: 1389px">&nbsp;</td>
+            <td style="height: 20px; width: 715px">&nbsp;</td>
+            <td style="height: 20px; width: 176px;" colspan="2">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 24px; width: 1329px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 24px; font-weight: bold; width: 1709px;">
+                &nbsp;</td>
+            <td style="height: 24px; font-weight: bold; width: 1389px;">
+                &nbsp;</td>
+            
+            <td></td>
+            <td style="height: 24px">&nbsp;</td>
+            <td style="height: 24px">&nbsp;</td>
+            <td style="height: 24px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 20px; width: 1329px">              
             </td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 20px; width: 1709px">&nbsp;</td>
+            <td style="height: 20px; width: 1389px">&nbsp;</td>
+            <td style="height: 20px; width: 715px">&nbsp;</td>
+            <td style="height: 20px; width: 176px;" colspan="2">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px;  width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
+            <td style="height: 20px;  width: 358px;">&nbsp;</td>
+            <td style="height: 20px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-        </tr>
-        <tr class="form-group">
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px;" colspan="4">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="btnAgregar" Class="btn" runat="server" Text="Agregar" ForeColor="White" BackColor="#BF0D11" Width="250px" Style="margin-left: 203px" CssClass="btn" />
-            </td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 24px; width: 1329px">&nbsp;</td>
+            <td style="height: 24px; width: 1709px">&nbsp;</td>
+            <td style="height: 24px; width: 1389px">&nbsp;</td>
+            <td style="height: 24px; width: 715px">&nbsp;</td>
+            <td style="height: 24px; width: 176px;" colspan="2">&nbsp;</td>
+            <td style="height: 24px; width: 358px;">&nbsp;</td>
+            <td style="height: 24px; width: 358px;">&nbsp;</td>
+            <td style="height: 24px; width: 358px;">&nbsp;</td>
+            <td style="height: 24px; width: 358px;">&nbsp;</td>
+            <td style="height: 24px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">&nbsp;</td>
+            <td style="height: 22px; width: 1389px">&nbsp;</td>
+            <td style="height: 22px; width: 715px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">&nbsp;&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
+            <td style="height: 22px; width: 1329px">&nbsp;&nbsp;</td>
+            <td style="height: 22px; width: 1709px">&nbsp;</td>
+            <td style="height: 22px; width: 1389px">&nbsp;</td>
+            <td style="height: 22px; width: 715px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 182px">&nbsp;</td>
-            <td style="height: 22px; width: 142px">&nbsp;</td>
+            <td style="height: 22px; width: 1329px">&nbsp;</td>
+            <td style="height: 22px; width: 1709px">&nbsp;</td>
+            <td style="height: 22px; width: 1389px">&nbsp;</td>
+            <td style="height: 22px; width: 715px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 332px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
     </table>
 </asp:Content>

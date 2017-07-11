@@ -22,31 +22,31 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label LblAgregarArchivo;
         
         /// <summary>
-        /// Control txtNombreArchivo.
+        /// Control LblNombreArchivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtNombreArchivo;
+        protected global::System.Web.UI.WebControls.Label LblNombreArchivo;
         
         /// <summary>
-        /// Control TextBox2.
+        /// Control TxtNombreArchivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox TxtNombreArchivo;
         
         /// <summary>
-        /// Control TextBox1.
+        /// Control LblCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox1;
+        protected global::System.Web.UI.WebControls.Label LblCliente;
         
         /// <summary>
         /// Control DDLCliente.
@@ -76,13 +76,13 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.FileUpload FUImagen;
         
         /// <summary>
-        /// Control Button1.
+        /// Control TxtGuardarArchivo.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Button1;
+        protected global::System.Web.UI.WebControls.Button TxtGuardarArchivo;
         
         /// <summary>
         /// Control GridView1.
@@ -101,14 +101,5 @@ namespace Krypto.Interfaz.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource1;
-        
-        /// <summary>
-        /// Control btnAgregar.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregar;
     }
 }

@@ -245,12 +245,12 @@
     <Content Include="Interfaz\Administrador\AgregarArchivos.aspx" />
     <Content Include="Interfaz\Administrador\AgregarCliente.aspx" />
     <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
-    <Content Include="Interfaz\Administrador\descarga.jpg" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
+    <Content Include="Interfaz\descarga.png" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\PaginaLider.aspx" />
     <Content Include="Interfaz\ProjectLeader.aspx" />

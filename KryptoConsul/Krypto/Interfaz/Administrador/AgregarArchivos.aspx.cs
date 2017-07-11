@@ -16,7 +16,7 @@ namespace Krypto.Interfaz.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            
+
 
         }
 
@@ -24,30 +24,10 @@ namespace Krypto.Interfaz.Administrador
         {
 
         }
-        //protected void btnAgregar_Click(object sender, EventArgs e)
-        //{
-        //    if (DDLCliente.SelectedValue == null)
-        //    {
 
-        //    }
-        //    else
-        //    {
-        //        ArchivoBLL archivoBLL = new ArchivoBLL();
-        //        if (archivoBLL.guardarImagen(txtNombreArchivo.Text, FUImagen.ToString(), Convert.ToInt32(DDLCliente.SelectedValue)))
-        //        {                   
-        //            Response.Redirect("AgregarArchivos.aspx");
-        //        }
-        //    }
-        //}
-
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GuardarArchivo_Click(object sender, EventArgs e)
         {
-           
-        }
-
-        protected void Button1_Click(object sender, EventArgs e)
-        {
-             string virtualFolder = "../Administrador/Imagenes/";
+            string virtualFolder = "../Administrador/Imagenes/";
             string pFolder = Server.MapPath(virtualFolder);
             string filterName = Guid.NewGuid().ToString();
             string extension = System.IO.Path.GetExtension(FUImagen.FileName);
@@ -58,17 +38,18 @@ namespace Krypto.Interfaz.Administrador
             using (KryptoContext context = new KryptoContext())
             {
                 Archivo ar = new Archivo();
-                ar.NombreArchivo = TextBox1.Text;
+                ar.NombreArchivo = TxtNombreArchivo.Text;
                 ar.imagen = finalUrl;
                 ar.idcliente = Convert.ToInt32(DDLCliente.SelectedValue);
                 context.Archivo.Add(ar);
                 context.SaveChanges();
                 Response.Redirect("AgregarArchivos.aspx");
             }
-
         }
 
-        protected void GridView1_RowCommand1(object sender, GridViewCommandEventArgs e)
+      
+
+        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "dwn")
             {
@@ -89,6 +70,8 @@ namespace Krypto.Interfaz.Administrador
                 Response.End();
             }
         }
+
+       
     }
 }
 
