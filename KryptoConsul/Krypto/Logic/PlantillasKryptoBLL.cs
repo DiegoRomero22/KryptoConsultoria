@@ -10,7 +10,6 @@ namespace Krypto.Logic
     public class PlantillasKryptoBLL
     {
 
-
         public bool guardarOferta(string razonSocial, string nit, string direccion, Int64 telefono, string ciudad, string nombreContacto, string cargoContacto, Int32 numeroCelular, string email, DateTime fecha)
         {
             try
@@ -27,18 +26,29 @@ namespace Krypto.Logic
                     oferttaKrypto.NumeroCelular = numeroCelular;
                     oferttaKrypto.Email = email;
                     oferttaKrypto.Fecha = fecha;
+
                 };
                 KryptoContext context = new KryptoContext();
                 context.ofertaKrypto.Add(oferttaKrypto);
                 context.SaveChanges();
                 return true;
             }
-            catch (Exception)
+            catch (DbEntityValidationException ex)
             {
+                // Retrieve the error messages as a list of strings.
+                var errorMessages = ex.EntityValidationErrors
+                        .SelectMany(x => x.ValidationErrors)
+                        .Select(x => x.ErrorMessage);
 
-                throw;
+                // Join the list to a single string.
+                var fullErrorMessage = string.Join("; ", errorMessages);
+
+                // Combine the original exception message with the new one.
+                var exceptionMessage = string.Concat(ex.Message, " The validation errors are: ", fullErrorMessage);
+
+                // Throw a new DbEntityValidationException with the improved exception message.
+                throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
             }
-
         }
         public bool plantillaKrypto1 (string tipoSociedad, string objetoSocial, DateTime FechaConstitucionEmpresa, int numeroSucursales, Int64 ventasAnuales, string Software, string modulosLicenciados, Int16 productosClasificados, string estadoDIAN, string estadoSecretariaHacienda, DateTime renovacionMercantil, DateTime FechaCorteEstadoFinanciero)
         {

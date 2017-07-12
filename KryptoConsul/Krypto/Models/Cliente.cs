@@ -14,8 +14,8 @@ namespace Krypto.Models
         {
             ofertaKrypto = new List<OfertaKrypto>();
         }
-        [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        [ScaffoldColumn(false)]
+        [Key]  
         public int IdCliente { get; set; }
 
         [Required, StringLength(100), Display(Name = "NombreCompleto")]

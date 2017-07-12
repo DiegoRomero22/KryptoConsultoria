@@ -11,7 +11,7 @@ namespace Krypto.Models
     public class OfertaKrypto
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
         public int IdOfertaKrypto { get; set; }
 
         [Required, StringLength(100), Display(Name = "RazonSocial")]
@@ -48,9 +48,9 @@ namespace Krypto.Models
 
 
         //Relación
-        //[ForeignKey("IdCliente")]
-        //public int IdCliente { get; set; }
-        //public virtual Cliente cliente { get; set; }
+        [ForeignKey("cliente")]
+        public int IdCliente { get; set; }
+        public virtual Cliente cliente { get; set; }
 
         //public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
         //public virtual ICollection<Usuario> usuario { get; set; }

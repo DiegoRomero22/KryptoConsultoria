@@ -44,36 +44,36 @@ namespace Krypto.Interfaz
             //Valida el Usuario y contraseña segun el rol
             if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
             {
-                if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
-                {
-                    //Rol Administrador.
+                //if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
+                //{
+                //Rol Administrador.
 
-                    Session["Admin"] = TxtUsuario.Text;
-                    usuarioEstaLogueado = 1;
-                    Session["email"] = TxtUsuario.Text;
-                    Response.Redirect("Administrador/Administrador.aspx");
-                }
+                Session["Admin"] = TxtUsuario.Text;
+                usuarioEstaLogueado = 1;
+                Session["email"] = TxtUsuario.Text;
+                Response.Redirect("Administrador/Administrador.aspx");
+
             }
             //Rol Lider.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
                 Session["Lider"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("Administrador/Lider.aspx");
+                Response.Redirect("Cliente.aspx");
             }
             //Rol Usuario.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
             {
-                Session["Usuario"] = TxtUsuario.Text;
+                Session["Cliente"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 3;
-                Response.Redirect("");
+                Response.Redirect("Cliente.aspx");
             }
             //Rol Cliente.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 4)
             {
-                Session["Cliente"] = TxtUsuario.Text;
+                Session["Usuario"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 4;
-                Response.Redirect("");
+                Response.Redirect("Cliente.aspx");
             }
             //Rol Nomina.
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 5)
@@ -84,7 +84,7 @@ namespace Krypto.Interfaz
             }
 
             else
-            {
+            { 
                 limpiarCasillas();
                 //Texto en el cual se mostrara si existe algún error.
                 LblResultado.Visible = true;
