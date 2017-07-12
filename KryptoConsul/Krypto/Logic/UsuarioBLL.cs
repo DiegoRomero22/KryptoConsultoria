@@ -4,13 +4,14 @@ using System.Linq;
 using System.Web;
 using Krypto.Models;
 using System.Data.Entity.SqlServer;
-
-
+using System.Data.Entity.Validation;
+using System.Data.Entity;
 
 namespace Krypto.Logic
 {
     public class UsuarioBLL
     {
+      
 
         public int Autenticar(string email, string clave)
         {
@@ -19,12 +20,12 @@ namespace Krypto.Logic
                 using (KryptoContext context = new KryptoContext())
                 {
                     var mostrarinfo = from usr in context.Usuario
-                                      where usr.Email == email && usr.Contraseña == clave
+                                      where usr.Email == email || usr.NombreCompleto == email && usr.Contraseña == clave
                                       select usr;
 
                     //Buscar el Rol del Usuario que se loguea.
                     var idRol = from user in context.Usuario
-                                where user.Email == email
+                                where user.Email == email || user.NombreCompleto == email
                                 select user.RolId;
 
                     //Este if confirma si hay un usuario en la Base de Datos.
@@ -64,9 +65,21 @@ namespace Krypto.Logic
                     }
                 }
             }
-            catch (Exception)
+            catch (DbEntityValidationException ex)
             {
-                throw;
+                // Retrieve the error messages as a list of strings.
+                var errorMessages = ex.EntityValidationErrors
+                        .SelectMany(x => x.ValidationErrors)
+                        .Select(x => x.ErrorMessage);
+
+                // Join the list to a single string.
+                var fullErrorMessage = string.Join("; ", errorMessages);
+
+                // Combine the original exception message with the new one.
+                var exceptionMessage = string.Concat(ex.Message, " The validation errors are: ", fullErrorMessage);
+
+                // Throw a new DbEntityValidationException with the improved exception message.
+                throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
             }
         }
 
@@ -76,7 +89,7 @@ namespace Krypto.Logic
             string sesionActual = HttpContext.Current.Session["UserLogin"].ToString();
             KryptoContext context = new KryptoContext();
             Guid? idUser = (from usuario in context.Usuario
-                            where usuario.Email == sesionActual
+                            where usuario.Email == sesionActual || usuario.NombreCompleto == sesionActual
                             select usuario.IdUsuario).FirstOrDefault();
 
             return idUser;

@@ -33,6 +33,37 @@ namespace Krypto.Logic
                 context.SaveChanges();
                 return true;
             }
+            catch (Exception)
+            {
+
+                throw;
+            }
+
+        }
+        public bool plantillaKrypto1 (string tipoSociedad, string objetoSocial, DateTime FechaConstitucionEmpresa, int numeroSucursales, Int64 ventasAnuales, string Software, string modulosLicenciados, Int16 productosClasificados, string estadoDIAN, string estadoSecretariaHacienda, DateTime renovacionMercantil, DateTime FechaCorteEstadoFinanciero)
+        {
+            try
+            {
+                ServicioDeContabilidad servicioContabilidads = new ServicioDeContabilidad();
+                {
+                    servicioContabilidads.TipoSociedad = tipoSociedad;
+                    servicioContabilidads.ObjetoSocial = objetoSocial;
+                    servicioContabilidads.FechaConstitucion = FechaConstitucionEmpresa;
+                    servicioContabilidads.NumeroSucursales = numeroSucursales;
+                    servicioContabilidads.VentasAnuales = ventasAnuales;
+                    servicioContabilidads.SoftwareQueUtiliza = Software;
+                    servicioContabilidads.ModulosLicenciados = modulosLicenciados;
+                    servicioContabilidads.ProductosClasificados = productosClasificados;
+                    servicioContabilidads.EstadoDIAN = estadoDIAN;
+                    servicioContabilidads.EstadoSecretariaHacienda = estadoSecretariaHacienda;
+                    servicioContabilidads.FechaRenovacionMercantil = renovacionMercantil;
+                    servicioContabilidads.FechaCorteFinanciero = FechaCorteEstadoFinanciero;
+                };
+                KryptoContext context = new KryptoContext();
+                context.ServicioDecontabilidad.Add(servicioContabilidads);
+                context.SaveChanges();
+                return true;
+            }
             catch (DbEntityValidationException ex)
             {
                 // Retrieve the error messages as a list of strings.
@@ -48,36 +79,6 @@ namespace Krypto.Logic
 
                 // Throw a new DbEntityValidationException with the improved exception message.
                 throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
-            }
-        }
-        public bool plantillaKrypto1 (string tipoSociedad, string objetoSocial, DateTime FechaConstitucionEmpresa, int numeroSucursales, Int64 ventasAnuales, string Software, string modulosLicenciados, Int16 productosClasificados, string estadoDIAN, string estadoSecretariaHacienda, DateTime renovacionMercantil, DateTime FechaCorteEstadoFinanciero)
-        {
-            try
-            {
-                ServicioDeContabilidad servicioContabilidad = new ServicioDeContabilidad();
-                {
-                    servicioContabilidad.TipoSociedad = tipoSociedad;
-                    servicioContabilidad.ObjetoSocial = objetoSocial;
-                    servicioContabilidad.FechaConstitucion = FechaConstitucionEmpresa;
-                    servicioContabilidad.NumeroSucursales = numeroSucursales;
-                    servicioContabilidad.VentasAnuales = ventasAnuales;
-                    servicioContabilidad.SoftwareQueUtiliza = Software;
-                    servicioContabilidad.ModulosLicenciados = modulosLicenciados;
-                    servicioContabilidad.ProductosClasificados = productosClasificados;
-                    servicioContabilidad.EstadoDIAN = estadoDIAN;
-                    servicioContabilidad.EstadoSecretariaHacienda = estadoSecretariaHacienda;
-                    servicioContabilidad.FechaRenovacionMercantil = renovacionMercantil;
-                    servicioContabilidad.FechaCorteFinanciero = FechaCorteEstadoFinanciero;
-                };
-                KryptoContext context = new KryptoContext();
-                context.ServicioDecontabilidad.Add(servicioContabilidad);
-                context.SaveChanges();
-                return true;
-            }
-            catch (Exception)
-            {
-
-                throw;
             }
         }
         public bool plantillaKrypto2 (Int16 numeroClientes, Int16 facturasVenta, Int16 cantidadRemisiones, Int16 cantidadOrdenes, Int16 numeroProveedores, Int16 facturasCompras, Int16 comprobanteEgreso, Int16 reembolsos, Int16 reembolsoGastosViajes, Int16 reciboCaja, Int16 legalizacionAnticipos, Int16 numeroCuentasBancarias, Int16 numeroPaginasExtractoBancario, Int16 numeroCajaMenores)

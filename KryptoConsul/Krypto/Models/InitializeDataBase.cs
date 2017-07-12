@@ -18,7 +18,7 @@ namespace Krypto.Models
             context.SaveChanges(); 
            
         }
-
+        
         private static List<Rol> ListaRol()
         {
             var rol = new List<Rol>

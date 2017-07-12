@@ -18,10 +18,8 @@
 
     <table style="border-style: double; border-color: inherit; border-width: medium; width: 92%; background-color: #f4f4f4; margin-left: 49px;" class="well bs-component">
         <tr>
-            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
-            <td style="width: 1709px; font-size: large; font-weight: bold;">&nbsp;</td>
-            <td style="width: 1389px; font-size: large; font-weight: bold;">&nbsp;</td>
-            <td style="width: 715px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 814px; font-size: large; font-weight: bold;" class="modal-lg">&nbsp;</td>
+            <td style="width: 843px; font-size: large; font-weight: bold;">&nbsp;</td>
             <td style="width: 176px" colspan="2">&nbsp;</td>
             <td style="width: 358px">&nbsp;</td>
             <td>&nbsp;</td>
@@ -30,10 +28,8 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
-            <td style="width: 1709px; font-size: large; font-weight: bold;">&nbsp;</td>
-            <td style="width: 1389px; font-size: large; font-weight: bold;">&nbsp;</td>
-            <td style="width: 715px; font-size: large; font-weight: bold;">&nbsp;</td>
+            <td style="width: 814px; font-size: large; font-weight: bold;" class="modal-lg">&nbsp;</td>
+            <td style="width: 843px; font-size: large; font-weight: bold;">&nbsp;</td>
             <td style="width: 176px" colspan="2">&nbsp;</td>
             <td style="width: 358px">&nbsp;</td>
             <td>&nbsp;</td>
@@ -42,13 +38,10 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 1329px; font-weight: bold; font-size: large;" class="modal-sm">&nbsp;</td>
-            <td style="font-size: large; font-weight: bold; width: 1709px;">
-                &nbsp;</td>
-            <td style="font-size: large; font-weight: bold; width: 1389px;">
+            <td style="font-size: large; font-weight: bold; width: 814px;" class="modal-lg">
                 &nbsp;</td>
             <td style="font-size: large; font-weight: bold;" colspan="4">
-                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+                <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                     <asp:Label ID="LblAgregarArchivo" runat="server" ForeColor="#BF0D11" Text="Agregar Archivo"></asp:Label></h3>
             </td>
             <td>&nbsp;</td>
@@ -57,10 +50,8 @@
             <td>&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">&nbsp;</td>
-            <td style="height: 22px; width: 1389px">&nbsp;</td>
-            <td style="height: 22px; width: 715px"></td>
+            <td style="height: 22px; width: 814px">&nbsp;</td>
+            <td style="height: 22px; width: 843px"></td>
             <td style="height: 22px; width: 176px;" colspan="2"></td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
@@ -69,10 +60,8 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="width: 1329px"></td>
-            <td style="width: 1709px">&nbsp;</td>
-            <td style="width: 1389px">&nbsp;</td>
-            <td style="width: 715px"></td>
+            <td style="width: 814px" class="modal-lg">&nbsp;</td>
+            <td style="width: 843px"></td>
             <td style="width: 176px;" colspan="2">&nbsp;</td>
             <td style="width: 358px;"></td>
             <td>&nbsp;</td>
@@ -81,12 +70,9 @@
             <td></td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 1709px; font-weight: bold;">
+            <td style="height: 22px; width: 814px; font-weight: bold;">
                 &nbsp;</td>
-            <td style="height: 22px; width: 1389px; font-weight: bold;">
-                &nbsp;</td>
-            <td></td>
+            <td style="width: 843px"></td>
             <td style="height: 22px; width: 715px; font-weight: bold;">
                 <asp:Label ID="LblNombreArchivo" runat="server" Text="Nombre del archivo:"></asp:Label>
                 <br />
@@ -105,9 +91,7 @@
             <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px;">&nbsp;</td>
-            <td style="height: 22px; width: 1389px;">&nbsp;</td>
+            <td style="height: 22px; width: 814px;">&nbsp;</td>
             <td style="height: 22px; width: 78px;" colspan="2">&nbsp;</td>
             <td style="height: 22px; width: 358px;"">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
@@ -117,12 +101,9 @@
             <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">
+            <td style="height: 22px; width: 814px">
                 &nbsp;</td>
-            <td style="height: 22px; width: 1389px">
-                &nbsp;</td>
-            <td></td>
+            <td style="width: 843px"></td>
             <td style="height: 22px; width: 715px">
                 <asp:FileUpload ID="FUImagen" runat="server" Width="290px" />
                 <asp:Button ID="TxtGuardarArchivo" runat="server" OnClick="GuardarArchivo_Click" Text="Guardar Archivo" Width="180px" />
@@ -136,10 +117,8 @@
             <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 1389px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 715px; font-weight: bold;">
+            <td style="height: 22px; width: 814px; font-weight: bold;">&nbsp;</td>
+            <td style="height: 22px; width: 843px; font-weight: bold;">
                 &nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 22px; width: 358px; font-weight: bold;">
@@ -150,12 +129,9 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">
+            <td style="height: 22px; width: 814px">
                 &nbsp;</td>
-            <td style="height: 22px; width: 1389px">
-                &nbsp;</td>
-            <td style="height: 22px; width: 715px">
+            <td style="height: 22px; width: 843px">
                 &nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2" aria-orientation="horizontal">
                 &nbsp;</td>
@@ -166,17 +142,15 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">&nbsp;</td>
-            <td style="height: 22px; width: 1389px">&nbsp;</td>
-            <td style="height: 22px; width: 715px">&nbsp;</td>
+            <td style="height: 22px; width: 814px">&nbsp;</td>
+            <td style="height: 22px; width: 843px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand" DataKeyNames="IdArchivo" AllowSorting="True" >
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand" DataKeyNames="IdArchivo" AllowSorting="True" style="margin-left: 101px" Width="415px" >
                     <Columns>
                         <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" SortExpression="IdArchivo" InsertVisible="false" ReadOnly="True" Visible="false"/>
-                        <asp:BoundField DataField="NombreArchivo" HeaderText="NombreArchivo" SortExpression="NombreArchivo" />
+                        <asp:BoundField DataField="NombreArchivo" HeaderText="Nombre de archivo" SortExpression="NombreArchivo" />
                         <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen"  Visible="false" />
-                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
+                        <asp:BoundField DataField="NombreCompleto" HeaderText="Cliente" SortExpression="NombreCompleto" />
                         <asp:TemplateField ShowHeader="False" >
                             <ItemTemplate>
                                 <asp:ImageButton ID="ImageButton1" Width="27px" ImageUrl="~/Interfaz/descarga.png" CommandArgument='<%# Eval("imagen")%>'  runat="server" CausesValidation="false" CommandName="dwn" Text="Botón" />
@@ -213,10 +187,19 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 20px; width: 1329px">&nbsp;</td>
-            <td style="height: 20px; width: 1709px">&nbsp;</td>
-            <td style="height: 20px; width: 1389px">&nbsp;</td>
-            <td style="height: 20px; width: 715px">&nbsp;</td>
+            <td style="height: 22px; width: 814px">&nbsp;</td>
+            <td style="height: 22px; width: 843px">&nbsp;</td>
+            <td style="height: 22px; width: 176px;" colspan="2">
+                &nbsp;</td>
+            <td style="height: 22px; width: 358px;">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 22px">&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="height: 20px; width: 814px">&nbsp;</td>
+            <td style="height: 20px; width: 843px">&nbsp;</td>
             <td style="height: 20px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 20px; width: 358px;">&nbsp;</td>
             <td style="height: 20px; width: 358px;">&nbsp;</td>
@@ -225,23 +208,17 @@
             <td style="height: 20px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 24px; width: 1329px; font-weight: bold;">&nbsp;</td>
-            <td style="height: 24px; font-weight: bold; width: 1709px;">
-                &nbsp;</td>
-            <td style="height: 24px; font-weight: bold; width: 1389px;">
+            <td style="height: 24px; font-weight: bold; width: 814px;">
                 &nbsp;</td>
             
-            <td></td>
+            <td style="width: 843px"></td>
             <td style="height: 24px">&nbsp;</td>
             <td style="height: 24px">&nbsp;</td>
             <td style="height: 24px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 20px; width: 1329px">              
-            </td>
-            <td style="height: 20px; width: 1709px">&nbsp;</td>
-            <td style="height: 20px; width: 1389px">&nbsp;</td>
-            <td style="height: 20px; width: 715px">&nbsp;</td>
+            <td style="height: 20px; width: 814px">&nbsp;</td>
+            <td style="height: 20px; width: 843px">&nbsp;</td>
             <td style="height: 20px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 20px; width: 358px;">&nbsp;</td>
             <td style="height: 20px;  width: 358px;">&nbsp;</td>
@@ -250,10 +227,8 @@
             <td style="height: 20px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 24px; width: 1329px">&nbsp;</td>
-            <td style="height: 24px; width: 1709px">&nbsp;</td>
-            <td style="height: 24px; width: 1389px">&nbsp;</td>
-            <td style="height: 24px; width: 715px">&nbsp;</td>
+            <td style="height: 24px; width: 814px">&nbsp;</td>
+            <td style="height: 24px; width: 843px">&nbsp;</td>
             <td style="height: 24px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 24px; width: 358px;">&nbsp;</td>
             <td style="height: 24px; width: 358px;">&nbsp;</td>
@@ -262,10 +237,8 @@
             <td style="height: 24px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">&nbsp;</td>
-            <td style="height: 22px; width: 1389px">&nbsp;</td>
-            <td style="height: 22px; width: 715px">&nbsp;</td>
+            <td style="height: 22px; width: 814px">&nbsp;</td>
+            <td style="height: 22px; width: 843px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
@@ -274,10 +247,8 @@
             <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;&nbsp;</td>
-            <td style="height: 22px; width: 1709px">&nbsp;</td>
-            <td style="height: 22px; width: 1389px">&nbsp;</td>
-            <td style="height: 22px; width: 715px">&nbsp;</td>
+            <td style="height: 22px; width: 814px">&nbsp;</td>
+            <td style="height: 22px; width: 843px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
@@ -285,17 +256,5 @@
             <td style="height: 22px; width: 358px;">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
         </tr>
-        <tr>
-            <td style="height: 22px; width: 1329px">&nbsp;</td>
-            <td style="height: 22px; width: 1709px">&nbsp;</td>
-            <td style="height: 22px; width: 1389px">&nbsp;</td>
-            <td style="height: 22px; width: 715px">&nbsp;</td>
-            <td style="height: 22px; width: 176px;" colspan="2">&nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-        </tr>
-    </table>
+        </table>
 </asp:Content>

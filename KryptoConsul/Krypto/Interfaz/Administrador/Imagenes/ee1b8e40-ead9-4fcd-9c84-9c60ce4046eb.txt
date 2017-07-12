@@ -1,0 +1,29 @@
+<asp:GridView ID="GridView2" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource3" OnRowCommand="GridView2_RowCommand" Width="721px" >
+                    <Columns>
+                        <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" SortExpression="IdArchivo" InsertVisible="true"/>
+                        <asp:BoundField DataField="NombreArchivo" HeaderText="NombreArchivo" SortExpression="NombreArchivo" />
+
+                        <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen" />
+                        <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" SortExpression="IdCliente" InsertVisible="False" />
+                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
+                         <asp:TemplateField ShowHeader="False">
+                            <ItemTemplate>
+                                <asp:ImageButton ID="ImageButton1" ImageUrl="~/Interfaz/descarga.png" Width="27px" CommandArgument='<%# Eval("imagen")%>' runat="server" CausesValidation="false"  CommandName="dwn" Text="Botón" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
+                        <asp:CommandField ButtonType="Button" InsertImageUrl="~/Interfaz/descarga.png"  ShowEditButton="True" >
+                        <ControlStyle BackColor="Red" BorderStyle="Double" Font-Size="Medium" ForeColor="White" />
+                        </asp:CommandField>
+                    </Columns>
+                </asp:GridView>
+
+
+
+
+SELECT Archivoes.NombreArchivo, Archivoes.imagen, Clientes.NombreCompleto FROM Archivoes LEFT OUTER JOIN Clientes ON Clientes.IdCliente = Archivoes.idcliente WHERE (Clientes.IdCliente = @IdCliente)
+
+
+ SelectCommand="SELECT Archivoes.NombreArchivo, Archivoes.imagen, Clientes.NombreCompleto FROM Archivoes LEFT OUTER JOIN Clientes ON Clientes.IdCliente = Archivoes.idcliente WHERE (Clientes.IdCliente = @IdCliente)" 
+                    DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo" 
+                    InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen]) VALUES (@NombreArchivo, @imagen)" 
+                    UpdateCommand="UPDATE [Archivoes] SET [NombreArchivo] = @NombreArchivo WHERE [IdArchivo] = @IdArchivo">

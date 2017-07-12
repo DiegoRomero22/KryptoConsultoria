@@ -9,10 +9,10 @@ namespace Krypto.Models
 {
     public class NominaYRecursosHumanos
     {
-        public NominaYRecursosHumanos()
-        {
-            ofertaKrypto = new List<OfertaKrypto>();
-        }
+        //public NominaYRecursosHumanos()
+        //{
+        //    ofertaKrypto = new List<OfertaKrypto>();
+        //}
         [Key]
 
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
@@ -41,6 +41,6 @@ namespace Krypto.Models
         public string Observaciones { get; set; }
 
         //Relación.
-        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
+        //public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
     }
 }

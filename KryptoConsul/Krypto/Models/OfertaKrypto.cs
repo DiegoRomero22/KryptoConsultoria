@@ -45,18 +45,18 @@ namespace Krypto.Models
         [Required]
         public DateTime Fecha { get; set; }
 
-     
+
 
         //Relación
         //[ForeignKey("IdCliente")]
         //public int IdCliente { get; set; }
         //public virtual Cliente cliente { get; set; }
 
-        public virtual DetalleRegistros detalleRegistros { get; set; }
-      
-        public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
-        public virtual ICollection<Usuario> usuario { get; set; }
-        public virtual ServicioDeContabilidad servicioDeContabilidad { get; set; }
+        //public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
+        //public virtual ICollection<Usuario> usuario { get; set; }
+        public virtual ICollection<ServicioDeContabilidad> ServicioDecontabilidad { get; set; }
+   
 
+       
     }
 }

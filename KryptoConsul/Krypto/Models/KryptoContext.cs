@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Data.Entity;
 using Krypto.Logic;
+using System.Data.Entity.Infrastructure;
 
 namespace Krypto.Models
 {
@@ -16,6 +17,7 @@ namespace Krypto.Models
         {
             Database.SetInitializer(new InitializeDataBase());
         }
+              
 
         public DbSet<Cliente> Cliente { get; set; }
 

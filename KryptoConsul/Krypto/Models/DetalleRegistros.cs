@@ -9,10 +9,7 @@ namespace Krypto.Models
 {
     public class DetalleRegistros
     {
-        public DetalleRegistros()
-        {
-            ofertaKrypto = new List<OfertaKrypto>();
-        }
+        
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
 
@@ -62,7 +59,6 @@ namespace Krypto.Models
         public Int16 NumeroCajaMenores { get; set; }
 
         //Relación.
-        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
 
 
     }

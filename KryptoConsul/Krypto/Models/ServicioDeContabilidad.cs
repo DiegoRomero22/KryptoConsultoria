@@ -4,19 +4,16 @@ using System.Linq;
 using System.Web;
 using Krypto.Logic;
 using System.ComponentModel.DataAnnotations;
-
+using System.ComponentModel.DataAnnotations.Schema;
+using System.Data.Entity;
 
 namespace Krypto.Models
 {
     public class ServicioDeContabilidad
-    {
+    {       
         
-        public ServicioDeContabilidad ()
-        {
-            ofertaKrypto = new List<OfertaKrypto>();
-        }
-        [ScaffoldColumn(false)]
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public int IdServicioContabilidad { get; set; }
 
@@ -60,9 +57,11 @@ namespace Krypto.Models
         [Required]
         public DateTime FechaCorteFinanciero { get; set; }
 
-        //Relacion.
-        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
+        public int idofertakrypto { get; set; }
+        public virtual OfertaKrypto OfertaKrypto { get; set; }
 
-
+      
+        
     }
+
 }

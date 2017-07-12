@@ -43,7 +43,7 @@ namespace Krypto.Logic
         public virtual Rol Rol { get; set; }
         
         public virtual ICollection<Tarea> tarea { get; set; }
-        public virtual OfertaKrypto ofertaKrypto { get; set; }
+        //public virtual OfertaKrypto ofertaKrypto { get; set; }
 
 
 

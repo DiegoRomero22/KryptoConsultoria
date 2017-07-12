@@ -62,7 +62,7 @@
            <td style="width: 169px; " rowspan="4">
            <div class="form-group"  >
 
-             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" TextMode="Email" OnTextChanged="TxtUsuario_TextChanged" ></asp:TextBox>
+             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" OnTextChanged="TxtUsuario_TextChanged" ></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtUsuario" CssClass="text-danger" ErrorMessage="Ingrese un correo."></asp:RequiredFieldValidator>
 
            </div>
