@@ -38,8 +38,8 @@ namespace Krypto.Interfaz.Administrador
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
             Guid nuevoId = Guid.NewGuid();
-            UsuarioBLL registrarLider = new UsuarioBLL();
-            if (registrarLider.registroLider(nuevoId, txtNombreLider.Text, ulong.Parse(txtDocumentoLider.Text), txtEmailLider.Text, txtPasswordLider.Text, txtDireccionLider.Text, Int64.Parse(txtTelefonoLider.Text), 2) == true)
+            AdministradorBLL registrarLider = new AdministradorBLL();
+            if (registrarLider.registroLider(nuevoId, txtNombreLider.Text, ulong.Parse(txtDocumentoLider.Text), txtEmailLider.Text, txtPasswordLider.Text, txtDireccionLider.Text, Int64.Parse(txtTelefonoLider.Text),1) == true)
             {
                 Response.Write("<script>alert('Se registro correctamente')</script>");
                 limpiarCasillas();

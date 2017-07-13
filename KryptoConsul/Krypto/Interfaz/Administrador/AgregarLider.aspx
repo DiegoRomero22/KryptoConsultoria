@@ -154,7 +154,7 @@
             <td colspan="3">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="btnAgregar" runat="server" Text="Agregar" CssClass="btn" BackColor="#bf0d11" OnClick="btnAgregar_Click" Width="140px" ForeColor="White"/>
                 &nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BtnCancelar"   runat="server" Text="Cancelar" CssClass="btn" Width="140px" OnClick="BtnCancelar_Click"  />
+                <asp:Button ID="BtnCancelar"   runat="server" Text="Cancelar" CssClass="btn" Width="140px" OnClick="BtnCancelar_Click" PostBackUrl="~/Interfaz/Administrador/Administrador.aspx"  />
             </td>
             <td style="width: 17px">&nbsp;</td>
             <td style="width: 64px">&nbsp;</td>

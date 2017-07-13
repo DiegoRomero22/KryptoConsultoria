@@ -37,10 +37,9 @@ namespace Krypto.Models
 
         [Required]
         public bool Estado { get; set; }
-
         
-
-        //Relación con Cargo.
+        //Relación.
+        public virtual Lider Lider { get; set; }
  
     }
 }

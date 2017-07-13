@@ -21,7 +21,7 @@ namespace Krypto.Models
 
         public DbSet<Cliente> Cliente { get; set; }
 
-        public DbSet<Usuario> Usuario { get; set; }
+        public DbSet<Administrador> Administrador { get; set; }
 
         public DbSet<Rol> Rol { get; set; }
 

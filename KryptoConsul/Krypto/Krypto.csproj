@@ -558,8 +558,9 @@
       <DependentUpon>VerProyecto.aspx</DependentUpon>
     </Compile>
     <Compile Include="Logic\ArchivoBLL.cs" />
+    <Compile Include="Logic\ClienteBLL.cs" />
     <Compile Include="Logic\PlantillasKryptoBLL.cs" />
-    <Compile Include="Logic\UsuarioBLL.cs" />
+    <Compile Include="Logic\AdministradorBLL.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
@@ -567,13 +568,14 @@
     <Compile Include="Models\GrupoDeTrabajo.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
+    <Compile Include="Models\Lider.cs" />
     <Compile Include="Models\NominaYRecursosHumanos.cs" />
     <Compile Include="Models\OfertaKrypto.cs" />
     <Compile Include="Models\Proyecto.cs" />
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\ServicioDeContabilidad.cs" />
     <Compile Include="Models\Tarea.cs" />
-    <Compile Include="Models\Usuario.cs" />
+    <Compile Include="Models\Administrador.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Interfaz\ProjectLeader.aspx.cs">
       <DependentUpon>ProjectLeader.aspx</DependentUpon>

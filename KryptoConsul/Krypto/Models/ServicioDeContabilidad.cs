@@ -13,7 +13,6 @@ namespace Krypto.Models
     {       
         
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         [Required]
         public int IdServicioContabilidad { get; set; }
 
