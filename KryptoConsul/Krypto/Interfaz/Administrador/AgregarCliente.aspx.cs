@@ -8,7 +8,7 @@ namespace Krypto.Interfaz.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+            
         }
 
         protected void BtnAgregar_Click(object sender, EventArgs e)
@@ -35,7 +35,7 @@ namespace Krypto.Interfaz.Administrador
                     ClienteBLL cBLL = new ClienteBLL();
                     if (cBLL.Agregarcliente(TxtNombreCompleto.Text, TxtDocumento.Text, TxtEmail.Text, TxtContraseña.Text, CheckBoxActivo.Checked))
                     {
-
+                        limpiarCasilas();
                     }
                 }
             }
@@ -43,9 +43,15 @@ namespace Krypto.Interfaz.Administrador
         
         protected void BtnInicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Interfaz/Administrador/Administrador.aspx");
+            Response.Redirect("~/Interfaz/Administrador/Administrador.aspx");            
+        }
 
-            
+        public void limpiarCasilas()
+        {
+            TxtNombreCompleto.Text = "";
+            TxtDocumento.Text = "";
+            TxtEmail.Text = "";
+            TxtContraseña.Text = "";
         }
     }
     }
