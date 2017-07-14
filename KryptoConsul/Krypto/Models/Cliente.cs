@@ -17,6 +17,7 @@ namespace Krypto.Models
         [ScaffoldColumn(false)]
         [Key]  
         public int IdCliente { get; set; }
+        public int clienteid { get; set; }
 
         [Required, StringLength(100), Display(Name = "NombreCompleto")]
         public string NombreCompleto { get; set; }  

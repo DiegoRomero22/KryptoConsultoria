@@ -9,7 +9,7 @@ using System.Data.Entity;
 
 namespace Krypto.Logic
 {
-    public class AdministradorBLL
+    public class UsuarioBLL
     {
 
 
@@ -19,13 +19,13 @@ namespace Krypto.Logic
             {
                 using (KryptoContext context = new KryptoContext())
                 {
-                    var mostrarinfo = from adm in context.Administrador
-                                      where adm.Email == email || adm.NombreCompleto == email && adm.Contraseña == clave
+                    var mostrarinfo = from adm in context.Usuario
+                                      where adm.Email == email && adm.Contraseña == clave
                                       select adm;
 
                     //Buscar el Rol del Usuario que se loguea.
-                    var idRol = from adm in context.Administrador
-                                where adm.Email == email || adm.NombreCompleto == email
+                    var idRol = from adm in context.Usuario
+                                where adm.Email == email || adm.NombreCompleto == email && adm.Contraseña == clave
                                 select adm.RolId;
 
                     //Este if confirma si hay un usuario en la Base de Datos.
@@ -45,17 +45,17 @@ namespace Krypto.Logic
                     }
                     else if (idRol.FirstOrDefault().Equals(2))
                     {
-                        HttpContext.Current.Session["liderLogin"] = 2;
+                        HttpContext.Current.Session["LiderLogin"] = 2;
                         return 2;
                     }
                     else if (idRol.FirstOrDefault().Equals(3))
                     {
-                        HttpContext.Current.Session["Usuariologin"] = 3;
+                        HttpContext.Current.Session["Clientelogin"] = 3;
                         return 3;
                     }
                     else if (idRol.FirstOrDefault().Equals(4))
                     {
-                        HttpContext.Current.Session["ClienteLogin"] = 4;
+                        HttpContext.Current.Session["ContadoLogin"] = 4;
                         return 4;
                     }
                     else
@@ -88,7 +88,7 @@ namespace Krypto.Logic
 
             string sesionActual = HttpContext.Current.Session["UserLogin"].ToString();
             KryptoContext context = new KryptoContext();
-            Guid? idUser = (from admin in context.Administrador
+            Guid? idUser = (from admin in context.Usuario
                             where admin.Email == sesionActual || admin.NombreCompleto == sesionActual
                             select admin.IdUsuario).FirstOrDefault();
 
@@ -99,7 +99,7 @@ namespace Krypto.Logic
         {
             try
             {
-                Administrador admin = new Administrador();
+                Usuario admin = new Usuario();
                 {
                     admin.IdUsuario = id;
                     admin.NombreCompleto = nnombrecompleto;
@@ -113,7 +113,7 @@ namespace Krypto.Logic
 
                 };
                 KryptoContext context = new KryptoContext();
-                context.Administrador.Add(admin);
+                context.Usuario.Add(admin);
                 context.SaveChanges();
                 return true;
             }

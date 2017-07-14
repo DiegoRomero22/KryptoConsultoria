@@ -560,7 +560,7 @@
     <Compile Include="Logic\ArchivoBLL.cs" />
     <Compile Include="Logic\ClienteBLL.cs" />
     <Compile Include="Logic\PlantillasKryptoBLL.cs" />
-    <Compile Include="Logic\AdministradorBLL.cs" />
+    <Compile Include="Logic\UsuarioBLL.cs" />
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
@@ -575,7 +575,7 @@
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\ServicioDeContabilidad.cs" />
     <Compile Include="Models\Tarea.cs" />
-    <Compile Include="Models\Administrador.cs" />
+    <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Interfaz\ProjectLeader.aspx.cs">
       <DependentUpon>ProjectLeader.aspx</DependentUpon>

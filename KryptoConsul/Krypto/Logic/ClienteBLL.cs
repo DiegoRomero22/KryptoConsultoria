@@ -32,6 +32,46 @@ namespace Krypto.Logic
 
                 throw;
             }
+        }    
+
+    public int ValidarCliente(string email, string pass)
+    {
+            try
+            {
+                using (KryptoContext context = new KryptoContext())
+                {
+                    var mostrarinfo = from adm in context.Cliente
+                                      where adm.Email == email || adm.NombreCompleto == email && adm.Contraseña == pass
+                                      select adm;
+
+                    //return mostrarinfo.SingleOrDefault();
+
+                    var idRol = from adm in context.Cliente
+                                where adm.Email == email || adm.NombreCompleto == email
+                                select adm.IdCliente;
+                    if (mostrarinfo.Count() == 0)
+                    {
+                        return 0; //0 vale a 'No hay usuarios'
+                    }
+                    else if (idRol.FirstOrDefault().Equals(3))
+                    {
+                        HttpContext.Current.Session["Adminlogin"] = 3;
+
+                        ///Si el Rol es 1 entonces es Administrador.
+                        return 3;
+                    }
+                    else
+                    {
+                        return 0;
+                    }
+
+                }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
         }
     }
 }

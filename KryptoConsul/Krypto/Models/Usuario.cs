@@ -8,7 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Logic
 {
-    public class Administrador
+    public class Usuario
 
     {
         [Key]

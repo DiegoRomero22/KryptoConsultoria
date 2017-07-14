@@ -33,7 +33,7 @@ namespace Krypto.Models
         public string Horas { get; set; }
 
         //Relaciones.
-        public virtual Administrador Administrador { get; set; }
+        public virtual Usuario usuario { get; set; }
         public virtual ICollection<GrupoDeTrabajo> GrupoDeTrabajo { get; set; }
 
     }

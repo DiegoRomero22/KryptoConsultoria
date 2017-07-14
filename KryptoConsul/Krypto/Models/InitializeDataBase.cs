@@ -14,7 +14,7 @@ namespace Krypto.Models
         protected override void Seed(KryptoContext context)
         {
             ListaRol().ForEach(r => context.Rol.Add(r));
-            ListarAdministrador().ForEach(u => context.Administrador.Add(u));
+            ListarUsuarios().ForEach(u => context.Usuario.Add(u));
             context.SaveChanges(); 
            
         }
@@ -69,11 +69,11 @@ namespace Krypto.Models
             return rol;
         }
 
-        private static List<Administrador> ListarAdministrador()
+        private static List<Usuario> ListarUsuarios()
         {
-            var admin = new List<Administrador>
+            var usuario = new List<Usuario>
             {
-                new Administrador
+                new Usuario
                 {
                     IdUsuario = Guid.NewGuid(),
                     NombreCompleto = "Diego Alejandro",
@@ -85,7 +85,7 @@ namespace Krypto.Models
                     Activo = true,
                     RolId = ( 1),                  
                 },
-                new Administrador
+                new Usuario
                 {
                     IdUsuario = Guid.NewGuid(),
                     NombreCompleto = "Jairo Andres",                    
@@ -98,8 +98,21 @@ namespace Krypto.Models
                     RolId = 2,                     
                     
                 },
+                new Usuario
+                {
+                    IdUsuario = Guid.NewGuid(),
+                    NombreCompleto = "Pruebacliente",
+                    Documento = 15646,
+                    Email = "cliente@hotmail.com",
+                    Contraseña = "123456",
+                    Direccion = "Calle46545as",
+                    Telefono = 3315646,
+                    Activo = true,
+                    RolId = 3,
+
+                },
             };
-            return admin;
+            return usuario;
         }
 
         //private static List<TipoArchivo> TArchivo()
