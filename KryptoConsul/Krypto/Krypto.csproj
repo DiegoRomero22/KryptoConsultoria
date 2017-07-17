@@ -246,9 +246,6 @@
     <Content Include="Interfaz\Administrador\AgregarCliente.aspx" />
     <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
-    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx" />
-    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx" />
-    <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\descarga.png" />
     <Content Include="Interfaz\Login.aspx" />
@@ -480,27 +477,6 @@
     <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx.designer.cs">
       <DependentUpon>PlantillaOfertaKrypto.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx.cs">
-      <DependentUpon>PlantillaOfertaKrypto1.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto1.aspx.designer.cs">
-      <DependentUpon>PlantillaOfertaKrypto1.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx.cs">
-      <DependentUpon>PlantillaOfertaKrypto2.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto2.aspx.designer.cs">
-      <DependentUpon>PlantillaOfertaKrypto2.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.cs">
-      <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto3.aspx.designer.cs">
-      <DependentUpon>PlantillaOfertaKrypto3.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Interfaz\Cliente\Cliente.aspx.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -564,16 +540,13 @@
     <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
-    <Compile Include="Models\DetalleRegistros.cs" />
     <Compile Include="Models\GrupoDeTrabajo.cs" />
     <Compile Include="Models\InitializeDataBase.cs" />
     <Compile Include="Models\KryptoContext.cs" />
     <Compile Include="Models\Lider.cs" />
-    <Compile Include="Models\NominaYRecursosHumanos.cs" />
     <Compile Include="Models\OfertaKrypto.cs" />
     <Compile Include="Models\Proyecto.cs" />
     <Compile Include="Models\Rol.cs" />
-    <Compile Include="Models\ServicioDeContabilidad.cs" />
     <Compile Include="Models\Tarea.cs" />
     <Compile Include="Models\Usuario.cs" />
     <Compile Include="Models\IdentityModels.cs" />

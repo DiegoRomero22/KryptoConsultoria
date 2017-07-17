@@ -31,12 +31,6 @@ namespace Krypto.Models
 
         public DbSet<Cargo> cargo { get; set; }
 
-        public DbSet<DetalleRegistros> DetalleRegistros { get; set; }
-
-        public DbSet<ServicioDeContabilidad> ServicioDecontabilidad { get; set; }
-
-        public DbSet<NominaYRecursosHumanos> NominaYRecursosHumanos { get; set; }
-
         public DbSet<OfertaKrypto> ofertaKrypto { get; set; }
 
         public DbSet<Proyecto> proyecto { get; set; }

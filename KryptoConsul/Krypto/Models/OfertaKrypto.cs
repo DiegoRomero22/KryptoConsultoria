@@ -47,14 +47,10 @@ namespace Krypto.Models
 
 
 
-        //Relación
-        [ForeignKey("cliente")]
-        public int IdCliente { get; set; }
+        //Relación     
         public virtual Cliente cliente { get; set; }
-
-        //public virtual NominaYRecursosHumanos nominaYRecursosHumanos { get; set; }
-        //public virtual ICollection<Usuario> usuario { get; set; }
-        public virtual ICollection<ServicioDeContabilidad> ServicioDecontabilidad { get; set; }
+        public virtual Usuario usuario { get; set; }
+        
    
 
        

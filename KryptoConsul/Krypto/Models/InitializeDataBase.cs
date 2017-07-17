@@ -25,6 +25,12 @@ namespace Krypto.Models
             {
                 new Rol
                 {
+                    IdRol = 0,
+                    NombreRol = "Seleccionar...",
+                    Activo = true
+                },
+                new Rol
+                {
                     IdRol = 1,
                     NombreRol = "Administrador",
                     Activo = true

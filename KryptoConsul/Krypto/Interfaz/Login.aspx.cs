@@ -40,6 +40,7 @@ namespace Krypto.Interfaz
 
         public void validarLogin()
         {
+           
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
             //Valida el Usuario y contraseña segun el rol            
             if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text)== 1)

@@ -95,25 +95,54 @@ namespace Krypto.Logic
             return idUser;
         }
 
-        public bool registroLider(Guid id, string nnombrecompleto, ulong ddocumento, string eemail, string cclave, string ddirecion, Int64 ttelefono, int rrol, bool aactivo = true)
+        //public bool registroLider(Guid id, string nnombrecompleto, Int64 ddocumento, string eemail, string cclave, string ddirecion, Int64 ttelefono, int rrol, int roloferta ,bool aactivo = true )
+        //{
+        //    try
+        //    {
+        //        Usuario admin = new Usuario();
+        //        {
+        //            admin.IdUsuario = id;
+        //            admin.NombreCompleto = nnombrecompleto;
+        //            admin.Documento = ddocumento;
+        //            admin.Email = eemail;
+        //            admin.Contraseña = cclave;
+        //            admin.Direccion = ddirecion;
+        //            admin.Telefono = ttelefono;
+        //            admin.Activo = aactivo;
+        //            admin.RolId = rrol;
+        //            admin.RolOferta = roloferta;
+
+        //        };
+        //        KryptoContext context = new KryptoContext();
+        //        context.Usuario.Add(admin);
+        //        context.SaveChanges();
+        //        return true;
+        //    }
+        //    catch (Exception)
+        //    {
+
+        //        throw;
+        //    }
+        //}
+        public bool Registrar(Guid id, string nombre, Int64 documento, string email, string clave, string direccion, Int64 telefono, int rol, int roloferta , bool activo = true)
         {
             try
             {
-                Usuario admin = new Usuario();
+                Usuario user = new Usuario();
                 {
-                    admin.IdUsuario = id;
-                    admin.NombreCompleto = nnombrecompleto;
-                    admin.Documento = ddocumento;
-                    admin.Email = eemail;
-                    admin.Contraseña = cclave;
-                    admin.Direccion = ddirecion;
-                    admin.Telefono = ttelefono;
-                    admin.Activo = aactivo;
-                    admin.RolId = rrol;
-
+                    user.IdUsuario = id;
+                    user.NombreCompleto = nombre;
+                    user.Documento = documento;
+                    user.Email = email;
+                    user.Contraseña = clave;
+                    user.Direccion = direccion;
+                    user.Telefono = telefono;                   
+                    user.RolId = rol;
+                    user.RolOferta = roloferta;
+                    user.Activo = activo;
                 };
                 KryptoContext context = new KryptoContext();
-                context.Usuario.Add(admin);
+                context.Usuario.Add(user);
                 context.SaveChanges();
                 return true;
             }
