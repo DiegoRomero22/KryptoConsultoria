@@ -8,12 +8,21 @@ namespace Krypto.Interfaz.Administrador
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            GridView1.Visible = true;
+            if (!IsPostBack)
+            {
+                GridView1.Visible = true;
+            }
+            else
+            {
+                
+            }
+            
         }
 
         protected void BtnAgregar_Click(object sender, EventArgs e)
-        {            
+        {
             {
+                
                 if (TxtNombreCompleto.Text == "")
                 {
                     Response.Write("<script>alert('Digite un Nombre')</script>");
@@ -38,14 +47,17 @@ namespace Krypto.Interfaz.Administrador
                 {
                     Response.Write("<script>alert('digite un telefono')</script>");
                 }
+               
                 else
                 {
                     Guid nuevoId = Guid.NewGuid();
                     UsuarioBLL userBll = new UsuarioBLL();
-                    if (userBll.Registrar(nuevoId, TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), DropDownList1.SelectedIndex, 1,  CheckBoxActivo.Checked))
+                    if (userBll.Registrar(nuevoId, TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), DropDownList1.SelectedIndex, 1, CheckBoxActivo.Checked))
                     {
                         limpiarCasilas();
                         GridView1.Visible = true;
+                        Response.Redirect("~/Interfaz/Administrador/AgregarUsuarios.aspx");
+                    
                     }
                 }
             }

@@ -80,9 +80,9 @@
             </td>
             <td style="height: 22px; width: 176px;" colspan="1">
                 <asp:Label ID="LblCliente" runat="server" Text="Seleccione el cliente:"></asp:Label>
-                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdCliente" AutoPostBack="True">
+                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="RolId" AutoPostBack="True" >
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdCliente], [NombreCompleto] FROM [Clientes]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [NombreCompleto], [RolId] FROM [Usuarios]"></asp:SqlDataSource>
             </td>
             <td style="height: 22px; width: 332px;">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>

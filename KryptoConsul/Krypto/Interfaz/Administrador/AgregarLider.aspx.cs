@@ -35,15 +35,16 @@ namespace Krypto.Interfaz.Administrador
             Response.Redirect("PaginaAdministrador.aspx");
         }
 
-        //protected void btnAgregar_Click(object sender, EventArgs e)
-        //{
-        //    Guid nuevoId = Guid.NewGuid();
-        //    UsuarioBLL registrarLider = new UsuarioBLL();
-        //    if (registrarLider.agregarCliente(nuevoId, txtNombreLider.Text, Convert.ToInt64(txtDocumentoLider.Text), txtEmailLider.Text, txtPasswordLider.Text, txtDireccionLider.Text, Int64.Parse(txtTelefonoLider.Text),1,2) == true)
-        //    {
-        //        Response.Write("<script>alert('Se registro correctamente')</script>");
-        //        limpiarCasillas();
-        //    }                     
-        //}
+        protected void btnAgregar_Click(object sender, EventArgs e)
+        {
+            Guid nuevoId = Guid.NewGuid();
+            UsuarioBLL registrarLider = new UsuarioBLL();
+
+            if (registrarLider.Registrar(nuevoId, txtNombreLider.Text, Convert.ToInt64(txtDocumentoLider.Text), txtEmailLider.Text, txtPasswordLider.Text, txtDireccionLider.Text, Int64.Parse(txtTelefonoLider.Text), 3, 2) == true)
+            {
+                Response.Write("<script>alert('Se registro correctamente')</script>");
+                limpiarCasillas();
+            }
+        }
     }
 }

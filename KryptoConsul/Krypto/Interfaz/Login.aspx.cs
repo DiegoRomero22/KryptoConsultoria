@@ -1,11 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
-using System.Web.UI;
-using System.Web.UI.WebControls;
 using Krypto.Logic;
-using Krypto;
 
 namespace Krypto.Interfaz
 {
@@ -40,15 +34,16 @@ namespace Krypto.Interfaz
 
         public void validarLogin()
         {
-           
+         
             UsuarioBLL LoginuserBLL = new UsuarioBLL();
             //Valida el Usuario y contraseña segun el rol            
             if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text)== 1)
-            {
+            {                
                 //Rol Administrador.
 
                 Session["Admin"] = TxtUsuario.Text;               
                 usuarioEstaLogueado = 1;
+                //Sessseion de nombre de usuario
                 Session["email"] = TxtUsuario.Text;
                 Response.Redirect("Administrador/Administrador.aspx");
 
@@ -57,7 +52,7 @@ namespace Krypto.Interfaz
             else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
                 Session["Lider"] = TxtUsuario.Text;
-                usuarioEstaLogueado = 2;
+                usuarioEstaLogueado = 2;                              
                 Response.Redirect("Administrador/AgregarLider.aspx");
             }
             //Rol Usuario.
@@ -65,6 +60,8 @@ namespace Krypto.Interfaz
             {
                 Session["Clientelogin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 3;
+                //Session de nombre del cliente
+                Session["nombreCliente"] = TxtUsuario.Text;
                 Response.Redirect("Cliente/Cliente.aspx");
             }
             //Rol Cliente.

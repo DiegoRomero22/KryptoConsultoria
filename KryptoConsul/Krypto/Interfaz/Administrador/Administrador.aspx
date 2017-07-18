@@ -65,7 +65,7 @@
         <tr>
             <td style="width: 49px">&nbsp;</td>
             <td style="width: 252px">
-                <asp:Button ID="BtnVerClientes" runat="server" CssClass="btn" Text="Ver Clientes" Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnVerClientes_Click" />
+                <asp:Button ID="BtnVerClientes" runat="server" CssClass="btn" Text="Agregar Usuarios" Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnVerClientes_Click" />
             </td>
             <td style="font-size: 11pt">&nbsp;</td>
             <td>&nbsp;</td>
@@ -81,7 +81,7 @@
         <tr>
             <td style="width: 49px">&nbsp;</td>
             <td style="width: 252px">
-                <asp:Button ID="BtnAgregarLider" runat="server" CssClass="btn"  Text="Agregar Lider" Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarLider_Click"  />
+                <%--<asp:Button ID="BtnAgregarLider" runat="server" CssClass="btn"  Text="Agregar Lider" Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarLider_Click"  />--%>
             </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
@@ -112,7 +112,9 @@
         </tr>
         <tr>
             <td style="width: 49px">&nbsp;</td>
-            <td style="width: 252px">&nbsp;</td>
+            <td style="width: 252px">
+                <asp:Button ID="BtnAsignarLider" runat="server" CssClass="btn"  Text="Asignar Lider " Width="191px" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarLider_Click"  />
+            </td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>
             <td>&nbsp;</td>

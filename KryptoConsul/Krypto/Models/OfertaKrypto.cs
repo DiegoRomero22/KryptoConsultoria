@@ -45,10 +45,12 @@ namespace Krypto.Models
         [Required]
         public DateTime Fecha { get; set; }
 
+        [Required, StringLength(200), Display(Name = "Oferta")]
+        public string Oferta { get; set; }
 
 
         //Relación     
-        public virtual Cliente cliente { get; set; }
+        public virtual Cliente clienteId { get; set; }
         public virtual Usuario usuario { get; set; }
         
    

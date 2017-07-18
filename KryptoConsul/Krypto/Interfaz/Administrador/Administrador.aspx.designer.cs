@@ -76,15 +76,6 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Button BtnVerClientes;
         
         /// <summary>
-        /// Control BtnAgregarLider.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregarLider;
-        
-        /// <summary>
         /// Control BtnAgregarProyecto.
         /// </summary>
         /// <remarks>
@@ -92,5 +83,14 @@ namespace Krypto.Interfaz.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button BtnAgregarProyecto;
+        
+        /// <summary>
+        /// Control BtnAsignarLider.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button BtnAsignarLider;
     }
 }

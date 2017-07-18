@@ -32,7 +32,7 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnVerClientes_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AgregarCliente.aspx");
+            Response.Redirect("AgregarUsuarios.aspx");
         }
 
         protected void BtnAgregarProyecto_Click(object sender, EventArgs e)

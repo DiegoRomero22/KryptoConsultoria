@@ -3,6 +3,7 @@
       <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #A2001E">
         <div class="container">
             <div class="navbar-body" contenteditable="inherit">
+                <br />
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
 
                     <span class="icon-bar"></span>
@@ -315,6 +316,34 @@
         </tr>
         <tr>
             <td style="width: 213px">&nbsp;</td>
+            <td colspan="2" rowspan="2">
+                <asp:Label ID="LblOfertaKrypto" runat="server" Text="OFERTA"></asp:Label>
+                <asp:FileUpload ID="FileUOferta" runat="server" />
+            </td>
+            <td style="width: 184px" class="modal-sm">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 213px">&nbsp;</td>
+            <td style="width: 184px" class="modal-sm">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 213px">&nbsp;</td>
+            <td style="width: 367px" class="modal-sm">&nbsp;</td>
+            <td style="width: 329px">&nbsp;</td>
+            <td style="width: 184px" class="modal-sm">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 213px">&nbsp;</td>
+            <td style="width: 367px" class="modal-sm">&nbsp;</td>
+            <td style="width: 329px">&nbsp;</td>
+            <td style="width: 184px" class="modal-sm">&nbsp;</td>
+            <td>&nbsp;</td>
+        </tr>
+        <tr>
+            <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">&nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
@@ -325,7 +354,7 @@
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
                 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                <asp:Button ID="BtnSiguiente" runat="server" CssClass="btn" ForeColor="White" BackColor="#BF0D11" Text="Siguiente" Width="128px" OnClick="BtnSiguiente_Click" />
+                <asp:Button ID="BtnGuardar" runat="server" CssClass="btn" ForeColor="White" BackColor="#BF0D11" Text="Guardar" Width="128px" OnClick="BtnSiguiente_Click" />
             </td>
             <td style="width: 184px" class="modal-sm">
                 &nbsp;</td>

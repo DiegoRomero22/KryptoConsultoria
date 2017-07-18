@@ -14,7 +14,7 @@ namespace Krypto.Models
         protected override void Seed(KryptoContext context)
         {
             ListaRol().ForEach(r => context.Rol.Add(r));
-            ListarUsuarios().ForEach(u => context.Usuario.Add(u));
+            ListarUsuarios().ForEach(user => context.Usuario.Add(user));
             context.SaveChanges(); 
            
         }
@@ -25,49 +25,49 @@ namespace Krypto.Models
             {
                 new Rol
                 {
-                    IdRol = 0,
+                    IdRol = 1,
                     NombreRol = "Seleccionar...",
                     Activo = true
                 },
                 new Rol
                 {
-                    IdRol = 1,
+                    IdRol = 2,
                     NombreRol = "Administrador",
                     Activo = true
                 },
                 new Rol
                 {
-                    IdRol = 2,
+                    IdRol = 3,
                     NombreRol = "Lider",
                     Activo = true
                 },
                 new Rol
                 {
-                    IdRol = 3,
+                    IdRol = 4,
                     NombreRol = "Cliente",
                     Activo = true
                 },
                 new Rol
                 {
-                    IdRol = 4,
+                    IdRol = 5,
                     NombreRol = "Contador",
                     Activo = true
                 },
                 new Rol
                 {
-                    IdRol = 5,
+                    IdRol = 6,
                     NombreRol = "Nomina",
                     Activo = true
                 },
                  new Rol
                 {
-                    IdRol = 6,
+                    IdRol = 7,
                     NombreRol = "Auxiliar Contable",
                     Activo = true
                 },
                   new Rol
                 {
-                    IdRol = 7,
+                    IdRol = 8,
                     NombreRol = "Auditor",
                     Activo = true
                 },
@@ -79,7 +79,7 @@ namespace Krypto.Models
         {
             var usuario = new List<Usuario>
             {
-                new Usuario
+                new Logic.Usuario
                 {
                     IdUsuario = Guid.NewGuid(),
                     NombreCompleto = "Diego Alejandro",

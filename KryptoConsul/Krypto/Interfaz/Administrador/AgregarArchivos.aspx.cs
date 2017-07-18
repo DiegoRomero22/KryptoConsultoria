@@ -71,7 +71,7 @@ namespace Krypto.Interfaz.Administrador
             }
         }
 
-       
+        
     }
 }
 

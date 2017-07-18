@@ -8,6 +8,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Logic
 {
+
     public class Usuario
 
     {
@@ -30,7 +31,7 @@ namespace Krypto.Logic
         public string Direccion { get; set; }
 
         [Required]
-        public Int64 Telefono { get; set; }                
+        public Int64 Telefono { get; set; }
 
         [Required]
         public bool Activo { get; set; }
@@ -48,9 +49,6 @@ namespace Krypto.Logic
         public virtual ICollection<Tarea> tarea { get; set; }
         //public virtual OfertaKrypto ofertaKrypto { get; set; }
         public virtual ICollection<Lider> Lider { get; set; }
-
-
-
 
     }
 }

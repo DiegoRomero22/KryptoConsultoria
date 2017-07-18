@@ -17,7 +17,7 @@ namespace Krypto.Models
         [ScaffoldColumn(false)]
         [Key]  
         public int IdCliente { get; set; }
-    
+        
         [Required, StringLength(100), Display(Name = "NombreCompleto")]
         public string NombreCompleto { get; set; }  
            
@@ -33,6 +33,10 @@ namespace Krypto.Models
         [Required]
         public bool Activo { get; set; }
         //Relación.
+
+        public int RolId { get; set; }
+
+        public virtual Rol Rol { get; set; }
 
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
