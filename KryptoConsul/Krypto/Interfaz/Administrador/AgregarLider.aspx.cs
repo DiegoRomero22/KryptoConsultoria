@@ -14,20 +14,17 @@ namespace Krypto.Interfaz.Administrador
         {
 
         }
-        protected void ImageButton2_Click(object sender, ImageClickEventArgs e)
-        {
-            Response.Redirect("Inicio.aspx");
-        }
+       
 
 
         public void limpiarCasillas()
         {
-            txtNombreLider.Text = "";
-            txtDocumentoLider.Text = "";
-            txtEmailLider.Text = "";
-            txtPasswordLider.Text = "";
-            txtTelefonoLider.Text = "";
-            txtDireccionLider.Text = "";
+            //txtNombreLider.Text = "";
+            //txtDocumentoLider.Text = "";
+            //txtEmailLider.Text = "";
+            //txtPasswordLider.Text = "";
+            //txtTelefonoLider.Text = "";
+            //txtDireccionLider.Text = "";
         }
 
         protected void BtnCancelar_Click(object sender, EventArgs e)
@@ -37,14 +34,6 @@ namespace Krypto.Interfaz.Administrador
 
         protected void btnAgregar_Click(object sender, EventArgs e)
         {
-            Guid nuevoId = Guid.NewGuid();
-            UsuarioBLL registrarLider = new UsuarioBLL();
-
-            if (registrarLider.Registrar(nuevoId, txtNombreLider.Text, Convert.ToInt64(txtDocumentoLider.Text), txtEmailLider.Text, txtPasswordLider.Text, txtDireccionLider.Text, Int64.Parse(txtTelefonoLider.Text), 3, 2) == true)
-            {
-                Response.Write("<script>alert('Se registro correctamente')</script>");
-                limpiarCasillas();
-            }
         }
     }
 }

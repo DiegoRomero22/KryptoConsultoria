@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Web.UI.WebControls;
 using Krypto.Logic;
+using Krypto.Models;
+using System.Linq;
 
 namespace Krypto.Interfaz.Administrador
 {
@@ -14,15 +16,15 @@ namespace Krypto.Interfaz.Administrador
             }
             else
             {
-                
+
             }
-            
+
         }
 
         protected void BtnAgregar_Click(object sender, EventArgs e)
         {
             {
-                
+
                 if (TxtNombreCompleto.Text == "")
                 {
                     Response.Write("<script>alert('Digite un Nombre')</script>");
@@ -47,25 +49,25 @@ namespace Krypto.Interfaz.Administrador
                 {
                     Response.Write("<script>alert('digite un telefono')</script>");
                 }
-               
+
                 else
                 {
                     Guid nuevoId = Guid.NewGuid();
                     UsuarioBLL userBll = new UsuarioBLL();
-                    if (userBll.Registrar(nuevoId, TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), DropDownList1.SelectedIndex, 1, CheckBoxActivo.Checked))
+                    if (userBll.Registrar(nuevoId, TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), DropDownList1.SelectedIndex, CheckBoxActivo.Checked))
                     {
                         limpiarCasilas();
                         GridView1.Visible = true;
                         Response.Redirect("~/Interfaz/Administrador/AgregarUsuarios.aspx");
-                    
+
                     }
                 }
             }
         }
-        
+
         protected void BtnInicio_Click(object sender, EventArgs e)
         {
-            Response.Redirect("~/Interfaz/Administrador/Administrador.aspx");            
+            Response.Redirect("~/Interfaz/Administrador/Administrador.aspx");
         }
 
         public void limpiarCasilas()
@@ -77,8 +79,20 @@ namespace Krypto.Interfaz.Administrador
             TxtDireccion.Text = "";
             TxtTelefono.Text = "";
         }
-    }
-    }
+
+        protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+       
+        }
+        //public void cargartexto()
+        //{
+        //    UsuarioBLL userbll = new UsuarioBLL();
+        //    userbll.traerusuario(DropDownList2.SelectedIndex.ToString());
 
 
+        //}   
         
+    }
+}
+
+

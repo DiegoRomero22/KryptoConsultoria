@@ -124,7 +124,7 @@ namespace Krypto.Logic
         //        throw;
         //    }
         //}
-        public bool Registrar(Guid id, string nombre, Int64 documento, string email, string clave, string direccion, Int64 telefono, int rol, int roloferta , bool activo = true)
+        public bool Registrar(Guid id, string nombre, Int64 documento, string email, string clave, string direccion, Int64 telefono, int rol, bool activo = true)
         {
             try
             {
@@ -138,7 +138,7 @@ namespace Krypto.Logic
                     user.Direccion = direccion;
                     user.Telefono = telefono;                   
                     user.RolId = rol;
-                    user.RolOferta = roloferta;
+                    
                     user.Activo = activo;
                 };
                 KryptoContext context = new KryptoContext();
@@ -152,6 +152,18 @@ namespace Krypto.Logic
                 throw;
             }
         }
+        //public Usuario traerusuario(string user)
+        //{
+
+        //    using (KryptoContext contect = new KryptoContext())
+        //    {
+        //        var User2 = from u in contect.Usuario
+        //                   where u.NombreCompleto == user
+        //                   select u;
+        //        return User2.FirstOrDefault();
+        //    }
+        //}
         
     }
 }
+

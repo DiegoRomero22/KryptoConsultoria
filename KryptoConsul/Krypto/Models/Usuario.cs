@@ -13,7 +13,7 @@ namespace Krypto.Logic
 
     {
         [Key]
-        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+        
         public Guid IdUsuario { get; set; }
 
         [Required, StringLength(100), Display(Name = "Nombre")]
@@ -33,19 +33,22 @@ namespace Krypto.Logic
         [Required]
         public Int64 Telefono { get; set; }
 
+
+        public int Horas { get; set; }
+
         [Required]
         public bool Activo { get; set; }
 
-
+        
         //Relación con Rol.     
         [Required]
         public int RolId { get; set; }
-
         public virtual Rol Rol { get; set; }
 
-        public int RolOferta { get; set; }
-        public virtual ICollection<OfertaKrypto> ofertaKryptp { get; set; }
+        //public int RolOferta { get; set; }
 
+        public virtual ICollection<OfertaKrypto> ofertaKryptp { get; set; }
+        
         public virtual ICollection<Tarea> tarea { get; set; }
         //public virtual OfertaKrypto ofertaKrypto { get; set; }
         public virtual ICollection<Lider> Lider { get; set; }

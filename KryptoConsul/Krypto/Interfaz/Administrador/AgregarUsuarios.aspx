@@ -73,7 +73,15 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 136px">
+                            <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="NombreCompleto" DataValueField="IdUsuario" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                            </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto] FROM [Usuarios] WHERE ([RolId] = @RolId)">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="DropDownList2" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
+                        </td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
@@ -196,16 +204,17 @@
                 &nbsp;<asp:GridView ID="GridView1" runat="server" AllowPaging="True" AllowSorting="True" AutoGenerateColumns="False" DataKeyNames="IdUsuario" DataSourceID="SqlDataSource1" style="margin-left: 0px" CellPadding="3" BackColor="#CCCCCC" BorderColor="#CCCCCC" BorderStyle="None" BorderWidth="1px" Width="544px" >
                     <Columns>
                         <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
-                        <asp:BoundField DataField="IdUsuario" HeaderText="IdUsuario" SortExpression="IdUsuario" ReadOnly="True" Visible="false"/>
-                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
+                        <asp:BoundField DataField="IdUsuario" HeaderText="IdUsuario" ReadOnly="True" SortExpression="IdUsuario" Visible="false" />
+                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto"/>
                         <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                         <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" SortExpression="Contraseña" />
                         <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
                         <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
                         <asp:CheckBoxField DataField="Activo" HeaderText="Activo" SortExpression="Activo" />
-                        <asp:BoundField DataField="RolId" HeaderText="RolId" SortExpression="RolId"  />
-                        <asp:BoundField DataField="RolOferta" HeaderText="RolOferta" SortExpression="RolOferta" />
+                        <asp:BoundField DataField="RolId" HeaderText="RolId" SortExpression="RolId" />
+                    
+                       
                         
                     </Columns>
                     <FooterStyle BackColor="White" ForeColor="#000066" />
@@ -218,9 +227,17 @@
                     <SortedDescendingCellStyle BackColor="#CAC9C9" />
                     <SortedDescendingHeaderStyle BackColor="#00547E" />
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" DeleteCommand="DELETE FROM [Usuarios] WHERE [IdUsuario] = @original_IdUsuario" InsertCommand="INSERT INTO [Usuarios] ([IdUsuario], [NombreCompleto], [Documento], [Email], [Contraseña], [Direccion], [Telefono], [Activo], [RolId], [RolOferta], [Rol_IdRol]) VALUES (@IdUsuario, @NombreCompleto, @Documento, @Email, @Contraseña, @Direccion, @Telefono, @Activo, @RolId, @RolOferta, @Rol_IdRol)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Usuarios]" UpdateCommand="UPDATE [Usuarios] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Direccion] = @Direccion, [Telefono] = @Telefono, [Activo] = @Activo,  [RolOferta] = @RolOferta, [Rol_IdRol] = @Rol_IdRol WHERE [IdUsuario] = @original_IdUsuario">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" DeleteCommand="DELETE FROM [Usuarios] WHERE [IdUsuario] = @original_IdUsuario AND [NombreCompleto] = @original_NombreCompleto AND [Documento] = @original_Documento AND [Email] = @original_Email AND [Contraseña] = @original_Contraseña AND [Direccion] = @original_Direccion AND [Telefono] = @original_Telefono AND [Activo] = @original_Activo AND [RolId] = @original_RolId " InsertCommand="INSERT INTO [Usuarios] ([IdUsuario], [NombreCompleto], [Documento], [Email], [Contraseña], [Direccion], [Telefono], [Activo], [RolId], [RolOferta], [Rol_IdRol]) VALUES (@IdUsuario, @NombreCompleto, @Documento, @Email, @Contraseña, @Direccion, @Telefono, @Activo, @RolId)" OldValuesParameterFormatString="original_{0}" SelectCommand="SELECT * FROM [Usuarios]" UpdateCommand="UPDATE [Usuarios] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Direccion] = @Direccion, [Telefono] = @Telefono, [Activo] = @Activo, [RolId] = @RolId WHERE [IdUsuario] = @original_IdUsuario AND [NombreCompleto] = @original_NombreCompleto AND [Documento] = @original_Documento AND [Email] = @original_Email AND [Contraseña] = @original_Contraseña AND [Direccion] = @original_Direccion AND [Telefono] = @original_Telefono AND [Activo] = @original_Activo AND [RolId] = @original_RolId " ConflictDetection="CompareAllValues">
                     <DeleteParameters>
                         <asp:Parameter Name="original_IdUsuario" Type="Object" />
+                        <asp:Parameter Name="original_NombreCompleto" Type="String" />
+                        <asp:Parameter Name="original_Documento" Type="Int64" />
+                        <asp:Parameter Name="original_Email" Type="String" />
+                        <asp:Parameter Name="original_Contraseña" Type="String" />
+                        <asp:Parameter Name="original_Direccion" Type="String" />
+                        <asp:Parameter Name="original_Telefono" Type="Int64" />
+                        <asp:Parameter Name="original_Activo" Type="Boolean" />
+                        <asp:Parameter Name="original_RolId" Type="Int32" />
                     </DeleteParameters>
                     <InsertParameters>
                         <asp:Parameter Name="IdUsuario" Type="Object" />
@@ -232,8 +249,6 @@
                         <asp:Parameter Name="Telefono" Type="Int64" />
                         <asp:Parameter Name="Activo" Type="Boolean" />
                         <asp:Parameter Name="RolId" Type="Int32" />
-                        <asp:Parameter Name="RolOferta" Type="Int32" />
-                        <asp:Parameter Name="Rol_IdRol" Type="Int32" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="NombreCompleto" Type="String" />
@@ -243,9 +258,16 @@
                         <asp:Parameter Name="Direccion" Type="String" />
                         <asp:Parameter Name="Telefono" Type="Int64" />
                         <asp:Parameter Name="Activo" Type="Boolean" />
-                        <asp:Parameter Name="RolOferta" Type="Int32" />
-                        <asp:Parameter Name="Rol_IdRol" Type="Int32" />
+                        <asp:Parameter Name="RolId" Type="Int32" />
                         <asp:Parameter Name="original_IdUsuario" Type="Object" />
+                        <asp:Parameter Name="original_NombreCompleto" Type="String" />
+                        <asp:Parameter Name="original_Documento" Type="Int64" />
+                        <asp:Parameter Name="original_Email" Type="String" />
+                        <asp:Parameter Name="original_Contraseña" Type="String" />
+                        <asp:Parameter Name="original_Direccion" Type="String" />
+                        <asp:Parameter Name="original_Telefono" Type="Int64" />
+                        <asp:Parameter Name="original_Activo" Type="Boolean" />
+                        <asp:Parameter Name="original_RolId" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
             </td>
