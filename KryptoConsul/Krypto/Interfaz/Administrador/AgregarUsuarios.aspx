@@ -43,7 +43,7 @@
                     </tr>
                     <tr>
                         <td style="width: 136px">
-                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreRol" DataValueField="IdRol" Width="194px">
+                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreRol" DataValueField="IdRol" Width="194px" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdRol], [NombreRol] FROM [Rols]"></asp:SqlDataSource>
                         </td>
