@@ -152,18 +152,18 @@ namespace Krypto.Logic
                 throw;
             }
         }
-        //public Usuario traerusuario(string user)
-        //{
+        public Usuario TraerUsuario(string user)
+        {
 
-        //    using (KryptoContext contect = new KryptoContext())
-        //    {
-        //        var User2 = from u in contect.Usuario
-        //                   where u.NombreCompleto == user
-        //                   select u;
-        //        return User2.FirstOrDefault();
-        //    }
-        //}
-        
+            using (KryptoContext contect = new KryptoContext())
+            {
+                var User2 = from u in contect.Usuario
+                            where u.NombreCompleto == user
+                            select u;
+                return User2.FirstOrDefault();
+            }
+        }
+
     }
 }
 

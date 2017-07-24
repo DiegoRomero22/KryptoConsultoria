@@ -1,8 +1,5 @@
 ﻿using System;
-using System.Web.UI.WebControls;
 using Krypto.Logic;
-using Krypto.Models;
-using System.Linq;
 
 namespace Krypto.Interfaz.Administrador
 {
@@ -82,16 +79,42 @@ namespace Krypto.Interfaz.Administrador
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
-       
+            LlenarElUsuario();
         }
-        //public void cargartexto()
-        //{
-        //    UsuarioBLL userbll = new UsuarioBLL();
-        //    userbll.traerusuario(DropDownList2.SelectedIndex.ToString());
 
 
-        //}   
-        
+        private void LlenarElUsuario()
+        {
+            //Instancia a la clase UsuarioBLL que contiene el método que devuelve un Objeto 'Usuario' desde la base de datos.
+            UsuarioBLL usuario = new UsuarioBLL();
+            //Invocar el método TraerUsuario pasandole como Argumento el nombre del usuario elegido en el DropDownList1
+            usuario.TraerUsuario(DropDownList2.SelectedItem.Text);
+            //Instancia a la clase POCO, que guardará el Objeto 'Usuario' que devuelva el método anterior.
+            Usuario usuarito = new Usuario();
+            //Guardando el objeto 'Usuario' en la instancia a la clase POCO.
+            usuarito = usuario.TraerUsuario(DropDownList2.SelectedItem.Text);
+  
+            //Llenando los campos con la información que guardó la Instancia 'usuarito' previamente.
+            TxtNombreCompleto.Text =  usuarito.NombreCompleto.ToString();
+            TxtDocumento.Text = usuarito.Documento.ToString();
+            TxtEmail.Text = usuarito.Email.ToString();
+            TxtContraseña.Text = usuarito.Contraseña.ToString();
+            TxtDireccion.Text = usuarito.Direccion.ToString();
+            TxtTelefono.Text = usuarito.Telefono.ToString();
+
+
+            if (usuarito.Activo == true)
+            {
+
+                //El checbox está checkeado si usuarito.Activo= true (El usuario está activo.)
+                CheckBoxActivo.Checked = true;
+            }
+            else
+            {
+                //...cuando el usuario está inactivo el checkbox no se marca.
+                CheckBoxActivo.Checked = false;
+            }
+        }
     }
 }
 
