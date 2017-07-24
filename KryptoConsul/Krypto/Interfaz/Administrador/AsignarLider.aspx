@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarLider.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarLider" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AsignarLider.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarLider" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
       <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #A2001E">
@@ -51,7 +51,8 @@
             <td style="width: 95px">
                 &nbsp;</td>
             <td style="width: 66px">
-                &nbsp;</td>
+                <asp:Label ID="LblCliente" runat="server" Text="Seleccionar Cliente"></asp:Label>
+            </td>
             <td>
                 &nbsp;</td>
             <td style="width: 17px">&nbsp;</td>
@@ -63,11 +64,11 @@
             <td style="width: 95px">
                 &nbsp;</td>
             <td style="width: 66px">
-                <asp:DropDownList ID="DDLCliente" runat="server" DataSourceID="SqlDataSource1" DataTextField="NombreCompleto" DataValueField="IdUsuario">
+                <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdUsuario">
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto], [RolId] FROM [Usuarios] WHERE ([RolId] = @RolId)">
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto], [RolId] FROM [Usuarios] WHERE ([RolId] = @RolId)">
                     <SelectParameters>
-                        <asp:ControlParameter ControlID="DDLCliente" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
+                        <asp:ControlParameter ControlID="DropDownList1" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
                     </SelectParameters>
                 </asp:SqlDataSource>
             </td>
@@ -91,13 +92,7 @@
             <td style="width: 95px">
                 &nbsp;</td>
             <td style="width: 66px">
-                <asp:DropDownList ID="DDLLider" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdUsuario">
-                </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto], [RolId] FROM [Usuarios] WHERE ([RolId] = @RolId)">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="DDLLider" DefaultValue="2" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
-                </asp:SqlDataSource>
+                <asp:Label ID="LblLider" runat="server" Text="Seleccione un lider"></asp:Label>
             </td>
             <td>
                 &nbsp;</td>

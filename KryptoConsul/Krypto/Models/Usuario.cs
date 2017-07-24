@@ -1,10 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.ComponentModel.DataAnnotations;
 using Krypto.Models;
-using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Krypto.Logic
 {
@@ -19,6 +16,7 @@ namespace Krypto.Logic
         [Required, StringLength(100), Display(Name = "Nombre")]
         public string NombreCompleto { get; set; }
 
+        [Required]
         public Int64 Documento { get; set; }
 
         [Required, StringLength(50), Display(Name = "Email")]
@@ -52,6 +50,8 @@ namespace Krypto.Logic
         public virtual ICollection<Tarea> tarea { get; set; }
         //public virtual OfertaKrypto ofertaKrypto { get; set; }
         public virtual ICollection<Lider> Lider { get; set; }
+        public virtual ICollection<Archivo> archivo { get; set; }
+        public virtual ICollection<Cliente> cliente { get; set; }
 
     }
 }

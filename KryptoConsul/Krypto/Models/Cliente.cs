@@ -18,29 +18,15 @@ namespace Krypto.Models
         [Key]  
         public int IdCliente { get; set; }
         
-        [Required, StringLength(100), Display(Name = "NombreCompleto")]
-        public string NombreCompleto { get; set; }  
-           
-        [Required]
-        public string Documento { get; set; }
-
-        [Required, StringLength(50), Display(Name = "Email")]
-        public string Email { get; set; }
-
-        [Required, StringLength(50), Display(Name = "Contraseña")]
-        public string Contraseña { get; set; }
-
-        [Required]
-        public bool Activo { get; set; }
-        //Relación.
-
-        public int RolId { get; set; }
+        public int RolId  { get; set; }
 
         public virtual Rol Rol { get; set; }
 
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }
-        public virtual ICollection<Archivo> archivo { get; set; }
+       
         public virtual Proyecto proyecto { get; set; }
+
+        public virtual Usuario usuario { get; set; }
         
     }
 }

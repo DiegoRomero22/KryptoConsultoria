@@ -40,16 +40,15 @@ namespace Krypto.Interfaz.Administrador
                 Archivo ar = new Archivo();
                 ar.NombreArchivo = TxtNombreArchivo.Text;
                 ar.imagen = finalUrl;
-                ar.idcliente = Convert.ToInt32(DDLCliente.SelectedValue);
+                ar.idusuario = Convert.ToInt32(DDLCliente.SelectedValue);
                 context.Archivo.Add(ar);
                 context.SaveChanges();
                 Response.Redirect("AgregarArchivos.aspx");
             }
         }
+        
 
-      
-
-        protected void GridView1_RowCommand(object sender, GridViewCommandEventArgs e)
+        protected void GridView1_RowCommand1(object sender, GridViewCommandEventArgs e)
         {
             if (e.CommandName == "dwn")
             {
@@ -70,8 +69,6 @@ namespace Krypto.Interfaz.Administrador
                 Response.End();
             }
         }
-
-        
     }
 }
 

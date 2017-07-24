@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarUsuarios.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarCliente" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="AgregarUsuarios.aspx.cs" Inherits="Krypto.Interfaz.Administrador.AgregarUsuarios" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
 
   <div class="navbar navbar-inverse navbar-fixed-top" style="background-color: #A2001E">
@@ -36,14 +36,16 @@
                 <br />
                 <table style="width: 140%;">
                     <tr>
-                        <td style="width: 136px; height: 20px;"></td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px; height: 20px;"></td>
                         <td style="height: 20px"></td>
                         <td style="height: 20px"></td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">
-                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreRol" DataValueField="IdRol" Width="194px">
+                        <td style="width: 259px">
+                            <asp:Label ID="LblRol" runat="server" Text="Seleccione un Rol"></asp:Label>
+                            <br />
+                            <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="SqlDataSource2" DataTextField="NombreRol" DataValueField="IdRol" Width="194px" AutoPostBack="True">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdRol], [NombreRol] FROM [Rols]"></asp:SqlDataSource>
                         </td>
@@ -57,13 +59,13 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">
                             <asp:Label ID="LblDocumento" runat="server" Text="Documento: "></asp:Label>
                         </td>
@@ -73,21 +75,21 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">
-                            <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="NombreCompleto" DataValueField="IdUsuario" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
+                        <td style="width: 259px">
+                         <%--   <asp:DropDownList ID="DropDownList2" runat="server" DataSourceID="SqlDataSource3" DataTextField="NombreCompleto" DataValueField="IdUsuario" AutoPostBack="True" OnSelectedIndexChanged="DropDownList2_SelectedIndexChanged">
                             </asp:DropDownList>
                             <asp:SqlDataSource ID="SqlDataSource3" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto] FROM [Usuarios] WHERE ([RolId] = @RolId)">
                                 <SelectParameters>
                                     <asp:ControlParameter ControlID="DropDownList2" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
                                 </SelectParameters>
-                            </asp:SqlDataSource>
+                            </asp:SqlDataSource>--%>
                         </td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">
                             <asp:Label ID="LblEmail" runat="server" Text="Email:"></asp:Label>
                         </td>
@@ -97,13 +99,13 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">
                             <asp:Label ID="LblContraseña" runat="server" Text="Contraseña: "></asp:Label>
                         </td>
@@ -113,13 +115,13 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px"></td>
+                        <td style="width: 259px; height: 20px"></td>
                         <td style="width: 113px; height: 20px"></td>
                         <td style="height: 20px"></td>
                         <td style="height: 20px"></td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px; height: 20px;">
                             <asp:Label ID="LblDireccion" runat="server" Text="Direccion"></asp:Label>
                         </td>
@@ -129,13 +131,13 @@
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px; height: 20px;">&nbsp;</td>
                         <td style="height: 20px">&nbsp;</td>
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px; height: 20px;">
                             <asp:Label ID="LblTelefono" runat="server" Text="Telefono"></asp:Label>
                         </td>
@@ -145,13 +147,13 @@
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px; height: 20px;">&nbsp;</td>
                         <td style="height: 20px">&nbsp;</td>
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px">
                             <asp:Label ID="LblActivo" runat="server" Text="Activo:"></asp:Label>
                         </td>
@@ -161,7 +163,7 @@
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px; height: 20px;">&nbsp;</td>
+                        <td style="width: 259px; height: 20px;">&nbsp;</td>
                         <td style="width: 113px">
                             &nbsp;</td>
                         <td>
@@ -169,9 +171,9 @@
                         <td style="height: 20px">&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">
-                            <asp:Button ID="BtnAgregar" runat="server" CssClass="btn" OnClick="BtnAgregar_Click" Text="Agregar" />
+                            <asp:Button ID="BtnAgregar" runat="server" CssClass="btn" Text="Agregar" style="height: 36px" OnClick="BtnAgregar_Click1" />
                         </td>
                         <td>
                             <asp:Button ID="BtnInicio" runat="server" CssClass="btn" Text="Inicio" OnClick="BtnInicio_Click" PostBackUrl="~/Interfaz/Administrador/Administrador.aspx" />
@@ -179,19 +181,19 @@
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>
                     </tr>
                     <tr>
-                        <td style="width: 136px">&nbsp;</td>
+                        <td style="width: 259px">&nbsp;</td>
                         <td style="width: 113px">&nbsp;</td>
                         <td>&nbsp;</td>
                         <td>&nbsp;</td>

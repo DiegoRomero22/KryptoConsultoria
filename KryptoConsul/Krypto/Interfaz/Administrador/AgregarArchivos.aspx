@@ -80,9 +80,13 @@
             </td>
             <td style="height: 22px; width: 176px;" colspan="1">
                 <asp:Label ID="LblCliente" runat="server" Text="Seleccione el cliente:"></asp:Label>
-                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="RolId" AutoPostBack="True" >
+                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="RolId" >
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [NombreCompleto], [RolId] FROM [Usuarios]"></asp:SqlDataSource>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto], [RolId] FROM [Usuarios] WHERE ([RolId] = @RolId)">
+                    <SelectParameters>
+                        <asp:ControlParameter ControlID="DDLCliente" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
+                    </SelectParameters>
+                </asp:SqlDataSource>
             </td>
             <td style="height: 22px; width: 332px;">&nbsp;</td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
@@ -145,40 +149,48 @@
             <td style="height: 22px; width: 814px">&nbsp;</td>
             <td style="height: 22px; width: 843px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand" DataKeyNames="IdArchivo" AllowSorting="True" style="margin-left: 101px" Width="415px" >
+                
+                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdArchivo" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand1">
                     <Columns>
-                        <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" SortExpression="IdArchivo" InsertVisible="false" ReadOnly="True" Visible="false"/>
-                        <asp:BoundField DataField="NombreArchivo" HeaderText="Nombre de archivo" SortExpression="NombreArchivo" />
-                        <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen"  Visible="false" />
-                        <asp:BoundField DataField="NombreCompleto" HeaderText="Cliente" SortExpression="NombreCompleto" />
-                        <asp:TemplateField ShowHeader="False" >
+                        <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" InsertVisible="False" ReadOnly="True" SortExpression="IdArchivo" />
+                        <asp:BoundField DataField="NombreArchivo" HeaderText="NombreArchivo" SortExpression="NombreArchivo" />
+                        <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen" />
+                        <asp:BoundField DataField="idusuario" HeaderText="idusuario" SortExpression="idusuario" />
+                     
+                       <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+                        <asp:TemplateField ShowHeader="False">
                             <ItemTemplate>
-                                <asp:ImageButton ID="ImageButton1" Width="27px" ImageUrl="~/Interfaz/descarga.png" CommandArgument='<%# Eval("imagen")%>'  runat="server" CausesValidation="false" CommandName="dwn" Text="Botón" />
+                                <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="false" CommandName="dwn" CommandArgument='<%# Eval("imagen")%>'  Width="27px" ImageUrl="~/Interfaz/descarga.png" Text="Botón"  />
                             </ItemTemplate>
                         </asp:TemplateField>
-                        <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+                     
+                      
+                     
+                       
+                     
                     </Columns>
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" 
-                    DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo"
-                     InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen]) VALUES (@NombreArchivo, @imagen)" 
-                    SelectCommand="SELECT Archivoes.IdArchivo, Archivoes.NombreArchivo, Archivoes.imagen, Clientes.NombreCompleto FROM Archivoes LEFT OUTER JOIN Clientes ON Clientes.IdCliente = Archivoes.idcliente WHERE (Clientes.IdCliente = @IdCliente)" 
-                    UpdateCommand="UPDATE Archivoes SET NombreArchivo = @NombreArchivo WHERE (IdArchivo = @IdArchivo)">
+                    DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo" 
+                    InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen], [idusuario]) VALUES (@NombreArchivo, @imagen, @idusuario)" 
+                    SelectCommand="SELECT [IdArchivo], [NombreArchivo], [imagen], [idusuario] FROM [Archivoes]" 
+                    UpdateCommand="UPDATE [Archivoes] SET [NombreArchivo] = @NombreArchivo, [imagen] = @imagen, [idusuario] = @idusuario WHERE [IdArchivo] = @IdArchivo">
                     <DeleteParameters>
-                        <asp:Parameter Name="IdArchivo" />
+                        <asp:Parameter Name="IdArchivo" Type="Int32" />
                     </DeleteParameters>
                     <InsertParameters>
-                        <asp:Parameter Name="NombreArchivo" />
-                        <asp:Parameter Name="imagen" />
+                        <asp:Parameter Name="NombreArchivo" Type="String" />
+                        <asp:Parameter Name="imagen" Type="String" />
+                        <asp:Parameter Name="idusuario" Type="Int32" />
                     </InsertParameters>
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="DDLCliente" Name="IdCliente" PropertyName="SelectedValue" />
-                    </SelectParameters>
                     <UpdateParameters>
-                        <asp:Parameter Name="NombreArchivo" />
-                        <asp:Parameter Name="IdArchivo" />
+                        <asp:Parameter Name="NombreArchivo" Type="String" />
+                        <asp:Parameter Name="imagen" Type="String" />
+                        <asp:Parameter Name="idusuario" Type="Int32" />
+                        <asp:Parameter Name="IdArchivo" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>
+                
             </td>
             <td style="height: 22px; width: 358px;">&nbsp;</td>
             <td style="height: 22px">&nbsp;</td>
@@ -187,15 +199,15 @@
             <td style="height: 22px">&nbsp;</td>
         </tr>
         <tr>
-            <td style="height: 22px; width: 814px">&nbsp;</td>
-            <td style="height: 22px; width: 843px">&nbsp;</td>
-            <td style="height: 22px; width: 176px;" colspan="2">
-                &nbsp;</td>
-            <td style="height: 22px; width: 358px;">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
-            <td style="height: 22px">&nbsp;</td>
+            <td style="height: 21px; width: 814px"></td>
+            <td style="height: 21px; width: 843px"></td>
+            <td style="height: 21px; width: 176px;" colspan="2">
+                </td>
+            <td style="height: 21px; width: 358px;"></td>
+            <td style="height: 21px"></td>
+            <td style="height: 21px"></td>
+            <td style="height: 21px"></td>
+            <td style="height: 21px"></td>
         </tr>
         <tr>
             <td style="height: 20px; width: 814px">&nbsp;</td>

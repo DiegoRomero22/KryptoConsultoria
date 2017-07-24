@@ -36,5 +36,6 @@ namespace Krypto.Models
         public DbSet<Proyecto> proyecto { get; set; }
 
         public DbSet<Tarea> tarea { get; set; }
+        public DbSet<Lider> lider { get; set;   }
     }
 }

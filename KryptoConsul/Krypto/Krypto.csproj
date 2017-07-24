@@ -243,8 +243,8 @@
     <Content Include="image\LogoKrypto.png" />
     <Content Include="Interfaz\Administrador\Administrador.aspx" />
     <Content Include="Interfaz\Administrador\AgregarArchivos.aspx" />
+    <Content Include="Interfaz\Administrador\AsignarLider.aspx" />
     <Content Include="Interfaz\Administrador\AgregarUsuarios.aspx" />
-    <Content Include="Interfaz\Administrador\AgregarLider.aspx" />
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\descarga.png" />
@@ -456,19 +456,19 @@
     <Compile Include="Interfaz\Administrador\AgregarArchivos.aspx.designer.cs">
       <DependentUpon>AgregarArchivos.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Administrador\AsignarLider.aspx.cs">
+      <DependentUpon>AsignarLider.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Administrador\AsignarLider.aspx.designer.cs">
+      <DependentUpon>AsignarLider.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\Administrador\AgregarUsuarios.aspx.cs">
       <DependentUpon>AgregarUsuarios.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Interfaz\Administrador\AgregarUsuarios.aspx.designer.cs">
       <DependentUpon>AgregarUsuarios.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\AgregarLider.aspx.cs">
-      <DependentUpon>AgregarLider.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\Administrador\AgregarLider.aspx.designer.cs">
-      <DependentUpon>AgregarLider.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx.cs">
       <DependentUpon>PlantillaOfertaKrypto.aspx</DependentUpon>
@@ -535,6 +535,7 @@
     </Compile>
     <Compile Include="Logic\ArchivoBLL.cs" />
     <Compile Include="Logic\ClienteBLL.cs" />
+    <Compile Include="Logic\LiderBLL.cs" />
     <Compile Include="Logic\PlantillasKryptoBLL.cs" />
     <Compile Include="Logic\UsuarioBLL.cs" />
     <Compile Include="Models\Cargo.cs" />

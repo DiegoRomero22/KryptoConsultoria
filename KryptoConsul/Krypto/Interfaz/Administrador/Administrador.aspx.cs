@@ -27,7 +27,7 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnAgregarLider_Click(object sender, EventArgs e)
         {
-            Response.Redirect("AgregarLider.aspx");
+            Response.Redirect("AsignarLider.aspx");
         }
 
         protected void BtnVerClientes_Click(object sender, EventArgs e)
