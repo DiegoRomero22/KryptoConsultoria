@@ -6,12 +6,12 @@ using Krypto.Models;
 namespace Krypto.Logic
 {
 
-    public class Usuario
+    public class Administrador
 
     {
         [Key]
         
-        public Guid IdUsuario { get; set; }
+        public Guid IdAdmin { get; set; }
 
         [Required, StringLength(100), Display(Name = "Nombre")]
         public string NombreCompleto { get; set; }
@@ -22,15 +22,14 @@ namespace Krypto.Logic
         [Required, StringLength(50), Display(Name = "Email")]
         public string Email { get; set; }
 
-        [Required, StringLength(100), Display(Name = "Contraseña")]
+        [Required, StringLength(20), Display(Name = "Contraseña")]
         public string Contraseña { get; set; }
 
-        [Required, StringLength(100), Display(Name = "Direccion")]
+        [Required, StringLength(50), Display(Name = "Direccion")]
         public string Direccion { get; set; }
 
         [Required]
         public Int64 Telefono { get; set; }
-
 
         public int Horas { get; set; }
 
@@ -45,13 +44,14 @@ namespace Krypto.Logic
 
         //public int RolOferta { get; set; }
 
-        public virtual ICollection<OfertaKrypto> ofertaKryptp { get; set; }
         
         public virtual ICollection<Tarea> tarea { get; set; }
         //public virtual OfertaKrypto ofertaKrypto { get; set; }
         public virtual ICollection<Lider> Lider { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
         public virtual ICollection<Cliente> cliente { get; set; }
+        public virtual ICollection<Horario> horario { get; set; }
+
 
     }
 }

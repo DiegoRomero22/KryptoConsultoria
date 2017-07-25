@@ -19,6 +19,6 @@ namespace Krypto.Models
         public string Descripcion { get; set; }
 
         //Relaciones.
-        public virtual ICollection<Usuario> usuario { get; set; }
+        public virtual ICollection<Administrador> admin { get; set; }
     }
 }

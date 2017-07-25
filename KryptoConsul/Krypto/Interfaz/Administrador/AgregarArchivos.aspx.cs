@@ -40,7 +40,7 @@ namespace Krypto.Interfaz.Administrador
                 Archivo ar = new Archivo();
                 ar.NombreArchivo = TxtNombreArchivo.Text;
                 ar.imagen = finalUrl;
-                ar.idusuario = Convert.ToInt32(DDLCliente.SelectedValue);
+                ar.idadmin = Convert.ToInt32(DDLCliente.SelectedValue);
                 context.Archivo.Add(ar);
                 context.SaveChanges();
                 Response.Redirect("AgregarArchivos.aspx");

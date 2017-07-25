@@ -14,7 +14,7 @@ namespace Krypto.Models
         protected override void Seed(KryptoContext context)
         {
             ListaRol().ForEach(r => context.Rol.Add(r));
-            ListarUsuarios().ForEach(user => context.Usuario.Add(user));
+            ListarAdministrador().ForEach(admin => context.Administrador.Add(admin));
             context.SaveChanges(); 
            
         }
@@ -23,13 +23,7 @@ namespace Krypto.Models
         {
             var rol = new List<Rol>
             {
-                new Rol
-                {
-                    IdRol = 1,
-                    NombreRol = "Seleccionar...",
-                    Activo = true
-                },
-                new Rol
+               new Rol
                 {
                     IdRol = 2,
                     NombreRol = "Administrador",
@@ -75,13 +69,13 @@ namespace Krypto.Models
             return rol;
         }
 
-        private static List<Usuario> ListarUsuarios()
+        private static List<Administrador> ListarAdministrador()
         {
-            var usuario = new List<Usuario>
+            var admin = new List<Administrador>
             {
-                new Logic.Usuario
+                new Logic.Administrador
                 {
-                    IdUsuario = Guid.NewGuid(),
+                    IdAdmin = Guid.NewGuid(),
                     NombreCompleto = "Diego Alejandro",
                     Documento = 1031156456,
                     Email = "Diego5220@hotmail.com",
@@ -89,36 +83,10 @@ namespace Krypto.Models
                     Direccion = "Calle 123",
                     Telefono = 3219929719,
                     Activo = true,
-                    RolId = ( 1),                  
-                },
-                new Usuario
-                {
-                    IdUsuario = Guid.NewGuid(),
-                    NombreCompleto = "Jairo Andres",                    
-                    Documento = 1102851384,
-                    Email = "Jairogca_19@hotmail.com",                    
-                    Contraseña = "1102851384",
-                    Direccion = "Calle456",
-                    Telefono = 3017047096,
-                    Activo = true, 
-                    RolId = 2,                     
-                    
-                },
-                new Usuario
-                {
-                    IdUsuario = Guid.NewGuid(),
-                    NombreCompleto = "Pruebacliente",
-                    Documento = 15646,
-                    Email = "cliente@hotmail.com",
-                    Contraseña = "123456",
-                    Direccion = "Calle46545as",
-                    Telefono = 3315646,
-                    Activo = true,
-                    RolId = 3,
-
-                },
+                    RolId = ( 1)
+                    }
             };
-            return usuario;
+            return admin;
         }
 
         //private static List<TipoArchivo> TArchivo()

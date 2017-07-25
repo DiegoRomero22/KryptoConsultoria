@@ -14,25 +14,16 @@ namespace Krypto.Interfaz.Administrador
         {
             try
             {
-           
-              string email  = Session["email"].ToString();
-                Label2.Text = "Bienvenido " + email;
+
+                string email = Session["email"].ToString();
+                Label1.Text = "Bienvenido " + email;
+                Label2.Text = " " + email;
+
             }
             catch (Exception)
             {
                 Response.Redirect("../Login.aspx?men=1");
             }
-        } 
-        
-
-        protected void BtnAgregarLider_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AsignarLider.aspx");
-        }
-
-        protected void BtnVerClientes_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("AgregarUsuarios.aspx");
         }
 
         protected void BtnAgregarProyecto_Click(object sender, EventArgs e)
@@ -40,16 +31,37 @@ namespace Krypto.Interfaz.Administrador
             Response.Redirect("PlantillaOfertaKrypto.aspx");
         }
 
-        protected void Timer1_Tick(object sender, EventArgs e)
+        protected void BtnAgregarLider_Click(object sender, EventArgs e)
         {
-            
-            Label1.Text = DateTime.Now.ToString();
+            Response.Redirect("AgregarLider.aspx");
+        }
+
+        protected void BtnVerClientes_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarCliente.aspx");
         }
 
         protected void BtnCerrarSesion_Click(object sender, EventArgs e)
         {
-            Session.Remove("email");
+            HoraBLL horar = new HoraBLL();
+
+            if (lblTiempofinal.Text != null)
+            {
+                string horario = Session["HoraInicial"].ToString();
+                lblhora.Text = horario;
+                //horar.registroHorario(Convert.ToDateTime(lblhora.Text), Convert.ToDateTime(lblTiempofinal.Text));
+                horar.guardarHora(Label2.Text, Convert.ToDateTime(lblTiempofinal.Text));
+                Session.Remove("email");
+
+            }
             Response.Redirect("../Login.aspx");
+        }
+
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+           lblTiempofinal.Text = DateTime.Now.ToString();
+            lblhora.Text = DateTime.Now.ToString();
+
         }
     }
 }

@@ -51,7 +51,6 @@ namespace Krypto.Models
 
         //Relación     
         public virtual Cliente clienteId { get; set; }
-        public virtual Usuario usuario { get; set; }
         
    
 

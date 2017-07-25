@@ -8,14 +8,14 @@ using System.Web.UI.WebControls;
 
 namespace Krypto.Interfaz.Administrador
 {
-    public partial class AgregarUsuarios : System.Web.UI.Page
+    public partial class AgregarCliente : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
             {
-                GridView1.Visible = true;
-                
+                GVClientes.Visible = true;
+
             }
             else
             {
@@ -25,7 +25,7 @@ namespace Krypto.Interfaz.Administrador
 
         }
 
-     
+
         protected void BtnInicio_Click(object sender, EventArgs e)
         {
             Response.Redirect("~/Interfaz/Administrador/Administrador.aspx");
@@ -43,7 +43,7 @@ namespace Krypto.Interfaz.Administrador
 
         protected void DropDownList2_SelectedIndexChanged(object sender, EventArgs e)
         {
-           
+
         }
 
 
@@ -82,12 +82,6 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnAgregar_Click1(object sender, EventArgs e)
         {
-            if (DropDownList1.SelectedValue == Convert.ToString((1)))
-            {
-                Response.Write("<script>alert('Seleccione un rol')</script>");
-            }
-            else
-            {
                 if (TxtNombreCompleto.Text == "")
                 {
                     Response.Write("<script>alert('Digite un Nombre')</script>");
@@ -111,20 +105,19 @@ namespace Krypto.Interfaz.Administrador
                 if (TxtTelefono.Text == "")
                 {
                     Response.Write("<script>alert('digite un telefono')</script>");
-                }               
-                    Guid nuevoId = Guid.NewGuid();
-                    UsuarioBLL userBll = new UsuarioBLL();
-                    if (userBll.Registrar(nuevoId, TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), DropDownList1.SelectedIndex, CheckBoxActivo.Checked))
-                    {
-                        limpiarCasilas();
-                        GridView1.Visible = true;
-                        Response.Redirect("~/Interfaz/Administrador/AgregarUsuarios.aspx");
                 }
-                
+            else
+            {
+                ClienteBLL clienteBLL = new ClienteBLL();
+                if (clienteBLL.registrarCliente(TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), 2, CheckBoxActivo.Checked))
+                {
+                    limpiarCasilas();
+                    GVClientes.Visible = true;
+                    Response.Redirect("~/Interfaz/Administrador/AgregarCliente.aspx");
+                }
             }
         }
-
     }
 }
 
-           
+

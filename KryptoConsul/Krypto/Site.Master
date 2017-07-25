@@ -15,6 +15,13 @@
     <webopt:BundleReference runat="server" Path="~/Content/css" />
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
 
+    <style type="text/css">
+        .auto-style1 {
+            height: 7px;
+            margin-top: 23px;
+        }
+    </style>
+
 </head>
 <body>
    
@@ -39,10 +46,11 @@
                 <%--Scripts del sitio--%>
             </Scripts>            
         </asp:ScriptManager>
-        <div class="navbar navbar-inverse navbar-fixed" style="background-color:#ffffff; border:none" >
+        <div class="navbar navbar-inverse navbar-fixed" style="border-style: none; border-color: inherit; border-width: medium; background-color:#ffffff; left: 0px; top: 18px; height: 133px;" >
                     <div class="container">
-                        <div class="navbar-body" contenteditable="inherit">
-                            <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="150" Height="95" ImageAlign="Left"  /></a>                           
+                        <div class="auto-style1" contenteditable="inherit">
+                            <br />
+                            <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="146px" Height="90px" ImageAlign="Left"  /></a>                           
                         </div>
           
                     </div>

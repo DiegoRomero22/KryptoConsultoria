@@ -10,43 +10,7 @@
 namespace Krypto.Interfaz.Administrador {
     
     
-    public partial class AgregarUsuarios {
-        
-        /// <summary>
-        /// Control LblRol.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblRol;
-        
-        /// <summary>
-        /// Control DropDownList1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
-        
-        /// <summary>
-        /// Control SqlDataSource2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.SqlDataSource SqlDataSource2;
-        
-        /// <summary>
-        /// Control LblNombreCompleto.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblNombreCompleto;
+    public partial class AgregarCliente {
         
         /// <summary>
         /// Control RegularExpressionValidator1.
@@ -56,6 +20,15 @@ namespace Krypto.Interfaz.Administrador {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.RegularExpressionValidator RegularExpressionValidator1;
+        
+        /// <summary>
+        /// Control LblNombreCompleto.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label LblNombreCompleto;
         
         /// <summary>
         /// Control TxtNombreCompleto.
@@ -193,13 +166,13 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Button BtnInicio;
         
         /// <summary>
-        /// Control GridView1.
+        /// Control GVClientes.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView GVClientes;
         
         /// <summary>
         /// Control SqlDataSource1.

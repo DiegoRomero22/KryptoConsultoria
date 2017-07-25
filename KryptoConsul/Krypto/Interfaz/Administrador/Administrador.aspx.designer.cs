@@ -22,6 +22,15 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// Control BtnCerrarSesion.
         /// </summary>
         /// <remarks>
@@ -31,22 +40,13 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Button BtnCerrarSesion;
         
         /// <summary>
-        /// Control UpdatePanel1.
+        /// Control UpdatePanel3.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel1;
-        
-        /// <summary>
-        /// Control UpdatePanel2.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.UpdatePanel UpdatePanel2;
+        protected global::System.Web.UI.UpdatePanel UpdatePanel3;
         
         /// <summary>
         /// Control Timer1.
@@ -58,39 +58,57 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.Timer Timer1;
         
         /// <summary>
-        /// Control Label1.
+        /// Control lblTiempofinal.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label Label1;
+        protected global::System.Web.UI.WebControls.Label lblTiempofinal;
         
         /// <summary>
-        /// Control BtnVerClientes.
+        /// Control lblhora.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnVerClientes;
+        protected global::System.Web.UI.WebControls.Label lblhora;
         
         /// <summary>
-        /// Control BtnAsignarLider.
+        /// Control btnAgregarLider.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAsignarLider;
+        protected global::System.Web.UI.WebControls.Button btnAgregarLider;
         
         /// <summary>
-        /// Control BtnAgregarProyecto.
+        /// Control btnAgregarCliente.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnAgregarProyecto;
+        protected global::System.Web.UI.WebControls.Button btnAgregarCliente;
+        
+        /// <summary>
+        /// Control btnAgregarArchivos.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnAgregarArchivos;
+        
+        /// <summary>
+        /// Control Calendar1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Calendar Calendar1;
     }
 }

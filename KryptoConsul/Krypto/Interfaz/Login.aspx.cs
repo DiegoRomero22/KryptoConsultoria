@@ -8,7 +8,7 @@ namespace Krypto.Interfaz
         public static int? usuarioEstaLogueado;
         protected void Page_Load(object sender, EventArgs e)
         {
-           
+
         }
         //Metodo que limpia las cajas de texto.
         public void limpiarCasillas()
@@ -24,39 +24,67 @@ namespace Krypto.Interfaz
 
         protected void TxtUsuario_TextChanged(object sender, EventArgs e)
         {
-            validarLogin();
+            if (TxtUsuario.Text == "")
+            {
+
+            }
+            else
+            {
+                validarLogin();
+            }
+
         }
 
         protected void TxtContraseña_TextChanged(object sender, EventArgs e)
         {
-            validarLogin();
+            if (TxtContraseña.Text == "")
+            {
+                Response.Write("<script>alert('Usuario o contraseña incorrecta')</script>");
+            }
+            else
+            {
+                validarLogin();
+
+            }
         }
 
         public void validarLogin()
         {
-         
-            UsuarioBLL LoginuserBLL = new UsuarioBLL();
-            //Valida el Usuario y contraseña segun el rol            
-            if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text)== 1)
-            {                
-                //Rol Administrador.
+            LiderBLL liderBLL = new LiderBLL();
+            ClienteBLL clienteBLL = new ClienteBLL();
+            AdministradorBLL LoginuserBLL = new AdministradorBLL();
+            //Valida el Usuario y contraseña segun el rol      
 
-                Session["Admin"] = TxtUsuario.Text;               
+            if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 1)
+            {
+
+                //Rol Administrador.
+                //Session validar rol.
+                Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
-                //Sessseion de nombre de usuario
+                //Session de nombre de usuario.
                 Session["email"] = TxtUsuario.Text;
+                if (lblHorarioInicial.Text == null)
+                {
+
+                }
+                else
+                {
+                    Session["HoraInicial"] = lblHorarioInicial.Text;
+                }
                 Response.Redirect("Administrador/Administrador.aspx");
 
             }
             //Rol Lider.
-            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
+            else if (liderBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
-                Session["Lider"] = TxtUsuario.Text;
-                usuarioEstaLogueado = 2;                              
-                Response.Redirect("Administrador/AgregarLider.aspx");
+                Session["clienteLogin"] = TxtUsuario.Text;
+                usuarioEstaLogueado = 2;
+                Response.Redirect("Administrador/AsignarLider.aspx");
+
             }
-            //Rol Usuario.
-            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
+            //Rol Cliente.
+            else if (clienteBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
             {
                 Session["Clientelogin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 3;
@@ -64,29 +92,42 @@ namespace Krypto.Interfaz
                 Session["nombreCliente"] = TxtUsuario.Text;
                 Response.Redirect("Cliente/Cliente.aspx");
             }
-            //Rol Cliente.
-            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 4)
-            {
-                Session["Usuario"] = TxtUsuario.Text;
-                usuarioEstaLogueado = 4;
-                Response.Redirect("Cliente.aspx");
-            }
-            //Rol Nomina.
-            else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 5)
-            {
-                Session["Nomina"] = TxtUsuario.Text;
-                usuarioEstaLogueado = 5;
-                Response.Redirect("");
-            }
+            ////Rol Usuario.
+            //else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
+            //{
+            //    Session["Clientelogin"] = TxtUsuario.Text;
+            //    usuarioEstaLogueado = 3;
+            //    //Session de nombre del cliente
+            //    Session["nombreCliente"] = TxtUsuario.Text;
+            //    Response.Redirect("Cliente/Cliente.aspx");
+            //}
+            ////Rol Cliente.
+            //else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 4)
+            //{
+            //    Session["Usuario"] = TxtUsuario.Text;
+            //    usuarioEstaLogueado = 4;
+            //    Response.Redirect("Cliente.aspx");
+            //}
+            ////Rol Nomina.
+            //else if (LoginuserBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 5)
+            //{
+            //    Session["Nomina"] = TxtUsuario.Text;
+            //    usuarioEstaLogueado = 5;
+            //    Response.Redirect("");
+            //}
 
             else
-            { 
+            {
                 limpiarCasillas();
                 //Texto en el cual se mostrara si existe algún error.
                 LblResultado.Visible = true;
             }
+        }            
+        protected void Timer1_Tick(object sender, EventArgs e)
+        {
+            lblHorarioInicial.Text = DateTime.Now.ToString();
         }
-       
+
     } 
 }
     

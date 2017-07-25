@@ -9,72 +9,86 @@ namespace Krypto.Logic
 {
     public class ClienteBLL
     {
-        //{
-        //    public bool Agregarcliente (string nombrecompleto, string documento, string email, string contraseña, bool activo = true)
-        //    {
-        //        try
-        //        {
-        //            Cliente cliente = new Cliente();
-        //            {
-        //                cliente.NombreCompleto = nombrecompleto;
-        //                cliente.Documento = documento;
-        //                cliente.Email = email;
-        //                cliente.Contraseña = contraseña;
-        //                cliente.Activo = activo;
-        //            };
+        public int Autenticar(string email, string clave)
+        {
+            try
+            {
+                using (KryptoContext context = new KryptoContext())
+                {
+                    var mostrarinfo = from clientee in context.Cliente
+                                      where clientee.Email == email  && clientee.Contraseña == clave
+                                      select clientee;
 
-        //            KryptoContext context = new KryptoContext();
-        //            context.Cliente.Add(cliente);
-        //            context.SaveChanges();
-        //            return true;
-        //        }
-        //        catch (Exception)
-        //        {
+                    //Buscar el Rol del Usuario que se loguea.
+                    var idRol = from adm in context.Cliente
+                                where adm.Email == email && adm.Contraseña == clave
+                                select adm.RolId;
 
-        //            throw;
-        //        }
-        //    }    
+                    //Este if confirma si hay un usuario en la Base de Datos.
+                    if (mostrarinfo.Count() == 0)
+                    {
+                        return 0; //0 vale a 'No hay usuarios'
+                    }
 
-        //public int ValidarCliente(string email, string pass)
-        //{
-        //        try
-        //        {
-        //            using (KryptoContext context = new KryptoContext())
-        //            {
-        //                var mostrarinfo = from adm in context.Cliente
-        //                                  where adm.Email == email || adm.NombreCompleto == email && adm.Contraseña == pass
-        //                                  select adm;
+                    //Si se encuentra un usuario, compara el id de ese usuario.
+                    else if (idRol.FirstOrDefault().Equals(3))
+                    {
+                        //Y se activa un estado de sesión para Administrador.
+                        HttpContext.Current.Session["clienteLogin"] = 3;
 
-        //                //return mostrarinfo.SingleOrDefault();
+                        ///Si el Rol es 1 entonces es Administrador.
+                        return 3;
+                    }                   
+                    else
+                    {
+                        //Nomina
+                        return 4;
+                    }
+                }
+            }
+            catch (DbEntityValidationException ex)
+            {
+                // Retrieve the error messages as a list of strings.
+                var errorMessages = ex.EntityValidationErrors
+                        .SelectMany(x => x.ValidationErrors)
+                        .Select(x => x.ErrorMessage);
 
-        //                var idRol = from adm in context.Cliente
-        //                            where adm.Email == email || adm.NombreCompleto == email && adm.Contraseña == pass
-        //                            select adm.IdCliente;
-        //                if (mostrarinfo.Count() == 0)
-        //                {
-        //                    return 0; //0 vale a 'No hay usuarios'
-        //                }
-        //                else if (idRol.FirstOrDefault().Equals(3))
-        //                {
-        //                    HttpContext.Current.Session["Clientelogin"] = 3;
+                // Join the list to a single string.
+                var fullErrorMessage = string.Join("; ", errorMessages);
 
-        //                    ///Si el Rol es 1 entonces es Administrador.
-        //                    return 3;
-        //                }
-        //                else
-        //                {
-        //                    return 0;
-        //                }
+                // Combine the original exception message with the new one.
+                var exceptionMessage = string.Concat(ex.Message, " The validation errors are: ", fullErrorMessage);
 
-        //            }
-        //        }
-        //        catch (Exception)
-        //        {
+                // Throw a new DbEntityValidationException with the improved exception message.
+                throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
+            }
+        }
+        public bool registrarCliente( string nombre, Int64 documento, string email, string clave, string direccion, Int64 telefono, int rol, bool activo = true)
+        {
+            try
+            {
+                Cliente cliente = new Cliente();
+                {                    
+                    cliente.NombreCompleto = nombre;
+                    cliente.Documento = documento;
+                    cliente.Email = email;
+                    cliente.Contraseña = clave;
+                    cliente.Direccion = direccion;
+                    cliente.Telefono = telefono;
+                    cliente.RolId = rol;
 
-        //            throw;
-        //        }
-        //    }
-        //    }
+                    cliente.Activo = activo;
+                };
+                KryptoContext context = new KryptoContext();
+                context.Cliente.Add(cliente);
+                context.SaveChanges();
+                return true;
+            }
+            catch (Exception)
+            {
 
+                throw;
+            }
+        }
     }   
 }

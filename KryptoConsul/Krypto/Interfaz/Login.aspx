@@ -1,7 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Login.aspx.cs" Inherits="Krypto.Interfaz.Login" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="MainContent" runat="server">
     
-    
     <div class="navbar navbar-inverse navbar-fixed-top" style="background-color:#A2001E">
             <div class="container">
                 <div class="navbar-header">
@@ -11,7 +10,7 @@
                         <span class="icon-bar"></span>
                         
                     </button>
-
+                    <asp:Label ID="Label2" runat="server" Text="Label" Visible="false"></asp:Label>
                 </div>
              
                     <asp:LoginView runat="server" ViewStateMode="Disabled">
@@ -42,7 +41,19 @@
            <td style="width: 55px;">&nbsp;</td>
            <td style="width: 44px;">&nbsp;</td>
           <td style="width: 169px;">
-               <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
+               <h3>&nbsp;</h3>
+                                <asp:UpdatePanel ID="UpdatePanel1" runat="server">
+                                    <ContentTemplate>
+                                        <asp:Timer ID="Timer1" runat="server" Interval="500" OnTick="Timer1_Tick">
+                                        </asp:Timer>
+                                        <asp:Label ID="lblHorarioInicial" runat="server" Text="" Visible="false"></asp:Label>
+                                      
+                                    </ContentTemplate>
+                                    <Triggers>
+                                        <asp:AsyncPostBackTrigger ControlID="Timer1" EventName="Tick" />
+                                    </Triggers>
+               </asp:UpdatePanel>
+               <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </h3>
                                 <h3>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;<asp:Label ID="Label1" runat="server" Text="Iniciar Sesión" ForeColor="#BF0D11"></asp:Label>
                                     &nbsp;&nbsp;&nbsp; </h3> 
 
@@ -62,13 +73,13 @@
            <td style="width: 169px; " rowspan="4">
            <div class="form-group"  >
 
-             <asp:TextBox ID="TxtUsuario" runat="server" class="form-control" placeholder="Usuario" OnTextChanged="TxtUsuario_TextChanged" ></asp:TextBox>
+             <asp:TextBox ID="TxtUsuario" runat="server"  placeholder="Usuario" OnTextChanged="TxtUsuario_TextChanged" CssClass="form-control" ></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtUsuario" CssClass="text-danger" ErrorMessage="Ingrese un correo."></asp:RequiredFieldValidator>
 
            </div>
            <div class="form-group">
        
-               <asp:TextBox ID="TxtContraseña" runat="server" class="form-control" placeholder="Contraseña" TextMode="Password" OnTextChanged="TxtContraseña_TextChanged"></asp:TextBox>
+               <asp:TextBox ID="TxtContraseña" runat="server"  placeholder="Contraseña" TextMode="Password" OnTextChanged="TxtContraseña_TextChanged" CssClass="form-control"></asp:TextBox>
                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtContraseña" CssClass="text-danger" ErrorMessage="Ingrese una contraseña."></asp:RequiredFieldValidator>
                     
            </div>

@@ -23,8 +23,8 @@ namespace Krypto.Models
         public string imagen { get; set; }
         
         //Relaciones.
-        public int idusuario { get; set; }
-        public virtual Usuario usuario { get; set; }
+        public int idadmin { get; set; }
+        public virtual Administrador admin { get; set; }
 
 
 
