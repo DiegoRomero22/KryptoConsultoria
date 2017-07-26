@@ -46,10 +46,10 @@ namespace Krypto.Interfaz.Administrador
                 Response.Redirect("AgregarArchivos.aspx");
             }
         }
-        
 
-        protected void GridView1_RowCommand1(object sender, GridViewCommandEventArgs e)
+        protected void GVCliente_RowCommand(object sender, GridViewCommandEventArgs e)
         {
+
             if (e.CommandName == "dwn")
             {
                 string filterName = e.CommandArgument.ToString();

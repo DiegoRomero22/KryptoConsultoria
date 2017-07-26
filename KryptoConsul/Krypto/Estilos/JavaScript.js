@@ -1,161 +1,74 @@
-﻿// Create Countdown
-var Countdown = {
+﻿
+var Clock = (function () {
 
-    // Backbone-like structure
-    $el: $('.countdown'),
-
-    // Params
-    countdown_interval: null,
-    total_seconds: 0,
-
-    // Initialize the countdown  
-    init: function () {
-
-        // DOM
-        this.$ = {
-            hours: this.$el.find('.bloc-time.hours .figure'),
-            minutes: this.$el.find('.bloc-time.min .figure'),
-            seconds: this.$el.find('.bloc-time.sec .figure')
-        };
-
-        // Init countdown values
-        this.values = {
-            hours: this.$.hours.parent().attr('data-init-value'),
-            minutes: this.$.minutes.parent().attr('data-init-value'),
-            seconds: this.$.seconds.parent().attr('data-init-value'),
-        };
-
-        // Initialize total seconds
-        this.total_seconds = this.values.hours * 60 * 60 + (this.values.minutes * 60) + this.values.seconds;
-
-        // Animate countdown to the end 
-        this.count();
-    },
-
-    count: function () {
-
-        var that = this,
-            $hour_1 = this.$.hours.eq(0),
-            $hour_2 = this.$.hours.eq(1),
-            $min_1 = this.$.minutes.eq(0),
-            $min_2 = this.$.minutes.eq(1),
-            $sec_1 = this.$.seconds.eq(0),
-            $sec_2 = this.$.seconds.eq(1);
-
-        this.countdown_interval = setInterval(function () {
-
-            if (that.total_seconds > 0) {
-
-                ++that.values.seconds;
-
-                if (that.values.minutes >= 0 && that.values.seconds == 59) {
-
-                    that.values.seconds = 59;
-                    ++that.values.minutes;
-                    that.values.seconds = 0;
-                }
-
-                if (that.values.hours >= 0 && that.values.minutes == 59) {
-
-                    that.values.minutes = 59;
-                    ++that.values.hours;
-                    that.values.minutes = 0;
-                }
-
-                // Update DOM values
-                // Hours
-                that.checkHour(that.values.hours, $hour_1, $hour_2);
-
-                // Minutes
-                that.checkHour(that.values.minutes, $min_1, $min_2);
-
-                // Seconds
-                that.checkHour(that.values.seconds, $sec_1, $sec_2);
-
-                ++that.total_seconds;
-
-                if (that.values.hours == 23 && that.values.minutes == 59) {
-                    that.values.hours = 0;
-
-                }
-                if (that.time.hours == 23 && that.time.minutes == 59 && that.time.seconds == 59) {
-                    ++that.time.hours;
-                    that.time.hours = 01;
-                    that.time.minutes = 0;
-                    that.time.seconds = 0;
-                }
-            }
-
-            else {
-                clearInterval(that.countdown_interval);
-            }
-        }, 1000);
-    },
-
-    animateFigure: function ($el, value) {
-
-        var that = this,
-                $top = $el.find('.top'),
-            $bottom = $el.find('.bottom'),
-            $back_top = $el.find('.top-back'),
-            $back_bottom = $el.find('.bottom-back');
-
-        // Before we begin, change the back value
-        $back_top.find('span').html(value);
-
-        // Also change the back bottom value
-        $back_bottom.find('span').html(value);
-
-        // Then animate
-        TweenMax.to($top, 0.8, {
-            rotationX: '-180deg',
-            transformPerspective: 300,
-            ease: Quart.easeOut,
-            onComplete: function () {
-
-                $top.html(value);
-
-                $bottom.html(value);
-
-                TweenMax.set($top, { rotationX: 0 });
-            }
-        });
-
-        TweenMax.to($back_top, 0.8, {
-            rotationX: 0,
-            transformPerspective: 300,
-            ease: Quart.easeOut,
-            clearProps: 'all'
-        });
-    },
-
-    checkHour: function (value, $el_1, $el_2) {
-
-        var val_1 = value.toString().charAt(0),
-            val_2 = value.toString().charAt(1),
-            fig_1_value = $el_1.find('.top').html(),
-            fig_2_value = $el_2.find('.top').html();
-
-        if (value >= 10) {
-
-            // Animate only if the figure has changed
-            if (fig_1_value !== val_1) this.animateFigure($el_1, val_1);
-            if (fig_2_value !== val_2) this.animateFigure($el_2, val_2);
+    var exports = function (element) {
+        this._element = element;
+        var html = '';
+        for (var i = 0; i < 6; i++) {
+            html += '<span>&nbsp;</span>';
         }
-        else {
+        this._element.innerHTML = html;
+        this._slots = this._element.getElementsByTagName('span');
+        this._tick();
+    };
 
-            // If we are under 10, replace first figure with 0
-            if (fig_1_value !== '0') this.animateFigure($el_1, 0);
-            if (fig_2_value !== val_1) this.animateFigure($el_2, val_1);
+    exports.prototype = {
+
+        _tick: function () {
+            var time = new Date();
+            this._update(this._pad(time.getHours()) + this._pad(time.getMinutes()) + this._pad(time.getSeconds()));
+            var self = this;
+            setTimeout(function () {
+                self._tick();
+            }, 1000);
+        },
+
+        _pad: function (value) {
+            return ('0' + value).slice(-2);
+        },
+
+        _update: function (timeString) {
+
+            var i = 0, l = this._slots.length, value, slot, now;
+            for (; i < l; i++) {
+
+                value = timeString.charAt(i);
+                slot = this._slots[i];
+                now = slot.dataset.now;
+
+                if (!now) {
+                    slot.dataset.now = value;
+                    slot.dataset.old = value;
+                    continue;
+                }
+
+                if (now !== value) {
+                    this._flip(slot, value);
+                }
+            }
+        },
+
+        _flip: function (slot, value) {
+
+            // setup new state
+            slot.classList.remove('flip');
+            slot.dataset.old = slot.dataset.now;
+            slot.dataset.now = value;
+
+            // force dom reflow
+            slot.offsetLeft;
+
+            // start flippin
+            slot.classList.add('flip');
+
         }
-    }
 
+    };
 
-};
+    return exports;
+}());
 
-
-
-
-
-// Let's go !
-Countdown.init();
+var i = 0, clocks = document.querySelectorAll('.clock'), l = clocks.length;
+for (; i < l; i++) {
+    new Clock(clocks[i]);
+}

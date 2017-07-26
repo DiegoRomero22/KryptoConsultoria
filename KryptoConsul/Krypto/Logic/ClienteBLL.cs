@@ -63,20 +63,19 @@ namespace Krypto.Logic
                 throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
             }
         }
-        public bool registrarCliente( string nombre, Int64 documento, string email, string clave, string direccion, Int64 telefono, int rol, bool activo = true)
+        public bool registrarCliente(string nombre, Int64 documento, string email, string clave, Int64 telefono, int rol, int idOferta, bool activo = true)
         {
             try
             {
                 Cliente cliente = new Cliente();
-                {                    
+                {
                     cliente.NombreCompleto = nombre;
                     cliente.Documento = documento;
                     cliente.Email = email;
                     cliente.Contraseña = clave;
-                    cliente.Direccion = direccion;
                     cliente.Telefono = telefono;
                     cliente.RolId = rol;
-
+                    cliente.idoferta = idOferta;
                     cliente.Activo = activo;
                 };
                 KryptoContext context = new KryptoContext();

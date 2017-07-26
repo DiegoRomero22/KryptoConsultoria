@@ -46,17 +46,26 @@
                 <%--Scripts del sitio--%>
             </Scripts>            
         </asp:ScriptManager>
+
         <div class="navbar navbar-inverse navbar-fixed" style="border-style: none; border-color: inherit; border-width: medium; background-color:#ffffff; left: 0px; top: 18px; height: 133px;" >
                     <div class="container">
                         <div class="auto-style1" contenteditable="inherit">
                             <br />
                             <a href="Inicio.aspx"><asp:ImageButton ID="ImageButton2"  runat="server" ImageUrl="~/image/LogoKrypto.png" Width="146px" Height="90px" ImageAlign="Left"  /></a>                           
                         </div>
+                        <div>
+                            <link rel="stylesheet" href="Estilos/StyleSheet1.css" />
+                                <span class="clock" ></span>
+                            <script src="Estilos/JavaScript.js"></script>
+                        </div>
           
                     </div>
                 </div>        
+
         <div class="container body-content">
             <asp:ContentPlaceHolder ID="MainContent" runat="server">
+
+
            </asp:ContentPlaceHolder>
 
         </div>
@@ -70,7 +79,7 @@
 
                 <table border="0" cellpadding="0" cellspacing="0" width="100%" style="height: 74px; top: 10px;" class="footer">                   
                     <tr>
-                        <td style="width: 100%;" align="center" 
+                        <td style="width: 100%;" align="center"
                             <div class="footer">
                     <div class="copyright">
                         &copy; Krypto Consultoria | <a href="https://www.krypto.com.co/"> Contactenos </a>

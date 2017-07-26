@@ -15,7 +15,7 @@ namespace Krypto.Interfaz.Administrador
             try
             {
 
-                string email = Session["email"].ToString();
+                string email = Session["nombreAdmin"].ToString();
                 Label1.Text = "Bienvenido " + email;
                 Label2.Text = " " + email;
 
@@ -26,11 +26,7 @@ namespace Krypto.Interfaz.Administrador
             }
         }
 
-        protected void BtnAgregarProyecto_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("PlantillaOfertaKrypto.aspx");
-        }
-
+    
         protected void BtnAgregarLider_Click(object sender, EventArgs e)
         {
             Response.Redirect("AgregarLider.aspx");
@@ -51,7 +47,7 @@ namespace Krypto.Interfaz.Administrador
                 lblhora.Text = horario;
                 //horar.registroHorario(Convert.ToDateTime(lblhora.Text), Convert.ToDateTime(lblTiempofinal.Text));
                 horar.guardarHora(Label2.Text, Convert.ToDateTime(lblTiempofinal.Text));
-                Session.Remove("email");
+                Session.Remove("nombreAdmin");
 
             }
             Response.Redirect("../Login.aspx");
@@ -61,6 +57,12 @@ namespace Krypto.Interfaz.Administrador
         {
            lblTiempofinal.Text = DateTime.Now.ToString();
             lblhora.Text = DateTime.Now.ToString();
+
+        }
+
+        protected void btnAgregarOferta_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("PlantillaOfertaKrypto.aspx");
 
         }
     }

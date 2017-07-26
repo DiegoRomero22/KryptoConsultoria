@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto.Interfaz.Administrador {
+namespace Krypto.Interfaz {
     
     
-    public partial class Administrador {
+    public partial class PaginaLider {
         
         /// <summary>
         /// Control Label2.
@@ -76,48 +76,21 @@ namespace Krypto.Interfaz.Administrador {
         protected global::System.Web.UI.WebControls.Label lblhora;
         
         /// <summary>
-        /// Control btnAgregarLider.
+        /// Control BtnAsignarGT.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarLider;
+        protected global::System.Web.UI.WebControls.Button BtnAsignarGT;
         
         /// <summary>
-        /// Control UpdateProgress1.
+        /// Control BtnDescargarArchivos.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.UpdateProgress UpdateProgress1;
-        
-        /// <summary>
-        /// Control btnAgregarCliente.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarCliente;
-        
-        /// <summary>
-        /// Control btnAgregarOferta.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button btnAgregarOferta;
-        
-        /// <summary>
-        /// Control Calendar1.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Calendar Calendar1;
+        protected global::System.Web.UI.WebControls.Button BtnDescargarArchivos;
     }
 }

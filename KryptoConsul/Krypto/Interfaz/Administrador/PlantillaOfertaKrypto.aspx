@@ -83,8 +83,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="TxtRazonSocial" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -112,8 +111,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="TxtNit" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -141,8 +139,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="TxtDireccion" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -164,8 +161,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TxtTelefono" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -187,8 +183,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="TxtCiudad" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -210,8 +205,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TxtNombreContacto" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -233,8 +227,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator7" runat="server" ControlToValidate="TxtCargoContacto" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -256,8 +249,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator8" runat="server" ControlToValidate="TxtNumeroCelular" CssClass="alert-danger" ErrorMessage="*Campo Obligatorio."></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -279,8 +271,7 @@
             <td style="width: 213px">&nbsp;</td>
             <td style="width: 367px" class="modal-sm">&nbsp;</td>
             <td style="width: 329px">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator9" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtEmail" CssClass="alert-danger"></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>
@@ -302,8 +293,7 @@
             <td style="width: 213px; height: 20px;"></td>
             <td style="width: 367px; height: 20px;" class="modal-sm"></td>
             <td style="width: 329px; height: 20px;">
-                <asp:RequiredFieldValidator ID="RequiredFieldValidator10" runat="server" ErrorMessage="*Campo Obligatorio." ControlToValidate="TxtFecha" CssClass="alert-danger"></asp:RequiredFieldValidator>
-            </td>
+                &nbsp;</td>
             <td style="width: 184px; height: 20px;" class="modal-sm"></td>
             <td style="height: 20px"></td>
         </tr>
@@ -316,10 +306,12 @@
         </tr>
         <tr>
             <td style="width: 213px">&nbsp;</td>
-            <td colspan="2" rowspan="2">
+            <td rowspan="2">
                 <asp:Label ID="LblOfertaKrypto" runat="server" Text="OFERTA"></asp:Label>
                 <asp:FileUpload ID="FileUOferta" runat="server" />
             </td>
+            <td rowspan="2">
+                &nbsp;</td>
             <td style="width: 184px" class="modal-sm">&nbsp;</td>
             <td>&nbsp;</td>
         </tr>

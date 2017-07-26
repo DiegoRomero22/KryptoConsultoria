@@ -35,7 +35,7 @@ namespace Krypto.Logic
                     else if (idRol.FirstOrDefault().Equals(2))
                     {
                         //Y se activa un estado de sesión para Administrador.
-                        HttpContext.Current.Session["clienteLogin"] = 2;
+                        HttpContext.Current.Session["LiderLogin"] = 2;
 
                         ///Si el Rol es 1 entonces es Administrador.
                         return 2;

@@ -22,6 +22,15 @@ namespace Krypto.Interfaz.Cliente {
         protected global::System.Web.UI.WebControls.Label Label2;
         
         /// <summary>
+        /// Control Label1.
+        /// </summary>
+        /// <remarks>
+        /// Campo generado automáticamente.
+        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Label Label1;
+        
+        /// <summary>
         /// Control BtnCerrarSesion.
         /// </summary>
         /// <remarks>
@@ -31,30 +40,12 @@ namespace Krypto.Interfaz.Cliente {
         protected global::System.Web.UI.WebControls.Button BtnCerrarSesion;
         
         /// <summary>
-        /// Control BtnProyectos.
+        /// Control Button1.
         /// </summary>
         /// <remarks>
         /// Campo generado automáticamente.
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnProyectos;
-        
-        /// <summary>
-        /// Control BtnCalendarioTributario.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnCalendarioTributario;
-        
-        /// <summary>
-        /// Control BtnArchivos.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Button BtnArchivos;
+        protected global::System.Web.UI.WebControls.Button Button1;
     }
 }

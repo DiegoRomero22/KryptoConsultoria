@@ -247,19 +247,23 @@
         <tr>
             <td style="width: 79px">&nbsp;</td>
             <td colspan="5" rowspan="4">
-                <asp:GridView ID="DVLider" runat="server" AutoGenerateColumns="False" DataKeyNames="IdLider" DataSourceID="SqlDataSource1">
+                <asp:GridView ID="DVLider" runat="server" AutoGenerateColumns="False" DataKeyNames="IdLider" DataSourceID="SqlDataSource1" AllowSorting="True">
                     <Columns>
-                        <asp:BoundField DataField="IdLider" HeaderText="IdLider" InsertVisible="False" ReadOnly="True" SortExpression="IdLider" />
+                        <asp:BoundField DataField="IdLider" HeaderText="IdLider" InsertVisible="False" ReadOnly="True" SortExpression="IdLider" Visible="false" />
                         <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
                         <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                         <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" SortExpression="Contraseña" />
                         <asp:BoundField DataField="Horas" HeaderText="Horas" SortExpression="Horas" />
                         <asp:CheckBoxField DataField="Activo" HeaderText="Activo" SortExpression="Activo" />
-                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" HeaderText="Editar/Eliminar" />
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" DeleteCommand="DELETE FROM [Liders] WHERE [IdLider] = @IdLider" InsertCommand="INSERT INTO [Liders] ([NombreCompleto], [Documento], [Email], [Contraseña], [Horas], [Activo]) VALUES (@NombreCompleto, @Documento, @Email, @Contraseña, @Horas, @Activo)" SelectCommand="SELECT [IdLider], [NombreCompleto], [Documento], [Email], [Contraseña], [Horas], [Activo] FROM [Liders]" UpdateCommand="UPDATE [Liders] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Horas] = @Horas, [Activo] = @Activo WHERE [IdLider] = @IdLider">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" 
+                    DeleteCommand="DELETE FROM [Liders] WHERE [IdLider] = @IdLider" 
+                    InsertCommand="INSERT INTO [Liders] ([NombreCompleto], [Documento], [Email], [Contraseña], [Horas], [Activo]) VALUES (@NombreCompleto, @Documento, @Email, @Contraseña, @Horas, @Activo)" 
+                    SelectCommand="SELECT [IdLider], [NombreCompleto], [Documento], [Email], [Contraseña], [Horas], [Activo] FROM [Liders]" 
+                    UpdateCommand="UPDATE [Liders] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Horas] = @Horas, [Activo] = @Activo WHERE [IdLider] = @IdLider">
                     <DeleteParameters>
                         <asp:Parameter Name="IdLider" Type="Int32" />
                     </DeleteParameters>

@@ -80,12 +80,9 @@
             </td>
             <td style="height: 22px; width: 176px;" colspan="1">
                 <asp:Label ID="LblCliente" runat="server" Text="Seleccione el cliente:"></asp:Label>
-                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="RolId" >
+                <asp:DropDownList ID="DDLCliente" runat="server" CssClass="form-control" BackColor="White" Width="367px" DataSourceID="SqlDataSource2" DataTextField="NombreCompleto" DataValueField="IdCliente" >
                 </asp:DropDownList>
-                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdUsuario], [NombreCompleto], [RolId] FROM [Usuarios] WHERE ([RolId] = @RolId)">
-                    <SelectParameters>
-                        <asp:ControlParameter ControlID="DDLCliente" DefaultValue="3" Name="RolId" PropertyName="SelectedValue" Type="Int32" />
-                    </SelectParameters>
+                <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdCliente], [NombreCompleto] FROM [Clientes]">
                 </asp:SqlDataSource>
             </td>
             <td style="height: 22px; width: 332px;">&nbsp;</td>
@@ -150,43 +147,37 @@
             <td style="height: 22px; width: 843px">&nbsp;</td>
             <td style="height: 22px; width: 176px;" colspan="2">
                 
-                <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="False" DataKeyNames="IdArchivo" DataSourceID="SqlDataSource1" OnRowCommand="GridView1_RowCommand1">
+                <asp:GridView ID="GVCliente" runat="server" AutoGenerateColumns="False" DataKeyNames="IdArchivo" DataSourceID="SqlDataSource1" OnRowCommand="GVCliente_RowCommand">
                     <Columns>
                         <asp:BoundField DataField="IdArchivo" HeaderText="IdArchivo" InsertVisible="False" ReadOnly="True" SortExpression="IdArchivo" />
                         <asp:BoundField DataField="NombreArchivo" HeaderText="NombreArchivo" SortExpression="NombreArchivo" />
                         <asp:BoundField DataField="imagen" HeaderText="imagen" SortExpression="imagen" />
-                        <asp:BoundField DataField="idusuario" HeaderText="idusuario" SortExpression="idusuario" />
-                     
-                       <asp:CommandField ShowEditButton="True" ShowDeleteButton="True" />
+                        <asp:BoundField DataField="idadmin" HeaderText="idadmin" SortExpression="idadmin" />
+                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
                         <asp:TemplateField ShowHeader="False">
                             <ItemTemplate>
-                                <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="false" CommandName="dwn" CommandArgument='<%# Eval("imagen")%>'  Width="27px" ImageUrl="~/Interfaz/descarga.png" Text="Botón"  />
+                            <asp:ImageButton ID="ImageButton1" runat="server" CausesValidation="false" CommandName="dwn" CommandArgument='<%# Eval("imagen")%>'  Width="27px" ImageUrl="~/Interfaz/descarga.png"  />
                             </ItemTemplate>
                         </asp:TemplateField>
-                     
-                      
-                     
-                       
-                     
                     </Columns>
                 </asp:GridView>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" 
                     DeleteCommand="DELETE FROM [Archivoes] WHERE [IdArchivo] = @IdArchivo" 
-                    InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen], [idusuario]) VALUES (@NombreArchivo, @imagen, @idusuario)" 
-                    SelectCommand="SELECT [IdArchivo], [NombreArchivo], [imagen], [idusuario] FROM [Archivoes]" 
-                    UpdateCommand="UPDATE [Archivoes] SET [NombreArchivo] = @NombreArchivo, [imagen] = @imagen, [idusuario] = @idusuario WHERE [IdArchivo] = @IdArchivo">
+                    InsertCommand="INSERT INTO [Archivoes] ([NombreArchivo], [imagen], [idadmin]) VALUES (@NombreArchivo, @imagen, @idadmin)" 
+                    SelectCommand="SELECT [IdArchivo], [NombreArchivo], [imagen], [idadmin] FROM [Archivoes]" 
+                    UpdateCommand="UPDATE [Archivoes] SET [NombreArchivo] = @NombreArchivo, [imagen] = @imagen, [idadmin] = @idadmin WHERE [IdArchivo] = @IdArchivo">
                     <DeleteParameters>
                         <asp:Parameter Name="IdArchivo" Type="Int32" />
                     </DeleteParameters>
                     <InsertParameters>
                         <asp:Parameter Name="NombreArchivo" Type="String" />
                         <asp:Parameter Name="imagen" Type="String" />
-                        <asp:Parameter Name="idusuario" Type="Int32" />
+                        <asp:Parameter Name="idadmin" Type="Int32" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="NombreArchivo" Type="String" />
                         <asp:Parameter Name="imagen" Type="String" />
-                        <asp:Parameter Name="idusuario" Type="Int32" />
+                        <asp:Parameter Name="idadmin" Type="Int32" />
                         <asp:Parameter Name="IdArchivo" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>

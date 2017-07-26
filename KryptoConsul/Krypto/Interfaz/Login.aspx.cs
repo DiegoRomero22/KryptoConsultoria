@@ -19,7 +19,21 @@ namespace Krypto.Interfaz
         }
         protected void BtnIniciarSesion_Click1(object sender, EventArgs e)
         {
-            validarLogin();
+            if (TxtUsuario.Text == "")
+            {
+
+            }
+
+           else  if (TxtContraseña.Text == "")
+            {
+                Response.Write("<script>alert('Usuario o contraseña incorrecta')</script>");
+            }
+            else
+            {
+                validarLogin();
+
+            }
+
         }
 
         protected void TxtUsuario_TextChanged(object sender, EventArgs e)
@@ -63,7 +77,7 @@ namespace Krypto.Interfaz
                 Session["Admin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 1;
                 //Session de nombre de usuario.
-                Session["email"] = TxtUsuario.Text;
+                Session["nombreAdmin"] = TxtUsuario.Text;
                 if (lblHorarioInicial.Text == null)
                 {
 
@@ -78,9 +92,18 @@ namespace Krypto.Interfaz
             //Rol Lider.
             else if (liderBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 2)
             {
-                Session["clienteLogin"] = TxtUsuario.Text;
+                Session["LiderLogin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 2;
-                Response.Redirect("Administrador/AsignarLider.aspx");
+                Session["nombreLider"] = TxtUsuario.Text;
+                if (lblHorarioInicial.Text == null)
+                {
+
+                }
+                else
+                {
+                    Session["HoraInicial"] = lblHorarioInicial.Text;
+                }
+                Response.Redirect("Lider/PaginaLider.aspx");
 
             }
             //Rol Cliente.
@@ -90,6 +113,15 @@ namespace Krypto.Interfaz
                 usuarioEstaLogueado = 3;
                 //Session de nombre del cliente
                 Session["nombreCliente"] = TxtUsuario.Text;
+                Session["email"] = TxtUsuario.Text;
+                if (lblHorarioInicial.Text == null)
+                {
+
+                }
+                else
+                {
+                    Session["HoraInicial"] = lblHorarioInicial.Text;
+                }
                 Response.Redirect("Cliente/Cliente.aspx");
             }
             ////Rol Usuario.

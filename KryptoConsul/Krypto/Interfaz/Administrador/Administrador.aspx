@@ -67,14 +67,12 @@
                     <asp:Label ID="Label1" runat="server" ForeColor="White" Text="Bienvenido"></asp:Label>
                     <br />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Button ID="BtnCerrarSesion" runat="server" OnClick="BtnCerrarSesion_Click" Text="Cerrar Sesion" />
+                    <asp:Button ID="BtnCerrarSesion" runat="server" OnClick="BtnCerrarSesion_Click" Text="Cerrar Sesion" />                   
                 </div>
                 </div>
           </div>
 
-    <%--<footer class="container-fluid text-center">
-  <%--<p>Footer Text</p>
-</footer>--%>
+  
     <asp:UpdatePanel ID="UpdatePanel3" runat="server" >
                     <ContentTemplate>
                         <asp:Timer ID="Timer1" runat="server" Interval="500" OnTick="Timer1_Tick" >
@@ -89,93 +87,10 @@
                   
                 </asp:UpdatePanel>
 
-  <div class="wrap"> 
-  <div class="countdown" >
   
-      <link rel="stylesheet" href="../../Estilos/StyleSheet1.css" />
-    <div class="bloc-time hours" data-init-value="01" id="horas">
-      <span class="count-title"></span>
 
-
-      <div class="figure hours hours-1">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-
-      <div class="figure hours hours-2">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-    </div>
-
-    <div class="bloc-time min" data-init-value="0" id="minutos">
-      <span class="count-title"></span>
-
-      <div class="figure min min-1">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>        
-      </div>
-
-      <div class="figure min min-2">
-       <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-    </div>
-
-    <div class="bloc-time sec" data-init-value="0" id="segundos">
-      <span class="count-title"></span>
-
-        <div class="figure sec sec-1">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>          
-      </div>
-
-      <div class="figure sec sec-2">
-        <span class="top">0</span>
-        <span class="top-back">
-          <span>0</span>
-        </span>
-        <span class="bottom">0</span>
-        <span class="bottom-back">
-          <span>0</span>
-        </span>
-      </div>
-     
-    </div>
   
-  </div>
-  
-</div>
+
   <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
 <script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js'></script>
 
@@ -183,6 +98,9 @@
     <%--<div class="col-sm-2 sidenav">
       <%--<div class="well">
         <p>ADS</p>
+
+
+
       </div>
       <div class="well">
         <p>ADS</p>
@@ -196,10 +114,12 @@
         <asp:Button ID="btnAgregarLider" runat="server" Text="Agregar Lider" Width="160px" CssClass="btn" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarLider_Click" />
         <br />
         <br />
+        <asp:UpdateProgress ID="UpdateProgress1" runat="server" AssociatedUpdatePanelID="UpdatePanel3">
+        </asp:UpdateProgress>
         <asp:Button ID="btnAgregarCliente" runat="server" Text="Agregar Cliente" Width="160px" CssClass="btn" ForeColor="White" BackColor="#bf0d11" OnClick="BtnVerClientes_Click" />
         <br />
         <br />
-        <asp:Button ID="btnAgregarArchivos" runat="server" Text="Agregar Proyectos" Width="160px" CssClass="btn" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarProyecto_Click" />
+        <asp:Button ID="btnAgregarOferta" runat="server" Text="Agregar Oferta" Width="160px" CssClass="btn" ForeColor="White" BackColor="#bf0d11" OnClick="btnAgregarOferta_Click" />
         
         <%--<footer class="container-fluid text-center">
   <%--<p>Footer Text</p>
@@ -221,5 +141,6 @@
     </div>--%>
   </div>
 </div>
+    
 
 </asp:Content>

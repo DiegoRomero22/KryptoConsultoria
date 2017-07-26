@@ -7,10 +7,10 @@
 // </generado automáticamente>
 //------------------------------------------------------------------------------
 
-namespace Krypto {
+namespace Krypto.Interfaz.Lider {
     
     
-    public partial class ProjectLeader {
+    public partial class AsignarGrupoDeTrabajo {
         
         /// <summary>
         /// Control DropDownList1.
@@ -38,24 +38,6 @@ namespace Krypto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtAuxContable;
-        
-        /// <summary>
-        /// Control LblTelAuxContable.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTelAuxContable;
-        
-        /// <summary>
-        /// Control TxtTelAuxContable.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTelAuxContable;
         
         /// <summary>
         /// Control LblTareaAuxContable.
@@ -112,24 +94,6 @@ namespace Krypto {
         protected global::System.Web.UI.WebControls.TextBox TxtContador;
         
         /// <summary>
-        /// Control LblTelContador.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTelContador;
-        
-        /// <summary>
-        /// Control TxtTelContador.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTelContador;
-        
-        /// <summary>
         /// Control LblTareaContador.
         /// </summary>
         /// <remarks>
@@ -184,24 +148,6 @@ namespace Krypto {
         protected global::System.Web.UI.WebControls.TextBox TxtAuditor;
         
         /// <summary>
-        /// Control LblTelAuditor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTelAuditor;
-        
-        /// <summary>
-        /// Control TxtTelAuditor.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTelAuditor;
-        
-        /// <summary>
         /// Control LblTareaAuditor.
         /// </summary>
         /// <remarks>
@@ -254,24 +200,6 @@ namespace Krypto {
         /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TxtNomina;
-        
-        /// <summary>
-        /// Control LblTelNomina.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.Label LblTelNomina;
-        
-        /// <summary>
-        /// Control TxtTelNomina.
-        /// </summary>
-        /// <remarks>
-        /// Campo generado automáticamente.
-        /// Para modificarlo, mueva la declaración del campo del archivo del diseñador al archivo de código subyacente.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TxtTelNomina;
         
         /// <summary>
         /// Control LblTareaNomina.

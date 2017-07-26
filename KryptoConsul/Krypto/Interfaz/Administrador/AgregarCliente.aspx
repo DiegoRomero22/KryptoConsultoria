@@ -15,12 +15,28 @@
         </div>
     </div>
 
-    <table class="well bs-component" style="border-style: double; border-color: inherit; border-width: medium; width: 621px; margin-left: 223px; background-color:#f4f4f4" >
+    <table class="well bs-component" style="border-style: double; border-color: inherit; border-width: medium; width: 904px; margin-left: 151px; background-color:#f4f4f4" >
         <tr>
             <td style="width: 37px">&nbsp;</td>
             <td style="width: 169px" class="modal-sm">
                 <br />
-                <table align="center" class="nav-justified" style="width: 356%">
+                <table align="center" class="nav-justified" style="width: 398%">
+                    <tr>
+                        <td style="width: 217px">&nbsp;</td>
+                        <td style="width: 75px">&nbsp;</td>
+                        <td>&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td style="width: 217px">
+                            <asp:Label ID="Label1" runat="server" Text="Seleccione el proyecto:"></asp:Label>
+                        </td>
+                        <td style="width: 75px">&nbsp;</td>
+                        <td>
+                            <asp:DropDownList ID="DDlOferta" runat="server" DataSourceID="SqlDataSource2" DataTextField="RazonSocial" DataValueField="IdOfertaKrypto" AutoPostBack="True">
+                            </asp:DropDownList>
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" SelectCommand="SELECT [IdOfertaKrypto], [RazonSocial] FROM [OfertaKryptoes]"></asp:SqlDataSource>
+                        </td>
+                    </tr>
                     <tr>
                         <td style="width: 217px">&nbsp;</td>
                         <td style="width: 75px">&nbsp;</td>
@@ -87,20 +103,6 @@
                     </tr>
                     <tr>
                         <td style="width: 217px">
-                            <asp:Label ID="LblDireccion" runat="server" Text="Direccion"></asp:Label>
-                        </td>
-                        <td style="width: 75px">&nbsp;</td>
-                        <td>
-                            <asp:TextBox ID="TxtDireccion" runat="server" CssClass="form-control" Width="100px"></asp:TextBox>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td style="width: 217px">&nbsp;</td>
-                        <td style="width: 75px">&nbsp;</td>
-                        <td>&nbsp;</td>
-                    </tr>
-                    <tr>
-                        <td style="width: 217px">
                             <asp:Label ID="LblTelefono" runat="server" Text="Telefono"></asp:Label>
                         </td>
                         <td style="width: 75px">&nbsp;</td>
@@ -140,20 +142,33 @@
             <td style="width: 37px">&nbsp;</td>
             <td style="width: 169px" class="modal-sm">
                 
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:GridView ID="GVClientes" runat="server" AutoGenerateColumns="False" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" AllowSorting="True" Width="402px">
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:GridView ID="GVClientes" runat="server" AutoGenerateColumns="False" DataKeyNames="IdCliente" DataSourceID="SqlDataSource1" AllowSorting="True" Width="798px">
                     <Columns>
-                        <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" InsertVisible="False" ReadOnly="True" SortExpression="IdCliente" />
-                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto"  />
-                        <asp:BoundField ConvertEmptyStringToNull="False" DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
+                        <asp:BoundField DataField="IdCliente" HeaderText="IdCliente" SortExpression="IdCliente" InsertVisible="False" ReadOnly="True" Visible="false" />
+                        <asp:BoundField DataField="NombreCompleto" HeaderText="NombreCompleto" SortExpression="NombreCompleto" />
+                        <asp:BoundField DataField="Documento" HeaderText="Documento" SortExpression="Documento" />
                         <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
                         <asp:BoundField DataField="Contraseña" HeaderText="Contraseña" SortExpression="Contraseña" />
-                        <asp:BoundField DataField="Direccion" HeaderText="Direccion" SortExpression="Direccion" />
-                        <asp:BoundField ConvertEmptyStringToNull="False" DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
+                        <asp:BoundField DataField="Telefono" HeaderText="Telefono" SortExpression="Telefono" />
                         <asp:CheckBoxField DataField="Activo" HeaderText="Activo" SortExpression="Activo" />
-                        <asp:CommandField ShowDeleteButton="True" ShowEditButton="True" />
+                        <asp:BoundField DataField="idoferta" HeaderText="idoferta" SortExpression="idoferta" Visible="false"/>
+                        <asp:TemplateField HeaderText="Editar/Eliminar" ShowHeader="False">
+                            <EditItemTemplate>
+                                <asp:Button ID="Button1" runat="server" CausesValidation="True" CommandName="Update" Text="Actualizar" />
+                                &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Cancel" Text="Cancelar" />
+                            </EditItemTemplate>
+                            <ItemTemplate>
+                                <asp:Button ID="Button1" runat="server" CausesValidation="False" CommandName="Edit" Text="Editar" />
+                                &nbsp;<asp:Button ID="Button2" runat="server" CausesValidation="False" CommandName="Delete" Text="Eliminar" />
+                            </ItemTemplate>
+                        </asp:TemplateField>
                     </Columns>
                 </asp:GridView>
-                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" DeleteCommand="DELETE FROM [Clientes] WHERE [IdCliente] = @IdCliente" InsertCommand="INSERT INTO [Clientes] ([NombreCompleto], [Documento], [Email], [Contraseña], [Direccion], [Telefono], [Activo]) VALUES (@NombreCompleto, @Documento, @Email, @Contraseña, @Direccion, @Telefono, @Activo)" SelectCommand="SELECT [IdCliente], [NombreCompleto], [Documento], [Email], [Contraseña], [Direccion], [Telefono], [Activo] FROM [Clientes]" UpdateCommand="UPDATE [Clientes] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Direccion] = @Direccion, [Telefono] = @Telefono, [Activo] = @Activo WHERE [IdCliente] = @IdCliente">
+                <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:KryptoContext %>" 
+                    DeleteCommand="DELETE FROM [Clientes] WHERE [IdCliente] = @IdCliente" 
+                    InsertCommand="INSERT INTO [Clientes] ([NombreCompleto], [Documento], [Email], [Contraseña], [Telefono], [Activo], [idoferta]) VALUES (@NombreCompleto, @Documento, @Email, @Contraseña, @Telefono, @Activo, @idoferta)" 
+                    SelectCommand="SELECT [IdCliente], [NombreCompleto], [Documento], [Email], [Contraseña], [Telefono], [Activo], [idoferta] FROM [Clientes]" 
+                    UpdateCommand="UPDATE [Clientes] SET [NombreCompleto] = @NombreCompleto, [Documento] = @Documento, [Email] = @Email, [Contraseña] = @Contraseña, [Telefono] = @Telefono, [Activo] = @Activo WHERE [IdCliente] = @IdCliente">
                     <DeleteParameters>
                         <asp:Parameter Name="IdCliente" Type="Int32" />
                     </DeleteParameters>
@@ -162,18 +177,18 @@
                         <asp:Parameter Name="Documento" Type="Int64" />
                         <asp:Parameter Name="Email" Type="String" />
                         <asp:Parameter Name="Contraseña" Type="String" />
-                        <asp:Parameter Name="Direccion" Type="String" />
                         <asp:Parameter Name="Telefono" Type="Int64" />
                         <asp:Parameter Name="Activo" Type="Boolean" />
+                        <asp:Parameter Name="idoferta" Type="Int32" />
                     </InsertParameters>
                     <UpdateParameters>
                         <asp:Parameter Name="NombreCompleto" Type="String" />
                         <asp:Parameter Name="Documento" Type="Int64" />
                         <asp:Parameter Name="Email" Type="String" />
                         <asp:Parameter Name="Contraseña" Type="String" />
-                        <asp:Parameter Name="Direccion" Type="String" />
                         <asp:Parameter Name="Telefono" Type="Int64" />
                         <asp:Parameter Name="Activo" Type="Boolean" />
+                        <asp:Parameter Name="idoferta" Type="Int32" />
                         <asp:Parameter Name="IdCliente" Type="Int32" />
                     </UpdateParameters>
                 </asp:SqlDataSource>

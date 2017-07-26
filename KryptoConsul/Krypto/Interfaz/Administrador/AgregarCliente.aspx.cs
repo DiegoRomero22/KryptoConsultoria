@@ -37,7 +37,6 @@ namespace Krypto.Interfaz.Administrador
             TxtDocumento.Text = "";
             TxtEmail.Text = "";
             TxtContraseña.Text = "";
-            TxtDireccion.Text = "";
             TxtTelefono.Text = "";
         }
 
@@ -82,34 +81,36 @@ namespace Krypto.Interfaz.Administrador
 
         protected void BtnAgregar_Click1(object sender, EventArgs e)
         {
-                if (TxtNombreCompleto.Text == "")
-                {
-                    Response.Write("<script>alert('Digite un Nombre')</script>");
-                }
-                if (TxtDocumento.Text == "")
-                {
-                    Response.Write("<script>alert('Digite un documento')</script>");
-                }
-                if (TxtEmail.Text == "")
-                {
-                    Response.Write("<script>alert('Digite un correo electronico')</script>");
-                }
-                if (TxtContraseña.Text == "")
-                {
-                    Response.Write("<script>alert('digite una contraseña')</script>");
-                }
-                if (TxtDireccion.Text == "")
-                {
-                    Response.Write("<script>alert('digite una direccion')</script>");
-                }
-                if (TxtTelefono.Text == "")
-                {
-                    Response.Write("<script>alert('digite un telefono')</script>");
-                }
+            if (DDlOferta.SelectedValue == "")
+            {
+                Response.Write("<script>alert('Seleccione una empresa')</script>");
+
+            }
+            if (TxtNombreCompleto.Text == "" || TxtDocumento.Text == "" || TxtEmail.Text == "" || TxtContraseña.Text == "" || TxtTelefono.Text == "")
+            {
+                Response.Write("<script>alert('Digite todos los campos')</script>");
+            }
+                        
+            //if (TxtDocumento.Text == "")
+            //{
+            //    Response.Write("<script>alert('Digite un documento')</script>");
+            //}
+            //if (TxtEmail.Text == "")
+            //{
+            //    Response.Write("<script>alert('Digite un correo electronico')</script>");
+            //}
+            //if (TxtContraseña.Text == "")
+            //{
+            //    Response.Write("<script>alert('digite una contraseña')</script>");
+            //}
+            //if (TxtTelefono.Text == "")
+            //{
+            //    Response.Write("<script>alert('digite un telefono')</script>");
+            //}
             else
             {
                 ClienteBLL clienteBLL = new ClienteBLL();
-                if (clienteBLL.registrarCliente(TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, TxtDireccion.Text, long.Parse(TxtTelefono.Text), 2, CheckBoxActivo.Checked))
+                if (clienteBLL.registrarCliente( TxtNombreCompleto.Text, long.Parse(TxtDocumento.Text), TxtEmail.Text, TxtContraseña.Text, long.Parse(TxtTelefono.Text), 3, int.Parse( DDlOferta.SelectedValue),  CheckBoxActivo.Checked))
                 {
                     limpiarCasilas();
                     GVClientes.Visible = true;

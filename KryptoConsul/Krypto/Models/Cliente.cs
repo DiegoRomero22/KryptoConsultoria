@@ -27,10 +27,7 @@ namespace Krypto.Models
         public string Email { get; set; }
 
         [StringLength(20), Display(Name = "Contraseña")]
-        public string Contraseña { get; set; }
-
-        [StringLength(50), Display(Name = "Direccion")]
-        public string Direccion { get; set; }
+        public string Contraseña { get; set; }        
         
         public Int64 Telefono { get; set; }
        

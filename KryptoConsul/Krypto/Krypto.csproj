@@ -250,9 +250,9 @@
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\descarga.png" />
+    <Content Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx" />
     <Content Include="Interfaz\Login.aspx" />
-    <Content Include="Interfaz\PaginaLider.aspx" />
-    <Content Include="Interfaz\ProjectLeader.aspx" />
+    <Content Include="Interfaz\Lider\PaginaLider.aspx" />
     <Content Include="Interfaz\Registro.aspx" />
     <Content Include="Interfaz\Report_Admin.aspx" />
     <Content Include="Interfaz\RolAlfa.aspx" />
@@ -486,6 +486,13 @@
     <Compile Include="Interfaz\Cliente\Cliente.aspx.designer.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx.cs">
+      <DependentUpon>AsignarGrupoDeTrabajo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx.designer.cs">
+      <DependentUpon>AsignarGrupoDeTrabajo.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Interfaz\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -493,11 +500,11 @@
     <Compile Include="Interfaz\Login.aspx.designer.cs">
       <DependentUpon>Login.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\PaginaLider.aspx.cs">
+    <Compile Include="Interfaz\Lider\PaginaLider.aspx.cs">
       <DependentUpon>PaginaLider.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\PaginaLider.aspx.designer.cs">
+    <Compile Include="Interfaz\Lider\PaginaLider.aspx.designer.cs">
       <DependentUpon>PaginaLider.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Registro.aspx.cs">
@@ -554,13 +561,6 @@
     <Compile Include="Models\Rol.cs" />
     <Compile Include="Models\Tarea.cs" />
     <Compile Include="Models\IdentityModels.cs" />
-    <Compile Include="Interfaz\ProjectLeader.aspx.cs">
-      <DependentUpon>ProjectLeader.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Interfaz\ProjectLeader.aspx.designer.cs">
-      <DependentUpon>ProjectLeader.aspx</DependentUpon>
-    </Compile>
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Properties\Settings.Designer.cs">

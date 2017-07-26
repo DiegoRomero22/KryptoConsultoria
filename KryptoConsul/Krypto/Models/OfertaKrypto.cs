@@ -45,6 +45,9 @@ namespace Krypto.Models
         [Required]
         public DateTime Fecha { get; set; }
 
+        [Required]
+        public bool Estado { get; set; }
+
         [Required, StringLength(200), Display(Name = "Oferta")]
         public string Oferta { get; set; }
 
