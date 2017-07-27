@@ -250,7 +250,8 @@
     <Content Include="Interfaz\Administrador\PlantillaOfertaKrypto.aspx" />
     <Content Include="Interfaz\Cliente\Cliente.aspx" />
     <Content Include="Interfaz\descarga.png" />
-    <Content Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx" />
+    <Content Include="Interfaz\Lider\AgregarGrupoDeTrabajo.aspx" />
+    <Content Include="Interfaz\Lider\ModificarTareas.aspx" />
     <Content Include="Interfaz\Login.aspx" />
     <Content Include="Interfaz\Lider\PaginaLider.aspx" />
     <Content Include="Interfaz\Registro.aspx" />
@@ -486,12 +487,19 @@
     <Compile Include="Interfaz\Cliente\Cliente.aspx.designer.cs">
       <DependentUpon>Cliente.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx.cs">
-      <DependentUpon>AsignarGrupoDeTrabajo.aspx</DependentUpon>
+    <Compile Include="Interfaz\Lider\AgregarGrupoDeTrabajo.aspx.cs">
+      <DependentUpon>AgregarGrupoDeTrabajo.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Interfaz\Lider\AsignarGrupoDeTrabajo.aspx.designer.cs">
-      <DependentUpon>AsignarGrupoDeTrabajo.aspx</DependentUpon>
+    <Compile Include="Interfaz\Lider\AgregarGrupoDeTrabajo.aspx.designer.cs">
+      <DependentUpon>AgregarGrupoDeTrabajo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Interfaz\Lider\ModificarTareas.aspx.cs">
+      <DependentUpon>ModificarTareas.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Interfaz\Lider\ModificarTareas.aspx.designer.cs">
+      <DependentUpon>ModificarTareas.aspx</DependentUpon>
     </Compile>
     <Compile Include="Interfaz\Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -544,11 +552,11 @@
     </Compile>
     <Compile Include="Logic\ArchivoBLL.cs" />
     <Compile Include="Logic\ClienteBLL.cs" />
+    <Compile Include="Logic\GrupoDeTrabajoBLL.cs" />
     <Compile Include="Logic\HoraBLL.cs" />
     <Compile Include="Logic\LiderBLL.cs" />
     <Compile Include="Logic\PlantillasKryptoBLL.cs" />
     <Compile Include="Logic\AdministradorBLL.cs" />
-    <Compile Include="Models\Cargo.cs" />
     <Compile Include="Models\Cliente.cs" />
     <Compile Include="Models\Archivo.cs" />
     <Compile Include="Models\GrupoDeTrabajo.cs" />
@@ -559,7 +567,6 @@
     <Compile Include="Models\OfertaKrypto.cs" />
     <Compile Include="Models\Proyecto.cs" />
     <Compile Include="Models\Rol.cs" />
-    <Compile Include="Models\Tarea.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\Administrador.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

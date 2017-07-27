@@ -39,7 +39,7 @@ namespace Krypto.Models
 
         public virtual Rol Rol { get; set; }
 
-        public virtual Administrador admin { get; set; }
+  
 
         public int idoferta { get; set; }
         public virtual ICollection <OfertaKrypto> ofertaKrypto { get; set; }

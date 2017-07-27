@@ -89,6 +89,6 @@ namespace Krypto.Logic
 
                 throw;
             }
-        }
+        }       
     }
 }

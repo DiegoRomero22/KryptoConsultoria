@@ -29,13 +29,10 @@ namespace Krypto.Models
 
         public DbSet<GrupoDeTrabajo> grupoDeTrabajo { get; set; }
 
-        public DbSet<Cargo> cargo { get; set; }
-
         public DbSet<OfertaKrypto> ofertaKrypto { get; set; }
 
         public DbSet<Proyecto> proyecto { get; set; }
 
-        public DbSet<Tarea> tarea { get; set; }
         public DbSet<Lider> lider { get; set;   }
 
         public DbSet<Horario> horario { get; set; }

@@ -6,6 +6,8 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using Krypto.Logic;
 using Krypto.Models;
+using System.Data.Entity.Validation;
+
 namespace Krypto.Interfaz.Administrador
 {
     public partial class PlantillaOfertaKrypto : System.Web.UI.Page
@@ -80,25 +82,45 @@ namespace Krypto.Interfaz.Administrador
                 string finalUrl = virtualFolder + filterName + extension;
                 using (KryptoContext context = new KryptoContext())
                 {
-                    OfertaKrypto ofertaKrypto = new OfertaKrypto();
-                    ofertaKrypto.RazonSocial = TxtRazonSocial.Text;
-                    ofertaKrypto.NIT = TxtNit.Text;
-                    ofertaKrypto.Direccion = TxtDireccion.Text;
-                    ofertaKrypto.Telefono = Convert.ToInt64(TxtTelefono.Text);
-                    ofertaKrypto.Ciudad = TxtCiudad.Text;
-                    ofertaKrypto.NombreContacto = TxtNombreContacto.Text;
-                    ofertaKrypto.CargoContacto = TxtCargoContacto.Text;
-                    ofertaKrypto.NumeroCelular = Convert.ToInt32(TxtNumeroCelular.Text);
-                    ofertaKrypto.Email = TxtEmail.Text;
-                    ofertaKrypto.Fecha = Convert.ToDateTime(TxtFecha.Text);
-                    ofertaKrypto.Oferta = finalUrl;
-                    ofertaKrypto.Estado = true;
-                    context.ofertaKrypto.Add(ofertaKrypto);
-                    context.SaveChanges();
+                    try
+                    {
+                        OfertaKrypto ofertaKrypto = new OfertaKrypto();
+                        ofertaKrypto.RazonSocial = TxtRazonSocial.Text;
+                        ofertaKrypto.NIT = TxtNit.Text;
+                        ofertaKrypto.Direccion = TxtDireccion.Text;
+                        ofertaKrypto.Telefono = Convert.ToInt64(TxtTelefono.Text);
+                        ofertaKrypto.Ciudad = TxtCiudad.Text;
+                        ofertaKrypto.NombreContacto = TxtNombreContacto.Text;
+                        ofertaKrypto.CargoContacto = TxtCargoContacto.Text;
+                        ofertaKrypto.NumeroCelular = Convert.ToInt32(TxtNumeroCelular.Text);
+                        ofertaKrypto.Email = TxtEmail.Text;
+                        ofertaKrypto.Fecha = Convert.ToDateTime(TxtFecha.Text);
+                        ofertaKrypto.Oferta = finalUrl;
+                        ofertaKrypto.idaadmin=1;
+                        ofertaKrypto.Estado = true;
+                        context.ofertaKrypto.Add(ofertaKrypto);
+                        context.SaveChanges();
 
-                    Response.Write("<script>alert('Se han guardado con exito los datos.')</script>");
-                    limpiarCasillas();
-                    Response.Redirect("Administrador.aspx");
+                        Response.Write("<script>alert('Se han guardado con exito los datos.')</script>");
+                        limpiarCasillas();
+                        Response.Redirect("Administrador.aspx");
+                    }
+                    catch (DbEntityValidationException ex)
+                    {
+                        // Retrieve the error messages as a list of strings.
+                        var errorMessages = ex.EntityValidationErrors
+                                .SelectMany(x => x.ValidationErrors)
+                                .Select(x => x.ErrorMessage);
+
+                        // Join the list to a single string.
+                        var fullErrorMessage = string.Join("; ", errorMessages);
+
+                        // Combine the original exception message with the new one.
+                        var exceptionMessage = string.Concat(ex.Message, " The validation errors are: ", fullErrorMessage);
+
+                        // Throw a new DbEntityValidationException with the improved exception message.
+                        throw new DbEntityValidationException(exceptionMessage, ex.EntityValidationErrors);
+                    }
                 }
             }
         }

@@ -47,5 +47,20 @@ namespace Krypto.Interfaz
             }
             Response.Redirect("../Login.aspx");
         }
+
+        protected void BtnAsignarGT_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarGrupoDeTrabajo.aspx");
+        }
+
+        protected void BtnModificarTareas_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("ModificarTareas.aspx");
+        }
+
+        protected void BtnAgregarGT_Click(object sender, EventArgs e)
+        {
+            Response.Redirect("AgregarGrupoDeTrabajo");
+        }
     }
     }

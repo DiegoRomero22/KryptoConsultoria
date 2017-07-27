@@ -114,10 +114,21 @@
 
                 <%--     Espacio para Botones--%>
                 
-        <asp:Button ID="BtnAsignarGT" runat="server" Text="Asignar Grupo de Trabajo" Width="200px" CssClass="auto-style2" ForeColor="White" BackColor="#bf0d11"  /><br />
+        <asp:Button ID="BtnAgregarGT" runat="server" Text="Agregar  Grupo de Trabajo" Width="200px" CssClass="auto-style2" ForeColor="White" BackColor="#bf0d11" OnClick="BtnAgregarGT_Click"  />
+                <br />
+                <br />
+        
+        <asp:Button ID="BtnModificarTareas" runat="server" Text="Modificar Tareas" Width="200px" CssClass="auto-style2" ForeColor="White" BackColor="#bf0d11" OnClick="BtnModificarTareas_Click" />
+        
+
+                <br />
                 <br />
         
         <asp:Button ID="BtnDescargarArchivos" runat="server" Text="Descargar Archivos" Width="200px" CssClass="auto-style2" ForeColor="White" BackColor="#bf0d11"  />
+        
+
+                <br />
+                <br />
         
 
             </div>

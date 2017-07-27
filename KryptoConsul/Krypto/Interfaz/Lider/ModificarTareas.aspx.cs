@@ -7,7 +7,7 @@ using System.Web.UI.WebControls;
 
 namespace Krypto.Interfaz.Lider
 {
-    public partial class AsignarGrupoDeTrabajo : System.Web.UI.Page
+    public partial class ModificarTareas : System.Web.UI.Page
     {
         protected void Page_Load(object sender, EventArgs e)
         {

@@ -109,11 +109,10 @@ namespace Krypto.Interfaz
             //Rol Cliente.
             else if (clienteBLL.Autenticar(TxtUsuario.Text, TxtContraseña.Text) == 3)
             {
-                Session["Clientelogin"] = TxtUsuario.Text;
+                Session["ClienteLogin"] = TxtUsuario.Text;
                 usuarioEstaLogueado = 3;
                 //Session de nombre del cliente
-                Session["nombreCliente"] = TxtUsuario.Text;
-                Session["email"] = TxtUsuario.Text;
+                Session["nombreCliente"] = TxtUsuario.Text;              
                 if (lblHorarioInicial.Text == null)
                 {
 

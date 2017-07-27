@@ -31,8 +31,6 @@ namespace Krypto.Logic
         [Required]
         public Int64 Telefono { get; set; }
 
-        public int Horas { get; set; }
-
         [Required]
         public bool Activo { get; set; }
 
@@ -42,15 +40,13 @@ namespace Krypto.Logic
         public int RolId { get; set; }
         public virtual Rol Rol { get; set; }
 
-        //public int RolOferta { get; set; }
-
-        
-        public virtual ICollection<Tarea> tarea { get; set; }
+        public int idoferta { get; set; }
+        public virtual ICollection<OfertaKrypto> ofertaKrypto { get; set; }
         //public virtual OfertaKrypto ofertaKrypto { get; set; }
         public virtual ICollection<Lider> Lider { get; set; }
         public virtual ICollection<Archivo> archivo { get; set; }
-        public virtual ICollection<Cliente> cliente { get; set; }
         public virtual ICollection<Horario> horario { get; set; }
+       
 
 
     }

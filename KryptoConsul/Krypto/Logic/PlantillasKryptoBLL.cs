@@ -10,7 +10,7 @@ namespace Krypto.Logic
     public class PlantillasKryptoBLL
     {
 
-        public bool guardarOferta(string razonSocial, string nit, string direccion, Int64 telefono, string ciudad, string nombreContacto, string cargoContacto, Int32 numeroCelular, string email, DateTime fecha, string oferta)
+        public bool guardarOferta(string razonSocial, string nit, string direccion, Int64 telefono, string ciudad, string nombreContacto, string cargoContacto, Int32 numeroCelular, string email, DateTime fecha, string oferta , int idAdmin = 1)
         {
             try
             {
@@ -27,6 +27,7 @@ namespace Krypto.Logic
                     oferttaKrypto.Email = email;
                     oferttaKrypto.Fecha = fecha;
                     oferttaKrypto.Oferta = oferta;
+                    oferttaKrypto.idaadmin = idAdmin;
 
                 };
                 KryptoContext context = new KryptoContext();

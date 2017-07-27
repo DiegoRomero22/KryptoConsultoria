@@ -51,10 +51,10 @@ namespace Krypto.Models
         [Required, StringLength(200), Display(Name = "Oferta")]
         public string Oferta { get; set; }
 
-
+        public int idaadmin { get; set; }
         //Relación     
         public virtual Cliente clienteId { get; set; }
-        
+        public virtual Administrador idAdmin { get; set; }
    
 
        
